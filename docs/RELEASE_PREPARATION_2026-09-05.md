@@ -2,6 +2,8 @@
 
 Candidate: **0.3.0-rc.3**. The changes fix wrapping primary-action text and the installed-package TypeScript loader; the Run renderer identity is `workline-0.4.2`. A synthetic offline input is now packaged for a first result without a model call. Earlier review ZIPs, machine receipts and the accepted rc.2 Mac result remain intact.
 
+Publication follow-through completed: [0.3.0-rc.3](https://github.com/codex-improvement-lab/codex-workprint/releases/tag/v0.3.0-rc.3), commit `b5ea146`, with four passing hosted jobs and verified unauthenticated downloads. See the [publication record](evidence/github/release-0.3.0-rc.3.json). The observations below describe preparation; publication is separately recorded.
+
 ## Current checks
 
 - 46/46 core tests passed.

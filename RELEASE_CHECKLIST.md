@@ -40,7 +40,7 @@ The user authorized completion and GitHub publication on 2026-09-05. This checkl
 - [x] Real-browser QA covers the primary and Chinese Run Receipts at requested 1440×900 and 390×844 page viewports, plus the visible copy fallback at both sizes, with seven current retained screenshots, including a 1280px regression.
 - [x] Browser QA records zero horizontal-overflow failures, visible outliers, console errors/warnings, remote asset URLs, missing share-card public glyph fields, and Unicode replacement characters; key local interactions are observed.
 - [x] Historical 0.2 Profile browser evidence remains bound to the unchanged three Profile artifacts and six screenshots.
-- [ ] Fresh external GitHub Actions are observed for the exact 0.3 bytes.
+- [x] Fresh external GitHub Actions pass for release commit `b5ea146`: all four Windows/macOS × Node 22/24 jobs; see the [publication record](docs/evidence/github/release-0.3.0-rc.3.json).
 - [x] The historical 0.3.0-rc.2 physical-macOS receipt/report records a scoped external PASS for its exact package; archive/artifacts are machine-bound and transformed screenshot correspondence is explicitly user-confirmed without relabeling unequal hashes.
 
 ## Evidence and external boundaries
@@ -48,7 +48,7 @@ The user authorized completion and GitHub publication on 2026-09-05. This checkl
 - [x] Local deterministic, synthetic, real-input projection, and browser evidence is not described as authenticity, correctness, causality, physical-device, human, production, user, adoption, or market evidence.
 - [x] Public source excludes raw real Codex JSONL, credentials, local audits and dependency directories; runtime has no account, database, telemetry or service.
 - [x] User authorized GitHub publication using the established Lab organization and maintainer identity. Private security reports use GitHub Advisories.
-- [ ] Authorized commit, remote push, passing hosted matrix, tag and prerelease publication complete.
+- [x] Authorized commit, remote push, passing hosted matrix, tag and [prerelease publication](https://github.com/codex-improvement-lab/codex-workprint/releases/tag/v0.3.0-rc.3) complete. All four uploaded assets downloaded without authentication and matched local SHA-256 values; the downloaded portable ZIP built and verified a fresh synthetic receipt.
 
 The canonical evidence ledger is [docs/VALIDATION.md](docs/VALIDATION.md). An unchecked item is an explicit external or not-yet-run gate, not an implied implementation result.
 
