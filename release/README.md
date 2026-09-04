@@ -17,8 +17,8 @@ node ./bin/codex-workprint.js verify ./first-workprint
 
 | 文件 | 字节数 | SHA-256 |
 | --- | ---: | --- |
-| [codex-workprint-0.3.0-rc.3.tgz](https://github.com/codex-improvement-lab/codex-workprint/releases/download/v0.3.0-rc.3/codex-workprint-0.3.0-rc.3.tgz) | 1038755 | `9116e017cc64f462f549811c8c66583a6e2f9cb3a04424f7530c0ddb6b2dc535` |
-| [codex-workprint-0.3.0-rc.3-portable.zip](https://github.com/codex-improvement-lab/codex-workprint/releases/download/v0.3.0-rc.3/codex-workprint-0.3.0-rc.3-portable.zip) | 1073117 | `5762106df5aeea7906a5f88b445a362172f0266f25ed7d4e4d0d805d4c6e0cb4` |
+| [codex-workprint-0.3.0-rc.3.tgz](https://github.com/codex-improvement-lab/codex-workprint/releases/download/v0.3.0-rc.3/codex-workprint-0.3.0-rc.3.tgz) | 1038584 | `094ec6a24583f18c6740def2c4cf9b3797b4d9406649b87b96b023a8b43db673` |
+| [codex-workprint-0.3.0-rc.3-portable.zip](https://github.com/codex-improvement-lab/codex-workprint/releases/download/v0.3.0-rc.3/codex-workprint-0.3.0-rc.3-portable.zip) | 1073058 | `386df2a3e23329afdce97780809cba2b16883ed028cea6977b9733a675cb2710` |
 
 校验文件与归档同名，后缀为 `.sha256`，与归档一起提供在 Release 中。归档不随源码提交。
 

@@ -47,13 +47,13 @@
   "artifacts": [
     {
       "file": "codex-workprint-0.3.0-rc.3.tgz",
-      "bytes": 1038755,
-      "sha256": "9116e017cc64f462f549811c8c66583a6e2f9cb3a04424f7530c0ddb6b2dc535"
+      "bytes": 1038584,
+      "sha256": "094ec6a24583f18c6740def2c4cf9b3797b4d9406649b87b96b023a8b43db673"
     },
     {
       "file": "codex-workprint-0.3.0-rc.3-portable.zip",
-      "bytes": 1073117,
-      "sha256": "5762106df5aeea7906a5f88b445a362172f0266f25ed7d4e4d0d805d4c6e0cb4"
+      "bytes": 1073058,
+      "sha256": "386df2a3e23329afdce97780809cba2b16883ed028cea6977b9733a675cb2710"
     }
   ],
   "publicationPerformed": false,
