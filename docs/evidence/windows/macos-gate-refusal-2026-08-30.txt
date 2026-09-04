@@ -1,0 +1,8 @@
+COMMAND=node ./scripts/macos-gate.mjs
+HOST_PLATFORM=win32
+EXPECTED_RESULT=fail-closed refusal; not a macOS run
+
+MACOS_IMPLEMENTATION_GATE=FAIL: Darwin required; no macOS result recorded.
+
+RECORDED_EXIT_CODE=2
+

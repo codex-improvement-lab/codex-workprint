@@ -1,0 +1,124 @@
+{
+  "artifact": "codex-workprint-profile",
+  "findings": [
+    {
+      "id": "archive-migration:goal",
+      "kind": "handoff",
+      "sourceRefs": [
+        "migration-brief",
+        "data-policy"
+      ],
+      "subject": "Current goal: Migrate searchable metadata without exposing restricted audio or identities.",
+      "verdict": "carried"
+    },
+    {
+      "id": "archive-migration:schema-decision",
+      "kind": "handoff",
+      "sourceRefs": [
+        "migration-brief"
+      ],
+      "subject": "Settled decision: Use the version-three archive schema and preserve original record keys.",
+      "verdict": "carried"
+    },
+    {
+      "id": "archive-migration:access-boundary",
+      "kind": "handoff",
+      "sourceRefs": [
+        "data-policy"
+      ],
+      "subject": "Settled decision: Keep audio objects and participant identity fields outside the public index.",
+      "verdict": "carried"
+    },
+    {
+      "id": "archive-migration:schema-evidence",
+      "kind": "handoff",
+      "sourceRefs": [
+        "migration-evidence"
+      ],
+      "subject": "Valid evidence: Schema validator passed all 2,400 synthetic archive records.",
+      "verdict": "carried"
+    },
+    {
+      "id": "archive-migration:redaction-evidence",
+      "kind": "handoff",
+      "sourceRefs": [
+        "migration-evidence"
+      ],
+      "subject": "Valid evidence: Redaction probe found zero identity fields in the public projection.",
+      "verdict": "carried"
+    },
+    {
+      "id": "archive-migration:retention-question",
+      "kind": "handoff",
+      "sourceRefs": [
+        "migration-issues"
+      ],
+      "subject": "Open question: Resolve retention codes for twelve legacy records before cutover.",
+      "verdict": "lost"
+    },
+    {
+      "id": "archive-migration:next-action",
+      "kind": "handoff",
+      "sourceRefs": [
+        "migration-brief",
+        "data-policy"
+      ],
+      "subject": "Next safe action: Run the restricted-field diff, then stage metadata-only cutover.",
+      "verdict": "carried"
+    },
+    {
+      "id": "archive-migration:rebuild-invented",
+      "kind": "handoff",
+      "sourceRefs": [],
+      "subject": "Unsupported reconstruction: Legal approved unrestricted publication of the interview audio.",
+      "verdict": "invented"
+    }
+  ],
+  "profile": "continuity",
+  "question": "What still holds after handoff?",
+  "render": {
+    "palette": "workprint-profile-family-v1",
+    "pngRenderer": "workprint-profile-png-v1/stored-deflate/bitmap-5x7",
+    "rendererVersion": "profile-print-0.1.0"
+  },
+  "schemaVersion": "workprint-profile-ir/0.1",
+  "source": {
+    "kind": "workprint-profile-public-projection",
+    "profileIrSha256": "5d892ecc7f19ddf1075f0be33088d6510ca9f71c77560ac43855ebb626342b22",
+    "schemaVersion": "workprint-profile/0.1"
+  },
+  "sourceRevision": "archive-migration/migration-brief@brief-r14+data-policy@policy-r09+migration-evidence@evidence-r31+migration-issues@issues-r08",
+  "sources": [
+    {
+      "id": "migration-brief",
+      "label": "Migration brief",
+      "revision": "brief-r14"
+    },
+    {
+      "id": "data-policy",
+      "label": "Data-use policy",
+      "revision": "policy-r09"
+    },
+    {
+      "id": "migration-evidence",
+      "label": "Migration evidence",
+      "revision": "evidence-r31"
+    },
+    {
+      "id": "migration-issues",
+      "label": "Open issue log",
+      "revision": "issues-r08"
+    }
+  ],
+  "summary": {
+    "counts": {
+      "carried": 6,
+      "invented": 1,
+      "lost": 1,
+      "stale": 0
+    },
+    "headline": "7 loss points · 2 continuity faults"
+  },
+  "title": "Handoff Receipt — Research archive migration",
+  "visualForm": "seam"
+}

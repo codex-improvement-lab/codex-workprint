@@ -1,0 +1,71 @@
+{
+  "artifact": "codex-workprint-public-projection",
+  "assurance": "receipt-not-guarantee",
+  "boundaries": {
+    "provesAuthenticity": false,
+    "provesCorrectness": false,
+    "provesIdentity": false,
+    "provesRecovery": false,
+    "rawInputHashPublished": false,
+    "rawValuesRetained": false,
+    "shapeIdentityExcludesPublicCopy": true,
+    "telemetry": false,
+    "thirdPartyRequests": false,
+    "timing": "not-observed"
+  },
+  "excludedCategories": [
+    "prompts and instructions",
+    "assistant message text and reasoning",
+    "command text",
+    "stdout, stderr, aggregated output, and tool responses",
+    "absolute paths, file content, environment, and host metadata",
+    "thread id, usage, token counts, model, account, organization, and implicit identity",
+    "all unlisted nested fields",
+    "raw JSONL digest"
+  ],
+  "excludedFieldOccurrences": {
+    "assistantOrReasoningText": 2,
+    "commandText": 4,
+    "identityOrUsage": 7,
+    "outputText": 4,
+    "pathEnvironmentOrContent": 4,
+    "prompt": 0,
+    "unlistedNestedOrTiming": 0
+  },
+  "explicitPublicFields": [
+    "run.publicTitle",
+    "run.publicLabels[0]",
+    "run.publicLabels[1]",
+    "run.publicIdentity.project",
+    "run.publicIdentity.release",
+    "observations[3].publicPhase",
+    "observations[3].publicLabel",
+    "observations[5].publicPhase",
+    "observations[5].publicLabel",
+    "observations[8].publicPhase",
+    "observations[8].publicLabel",
+    "observations[9].publicPhase",
+    "observations[9].publicLabel"
+  ],
+  "policy": {
+    "itemIds": "pseudonymized-for-sequence-association",
+    "mode": "default-deny-public-projection",
+    "version": "0.1"
+  },
+  "publicIrSha256": "907edd0670ee84c2d57d5c6dbb854785b57dbee476193babf8e29916942ab79d",
+  "renderer": {
+    "png": "workprint-png-v5/indexed-stored-deflate/unifont-17.0.05",
+    "workline": "workline-0.4.2"
+  },
+  "retainedCategories": [
+    "recognized event and item type",
+    "ordered observation sequence",
+    "pseudonymized item association",
+    "explicit status and integer exit code",
+    "aggregate public counts",
+    "explicit public title, labels, annotations, identity metadata, language, and public URL",
+    "shape digest derived only from ordered whitelisted observation structure"
+  ],
+  "schemaVersion": "0.1",
+  "shapeSha256": "272932db435165f5b8d64c42356067d6e8069a3ab093bd7450f54aa3866ff874"
+}

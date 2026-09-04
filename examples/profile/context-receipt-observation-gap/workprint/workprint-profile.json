@@ -1,0 +1,119 @@
+{
+  "artifact": "codex-workprint-profile",
+  "findings": [
+    {
+      "currentRevision": "memory-r5",
+      "expectedRevision": "memory-r5",
+      "id": "ambient-memory-item",
+      "kind": "context-source",
+      "reasonCode": "outside_explicit_boundary",
+      "sourceRefs": [
+        "ambient-memory"
+      ],
+      "subject": "Unscoped ambient memory candidate",
+      "verdict": "excluded"
+    },
+    {
+      "currentRevision": "archive-r21",
+      "expectedRevision": "archive-r21",
+      "id": "archived-method-note",
+      "kind": "context-source",
+      "reasonCode": "no_observation_event",
+      "sourceRefs": [
+        "archive-index"
+      ],
+      "subject": "Archived method note assumed to be available",
+      "verdict": "not_observed"
+    },
+    {
+      "currentRevision": "repo-r6",
+      "expectedRevision": "repo-r6",
+      "id": "repo-boundary",
+      "kind": "context-source",
+      "reasonCode": "observed_at_boundary",
+      "sourceRefs": [
+        "repo-instructions"
+      ],
+      "subject": "Repository scope and evidence boundary",
+      "verdict": "observed"
+    },
+    {
+      "currentRevision": "style-r3",
+      "expectedRevision": "style-r3",
+      "id": "style-guidance",
+      "kind": "context-source",
+      "reasonCode": "prepared_not_observed",
+      "sourceRefs": [
+        "style-pack"
+      ],
+      "subject": "Optional long-form writing guidance",
+      "verdict": "prepared"
+    },
+    {
+      "currentRevision": "brief-r9",
+      "expectedRevision": "brief-r9",
+      "id": "task-objective",
+      "kind": "context-source",
+      "reasonCode": "observed_at_boundary",
+      "sourceRefs": [
+        "task-brief"
+      ],
+      "subject": "Current research objective and acceptance checks",
+      "verdict": "observed"
+    }
+  ],
+  "profile": "context-receipt",
+  "question": "What context was prepared, observed, or absent?",
+  "render": {
+    "palette": "workprint-profile-family-v1",
+    "pngRenderer": "workprint-profile-png-v1/stored-deflate/bitmap-5x7",
+    "rendererVersion": "profile-print-0.1.0"
+  },
+  "schemaVersion": "workprint-profile-ir/0.1",
+  "source": {
+    "kind": "workprint-profile-public-projection",
+    "profileIrSha256": "6cfc0afe8fb732d8ab9805c7303b9cde9d7aed776145d0eb528fc60cb3a56db2",
+    "schemaVersion": "workprint-profile/0.1"
+  },
+  "sourceRevision": "sha256:f783f6f8307fd6041cadfb4879b4a7c638642c851ee136f1aa05ecdb5a9dec30",
+  "sources": [
+    {
+      "id": "ambient-memory",
+      "label": "Ambient memory candidate",
+      "revision": "memory-r5"
+    },
+    {
+      "id": "archive-index",
+      "label": "Archived research index",
+      "revision": "archive-r21"
+    },
+    {
+      "id": "repo-instructions",
+      "label": "Repository instructions",
+      "revision": "repo-r6"
+    },
+    {
+      "id": "style-pack",
+      "label": "Optional writing style pack",
+      "revision": "style-r3"
+    },
+    {
+      "id": "task-brief",
+      "label": "Explicit research task brief",
+      "revision": "brief-r9"
+    }
+  ],
+  "summary": {
+    "counts": {
+      "conflict": 0,
+      "excluded": 1,
+      "not_observed": 1,
+      "observed": 2,
+      "prepared": 1,
+      "stale": 0
+    },
+    "headline": "2 of 5 planned items have current observed evidence; 3 items remain outside that evidence boundary."
+  },
+  "title": "Research handoff with a three-item observation gap",
+  "visualForm": "slice"
+}

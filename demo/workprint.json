@@ -1,0 +1,232 @@
+{
+  "observations": [
+    {
+      "afterObservedFailure": false,
+      "eventType": "thread.started",
+      "exitCode": null,
+      "itemId": null,
+      "itemType": "run",
+      "publicLabel": null,
+      "publicPhase": null,
+      "sequence": 1,
+      "status": "observed"
+    },
+    {
+      "afterObservedFailure": false,
+      "eventType": "turn.started",
+      "exitCode": null,
+      "itemId": null,
+      "itemType": "turn",
+      "publicLabel": null,
+      "publicPhase": null,
+      "sequence": 2,
+      "status": "observed"
+    },
+    {
+      "afterObservedFailure": false,
+      "eventType": "item.completed",
+      "exitCode": null,
+      "itemId": "item-1",
+      "itemType": "agent_message",
+      "publicLabel": null,
+      "publicPhase": null,
+      "sequence": 3,
+      "status": "not-observed"
+    },
+    {
+      "afterObservedFailure": false,
+      "eventType": "item.started",
+      "exitCode": null,
+      "itemId": "item-2",
+      "itemType": "command_execution",
+      "publicLabel": null,
+      "publicPhase": null,
+      "sequence": 4,
+      "status": "in_progress"
+    },
+    {
+      "afterObservedFailure": false,
+      "eventType": "item.completed",
+      "exitCode": 1,
+      "itemId": "item-2",
+      "itemType": "command_execution",
+      "publicLabel": "Expected marker check",
+      "publicPhase": "verify",
+      "sequence": 5,
+      "status": "failed"
+    },
+    {
+      "afterObservedFailure": false,
+      "eventType": "item.completed",
+      "exitCode": null,
+      "itemId": "item-3",
+      "itemType": "agent_message",
+      "publicLabel": null,
+      "publicPhase": null,
+      "sequence": 6,
+      "status": "not-observed"
+    },
+    {
+      "afterObservedFailure": false,
+      "eventType": "item.started",
+      "exitCode": null,
+      "itemId": "item-4",
+      "itemType": "file_change",
+      "publicLabel": "Create marker",
+      "publicPhase": "edit",
+      "sequence": 7,
+      "status": "in_progress"
+    },
+    {
+      "afterObservedFailure": true,
+      "eventType": "item.completed",
+      "exitCode": null,
+      "itemId": "item-4",
+      "itemType": "file_change",
+      "publicLabel": null,
+      "publicPhase": null,
+      "sequence": 8,
+      "status": "completed"
+    },
+    {
+      "afterObservedFailure": false,
+      "eventType": "item.started",
+      "exitCode": null,
+      "itemId": "item-5",
+      "itemType": "command_execution",
+      "publicLabel": null,
+      "publicPhase": null,
+      "sequence": 9,
+      "status": "in_progress"
+    },
+    {
+      "afterObservedFailure": false,
+      "eventType": "item.completed",
+      "exitCode": 0,
+      "itemId": "item-5",
+      "itemType": "command_execution",
+      "publicLabel": "Follow-up marker check",
+      "publicPhase": "verify",
+      "sequence": 10,
+      "status": "completed"
+    },
+    {
+      "afterObservedFailure": false,
+      "eventType": "item.completed",
+      "exitCode": null,
+      "itemId": "item-6",
+      "itemType": "agent_message",
+      "publicLabel": "Concise public report",
+      "publicPhase": "deliver",
+      "sequence": 11,
+      "status": "not-observed"
+    },
+    {
+      "afterObservedFailure": false,
+      "eventType": "turn.completed",
+      "exitCode": null,
+      "itemId": null,
+      "itemType": "turn",
+      "publicLabel": null,
+      "publicPhase": null,
+      "sequence": 12,
+      "status": "observed"
+    }
+  ],
+  "privacy": {
+    "assurance": "receipt-not-guarantee",
+    "excludedCategories": [
+      "prompts and instructions",
+      "assistant message text and reasoning",
+      "command text",
+      "stdout, stderr, aggregated output, and tool responses",
+      "absolute paths, file content, environment, and host metadata",
+      "thread id, usage, token counts, model, account, organization, and implicit identity",
+      "all unlisted nested fields",
+      "raw JSONL digest"
+    ],
+    "excludedFieldOccurrences": {
+      "assistantOrReasoningText": 3,
+      "commandText": 4,
+      "identityOrUsage": 7,
+      "outputText": 4,
+      "pathEnvironmentOrContent": 4,
+      "prompt": 0,
+      "unlistedNestedOrTiming": 0
+    },
+    "explicitPublicFields": [
+      "run.publicTitle",
+      "run.publicLabels[0]",
+      "run.publicLabels[1]",
+      "run.publicIdentity.project",
+      "run.publicIdentity.release",
+      "observations[4].publicPhase",
+      "observations[4].publicLabel",
+      "observations[6].publicPhase",
+      "observations[6].publicLabel",
+      "observations[9].publicPhase",
+      "observations[9].publicLabel",
+      "observations[10].publicPhase",
+      "observations[10].publicLabel"
+    ],
+    "itemIds": "pseudonymized-for-sequence-association",
+    "mode": "default-deny-public-projection",
+    "policyVersion": "0.1",
+    "rawInputHashPublished": false,
+    "rawValuesRetained": false
+  },
+  "render": {
+    "palette": "the-run-has-a-shape-v1",
+    "pngRenderer": "workprint-png-v5/indexed-stored-deflate/unifont-17.0.05",
+    "rendererVersion": "workline-0.4.2"
+  },
+  "run": {
+    "durationMs": null,
+    "publicIdentity": {
+      "by": null,
+      "language": "en",
+      "project": "Codex Workprint",
+      "publicUrl": null,
+      "release": "0.3.0-rc.3"
+    },
+    "publicLabels": [
+      "Real Codex CLI 0.145.0 / Windows",
+      "Public projection / no transcript"
+    ],
+    "publicTitle": "Create a marker after an expected failed check",
+    "turnCompletion": "observed"
+  },
+  "schemaVersion": "0.2",
+  "source": {
+    "adapterVersion": "0.2.0",
+    "kind": "codex-exec-jsonl",
+    "malformedRecords": 0,
+    "parsedRecords": 12,
+    "publicIrSha256": "d8a0e621bedacceff134306af4e00e5a93407ae522c831f274825bd53f4e6aa8",
+    "recognizedEvents": 12,
+    "shapeSha256": "21fc1fde4c98b640a21ca5250733687aaa40f8a1cbabaa29e018cc4ddbc07872",
+    "timing": "not-observed",
+    "unknownEvents": 0
+  },
+  "summary": {
+    "agentMessageObservations": 3,
+    "commandCompleted": 1,
+    "commandFailed": 1,
+    "commandOutcomeNotObserved": 0,
+    "commandStarted": 2,
+    "completionAfterObservedFailure": 1,
+    "fileChangeObservations": 2,
+    "itemCompleted": 2,
+    "itemFailed": 1,
+    "itemStarted": 3,
+    "itemStatusNotObserved": 3,
+    "publicDeliver": 1,
+    "publicEdit": 1,
+    "publicInspect": 0,
+    "publicRecover": 0,
+    "publicVerify": 2,
+    "runObservations": 1,
+    "turnObservations": 2,
+    "unknown": 0
+  }
+}

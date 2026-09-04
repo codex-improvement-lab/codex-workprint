@@ -1,0 +1,84 @@
+{
+  "schema": "codex-workprint/macos-evidence-import-audit/v1",
+  "recordedAt": "2026-08-30T01:51:30+08:00",
+  "reviewer": "Codex local evidence audit",
+  "source": "two user-supplied attachments",
+  "importedAttachments": [
+    {
+      "file": "REVIEW_EVIDENCE.json",
+      "bytes": 4020,
+      "sha256": "c03160f42dc256a0a935834103e6d9b14323d9a6f0cf840f18b14d330e945bf8",
+      "byteIdenticalToAttachment": true
+    },
+    {
+      "file": "MAC_REVIEW_REPORT.md",
+      "bytes": 3023,
+      "sha256": "d09f46acf264732c883efa41fbd0f10f8b21e4661ef89cf89d27615ac9de3914",
+      "byteIdenticalToAttachment": true
+    }
+  ],
+  "reviewArchiveBinding": {
+    "bytes": 421238,
+    "sha256": "185e4bcdf789abd7fb7ab61ab357ee33fa468d6d4fc7195fda787bf4f7792c58",
+    "localIgnoredArchiveMatched": true,
+    "reportedSidecarMatched": true
+  },
+  "bindingAudit": {
+    "checks": 16,
+    "passed": 16,
+    "failed": 0,
+    "subjects": [
+      "candidate version",
+      "archive bytes",
+      "archive SHA-256",
+      "reported sidecar result",
+      "hero Shape identity",
+      "hero public IR identity",
+      "alternate Shape identity",
+      "alternate public IR identity",
+      "adapter identity",
+      "Workline renderer identity",
+      "PNG renderer identity",
+      "Darwin/arm64 environment",
+      "required source gates",
+      "scoped browser result",
+      "optional live-input non-claim",
+      "scoped physical-Mac verdict"
+    ]
+  },
+  "postImportArchiveComparison": {
+    "archiveFiles": 88,
+    "byteMatched": 78,
+    "changedAfterReview": [
+      "CHANGELOG.md",
+      "README.md",
+      "RELEASE_CHECKLIST.md",
+      "RELEASE_NOTES.md",
+      "SECURITY.md",
+      "docs/MACOS_HANDOFF.md",
+      "docs/PLATFORM_SUPPORT.md",
+      "docs/VALIDATION.md",
+      ".github/workflows/ci.yml"
+    ],
+    "archiveOnly": [
+      "MAC_REVIEW_PROMPT.md"
+    ],
+    "runtimeAdaptersRenderersTestsFixturesSchemasPackageDemosAndReleaseScriptsByteMatched": true,
+    "githubWorkflowChangedForPublicationHardening": true
+  },
+  "postImportLocalVerification": {
+    "platform": "win32",
+    "node": "v24.19.0",
+    "nodeTest": "PASS_19_OF_19",
+    "releaseCheck": "PASS_139_OF_139",
+    "heroBundleVerify": "PASS_7_OF_7",
+    "alternateBundleVerify": "PASS_7_OF_7",
+    "newBrowserObservationRecorded": false
+  },
+  "unavailableSupportingBytes": [
+    "workprint-desktop-1440x900.jpg",
+    "workprint-narrow-390x844.jpg"
+  ],
+  "verdict": "ACCEPT_SCOPED_PHYSICAL_MAC_PASS",
+  "claimCeiling": "Accepts the supplied, archive-bound receipt as external physical-Mac evidence. Codex did not witness the Darwin run and did not independently rehash the unavailable Mac screenshots. No fresh Mac Codex input, source-authenticity, task-correctness, human, identity, user, or market claim is established."
+}

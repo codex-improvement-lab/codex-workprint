@@ -1,0 +1,10 @@
+COMMAND=node ./scripts/macos-gate.mjs
+NODE=v24.19.0
+CANDIDATE=0.1.0-rc.3
+PLATFORM=Windows 11 10.0.26200 x64
+
+MACOS_IMPLEMENTATION_GATE=FAIL: Darwin required; no macOS result recorded.
+OBSERVED_LASTEXITCODE=2
+
+INTERPRETATION=Expected fail-closed refusal on Windows. This is not a macOS execution or PASS.
+RECORDED_EXIT_CODE=2

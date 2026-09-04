@@ -1,0 +1,109 @@
+{
+  "schemaVersion": "0.2",
+  "receiptType": "real-codex-input-public-projection",
+  "sourceCapturedAtDate": "2026-08-29",
+  "projectionRebuiltAtDate": "2026-08-30",
+  "candidate": "0.3.0-rc.2",
+  "environment": {
+    "operatingSystem": "Windows 11 10.0.26200 x64",
+    "codexCli": "codex-cli 0.145.0",
+    "captureMode": "global --ask-for-approval never; exec --ephemeral --sandbox workspace-write --color never --json",
+    "workspace": "two new small no-secret Git repositories in a gitignored local evidence directory",
+    "stdoutAndStderrSeparated": true
+  },
+  "sourceBoundary": {
+    "rawJsonlRetainedLocally": true,
+    "rawJsonlPublished": false,
+    "rawJsonlDigestPublished": false,
+    "rawPromptPublished": false,
+    "rawCommandOrOutputPublished": false,
+    "eventsHandEditedBeforeBuild": false
+  },
+  "shapeIdentityBoundary": {
+    "derivation": [
+      "ordered eventType",
+      "pseudonymized item association",
+      "itemType",
+      "explicit status and integer exitCode",
+      "afterObservedFailure"
+    ],
+    "publicCopyExcluded": true,
+    "optionalPublicIdentityExcluded": true,
+    "provesAuthenticity": false,
+    "provesCorrectness": false
+  },
+  "compiler": {
+    "runIrSchema": "0.2",
+    "runAdapter": "codex-jsonl/0.2.0",
+    "runRenderer": "workline-0.4.1",
+    "pngRenderer": "workprint-png-v5/indexed-stored-deflate/unifont-17.0.05",
+    "bundleFiles": 7
+  },
+  "runs": [
+    {
+      "id": "A",
+      "codexExecExitCode": 0,
+      "publicTitle": "Change one tiny status and observe the check",
+      "publicIdentity": {
+        "project": "Codex Workprint",
+        "release": "0.3.0-rc.2",
+        "language": "en",
+        "by": null,
+        "publicUrl": null
+      },
+      "shapeSha256": "272932db435165f5b8d64c42356067d6e8069a3ab093bd7450f54aa3866ff874",
+      "publicIrSha256": "9b5a6aadd6ee99f6d3c08ce3c312fe23cca04d74544049191a4c4cf20b9fae42",
+      "observations": 11,
+      "summary": {
+        "itemStarted": 3,
+        "itemCompleted": 3,
+        "itemFailed": 0,
+        "itemStatusNotObserved": 2,
+        "completionAfterObservedFailure": 0,
+        "unknown": 0
+      },
+      "publicBundle": "examples/alternate-workprint",
+      "manifestSha256": "a7df3809a6432c33a4f0b054aeeae59ce24ed963452e59386b661c775a7dc483",
+      "svgSha256": "daf295a1c9d8d22abf36a9c28833c7179b5457d64d988fbd585c4e6296606f1a",
+      "shareCardSha256": "054827dfd638b97a52a2b50cb03265b900f9568350359c566f2b564800250db7",
+      "verify": "observed pass"
+    },
+    {
+      "id": "B",
+      "codexExecExitCode": 0,
+      "publicTitle": "Create a marker after an expected failed check",
+      "publicIdentity": {
+        "project": "Codex Workprint",
+        "release": "0.3.0-rc.2",
+        "language": "en",
+        "by": null,
+        "publicUrl": null
+      },
+      "shapeSha256": "21fc1fde4c98b640a21ca5250733687aaa40f8a1cbabaa29e018cc4ddbc07872",
+      "publicIrSha256": "5bc530cfba595c45a6ae1ee4443e5abb21d15d3ec7a3dbb0836f1fa2be176424",
+      "observations": 12,
+      "summary": {
+        "itemStarted": 3,
+        "itemCompleted": 2,
+        "itemFailed": 1,
+        "itemStatusNotObserved": 3,
+        "completionAfterObservedFailure": 1,
+        "unknown": 0
+      },
+      "publicBundle": "demo",
+      "manifestSha256": "28f114a13e39ad604c9eee03270a7e86543233b5f2c1a55a5691040a5ee5cdf5",
+      "svgSha256": "30912bd4ab9fd294c85c4f4ec5558baeb1226e362e71e19112920631c5521816",
+      "shareCardSha256": "fc3d7c49c1d33ed590db07683cb07a2d0a26d075d21ea22370e0da0cac5bf6f6",
+      "verify": "observed pass"
+    }
+  ],
+  "differentShapeObservation": {
+    "shapeSha256Different": true,
+    "publicIrDifferent": true,
+    "observationCountDifferent": true,
+    "svgBytesDifferent": true,
+    "shareCardBytesDifferent": true,
+    "visualReview": "A has no failed item or later-completion arc; B has one explicit failed item and one completion-after-failure arc. Both compile into the 0.3 Run Receipt family while retaining different shapes."
+  },
+  "claimCeiling": "These are direct local public projections rebuilt from two retained Codex CLI 0.145.0 JSONL inputs on Windows. The receipt does not prove the raw inputs authentic, the tasks correct, authorship, causality, model influence, production behavior, physical-macOS behavior, user comprehension, adoption, or market demand."
+}

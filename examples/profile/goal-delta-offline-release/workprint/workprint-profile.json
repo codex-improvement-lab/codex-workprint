@@ -1,0 +1,92 @@
+{
+  "artifact": "codex-workprint-profile",
+  "findings": [
+    {
+      "affectedEvidenceIds": [],
+      "id": "goal-delta-A11Y-01",
+      "kind": "contract-change",
+      "sourceRefs": [
+        "contract-after"
+      ],
+      "subject": "A11Y-01 · Complete the primary workflow without pointer input.",
+      "verdict": "added"
+    },
+    {
+      "affectedEvidenceIds": [
+        "AC-LEGACY/xml-v1-export"
+      ],
+      "id": "goal-delta-LEGACY-01",
+      "kind": "contract-change",
+      "sourceRefs": [
+        "contract-before"
+      ],
+      "subject": "LEGACY-01 · Retain XML v1 export compatibility.",
+      "verdict": "removed"
+    },
+    {
+      "affectedEvidenceIds": [],
+      "id": "goal-delta-SIGN-01",
+      "kind": "contract-change",
+      "sourceRefs": [
+        "contract-before",
+        "contract-after"
+      ],
+      "subject": "SIGN-01 · Keep the offline package inventory inspectable.",
+      "verdict": "unchanged"
+    },
+    {
+      "affectedEvidenceIds": [],
+      "id": "goal-delta-WEB-01",
+      "kind": "contract-change",
+      "sourceRefs": [
+        "contract-before",
+        "contract-after"
+      ],
+      "subject": "WEB-01 · Support the documented desktop and mobile widths.",
+      "verdict": "unchanged"
+    }
+  ],
+  "profile": "goal-delta",
+  "question": "What evidence stops carrying when the goal changes?",
+  "render": {
+    "palette": "workprint-profile-family-v1",
+    "pngRenderer": "workprint-profile-png-v1/stored-deflate/bitmap-5x7",
+    "rendererVersion": "profile-print-0.1.0"
+  },
+  "schemaVersion": "workprint-profile-ir/0.1",
+  "source": {
+    "kind": "workprint-profile-public-projection",
+    "profileIrSha256": "2bbea8803939cf0c4f907794a248bbfb2a3aeea1397e1761ebe3981cd0dca0ab",
+    "schemaVersion": "workprint-profile/0.1"
+  },
+  "sourceRevision": "offline-release-2026.08..offline-release-2026.09",
+  "sources": [
+    {
+      "id": "contract-before",
+      "label": "Offline release acceptance contract",
+      "revision": "offline-release-2026.08"
+    },
+    {
+      "id": "contract-after",
+      "label": "Offline release acceptance contract",
+      "revision": "offline-release-2026.09"
+    }
+  ],
+  "summary": {
+    "counts": {
+      "added": 1,
+      "affectedEvidence": 1,
+      "changed": 0,
+      "newlyStaleEvidence": 1,
+      "removed": 1,
+      "rerunEvidence": 0,
+      "retireEvidence": 1,
+      "unchanged": 2,
+      "uncoveredAddedItems": 1,
+      "usableEvidence": 2
+    },
+    "headline": "2 contract changes make 1 previously verified proof line stale."
+  },
+  "title": "Goal Delta · Offline release acceptance contract",
+  "visualForm": "fault"
+}

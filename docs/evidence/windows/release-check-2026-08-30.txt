@@ -1,0 +1,148 @@
+COMMAND=node ./scripts/release-check.mjs
+NODE_VERSION=v24.19.0
+RECORDED_DATE=2026-08-30
+
+Codex Workprint release check · Node 24.19.0
+PASS Node runtime baseline
+PASS Package release-candidate version
+PASS Publish is not hard-disabled
+PASS Package Node engine
+PASS AGENTS Node consistency
+PASS README Node consistency
+PASS Changelog release line
+PASS README hero is real demo
+PASS README compares two real SVG shapes
+PASS README documents copy-independent shape identity
+PASS Release notes candidate consistency
+PASS Validation test count consistency
+PASS Validation release-check count consistency
+PASS Release checklist count consistency
+PASS macOS handoff candidate identities
+PASS npm dry-run remains honestly pending
+PASS CI Windows matrix
+PASS CI macOS matrix
+PASS CI Node 22 matrix
+PASS CI Node 24 matrix
+PASS CI has no dependency install side effect
+PASS CI package check does not publish
+PASS Required file .gitattributes
+PASS Required file AGENTS.md
+PASS Required file README.md
+PASS Required file LICENSE
+PASS Required file CHANGELOG.md
+PASS Required file PRIVACY.md
+PASS Required file SECURITY.md
+PASS Required file RELEASE_CHECKLIST.md
+PASS Required file RELEASE_NOTES.md
+PASS Required file schema/workprint-ir-v0.1.schema.json
+PASS Required file docs/releases/0.1.0-rc.1.md
+PASS Required file docs/MACOS_HANDOFF.md
+PASS Required file docs/PLATFORM_SUPPORT.md
+PASS Required file docs/VALIDATION.md
+PASS Required file docs/evidence/real-runs-2026-08-29.json
+PASS Required file docs/evidence/browser/qa-receipt-2026-08-29.json
+PASS Required file docs/evidence/browser/README.md
+PASS Required file docs/evidence/windows/validation-receipt-2026-08-29.json
+PASS Required file docs/evidence/browser/workprint-desktop-viewport-1440x900.jpg
+PASS Required file docs/evidence/browser/workprint-narrow-viewport-390x844.jpg
+PASS Required file docs/evidence/real-runs-2026-08-30.json
+PASS Required file docs/evidence/browser/qa-receipt-2026-08-30.json
+PASS Required file docs/evidence/windows/validation-receipt-2026-08-30.json
+PASS Required file docs/evidence/browser/workprint-desktop-viewport-1440x900-2026-08-30.jpg
+PASS Required file docs/evidence/browser/workprint-narrow-viewport-390x844-2026-08-30.jpg
+PASS Required file bin/codex-workprint.js
+PASS Required file src/cli.ts
+PASS IR schema identity
+PASS IR schema requires shape digest
+PASS Package allowlist is explicit and minimal
+PASS Package contains runtime and schema
+PASS Package allowlist excludes evidence
+PASS Package allowlist has no broad glob
+PASS Package keyword coding-agent
+PASS Package keyword developer-tools
+PASS Package keyword workflow-visualization
+PASS Package keyword svg
+PASS Package keyword cli
+PASS Private real runs ignored
+PASS Local audit ignored
+PASS Hero demo deterministic bundle
+PASS Alternate demo deterministic bundle
+PASS Real demo public IRs differ
+PASS Real demo shape identities differ
+PASS Hero shape identity format
+PASS Alternate shape identity format
+PASS Real demo observation shapes differ
+PASS Hero preserves observed failed item
+PASS Hero claim stays relational
+PASS Raw input hash absent from hero
+PASS Hero PNG renderer v2
+PASS Public copy leaves shape identity stable
+PASS Public copy changes full public IR
+PASS Public copy leaves Workline geometry stable
+PASS Real-run receipt publishes no raw digest
+PASS Real-run receipt binds hero public IR
+PASS Real-run receipt binds alternate public IR
+PASS Real-run receipt binds hero shape
+PASS Real-run receipt binds alternate shape
+PASS Real-run receipt artifact hashes current
+PASS PNG signature
+PASS PNG 1200x630
+PASS Desktop screenshot is honestly JPEG
+PASS Narrow screenshot is honestly JPEG
+PASS Desktop screenshot receipt digest
+PASS Narrow screenshot receipt digest
+PASS Desktop screenshot receipt dimensions
+PASS Narrow screenshot receipt dimensions
+PASS Browser receipt binds hero IR
+PASS Browser receipt binds hero shape
+PASS Browser receipt desktop overflow false
+PASS Browser receipt narrow overflow false
+PASS Browser receipt console clean
+PASS Browser receipt external assets empty
+PASS Browser receipt remote network empty
+PASS Replay shape interaction observed
+PASS Theme interaction observed
+PASS Clipboard copy interaction observed
+PASS Copy fallback interaction observed
+PASS Failed station is initial selection
+PASS Narrow station selection observed
+PASS Windows receipt candidate version
+PASS Windows receipt test result
+PASS Windows receipt keeps external CI unobserved
+PASS Windows receipt keeps physical macOS pending
+PASS Browser receipt HTML digest current
+PASS Browser receipt SVG digest current
+PASS HTML CSP blocks connections
+PASS HTML has no remote asset URL
+PASS HTML has no network API
+PASS HTML exposes Replay shape control
+PASS HTML honors reduced motion
+PASS HTML defaults to informative observation
+PASS HTML prints short Shape ID
+PASS PNG CTA command includes required title
+PASS PNG legend names failed/nonzero
+PASS No public real-run JSONL
+PASS Public text has no trailing whitespace
+PASS Temporary path contains spaces
+PASS Deterministic MANIFEST.sha256
+PASS Deterministic embed.md
+PASS Deterministic privacy-receipt.json
+PASS Deterministic share-card.png
+PASS Deterministic workprint.html
+PASS Deterministic workprint.json
+PASS Deterministic workprint.svg
+PASS Fresh bundle verifies
+PASS Verify rejects one-byte artifact drift
+PASS Restored bundle verifies
+PASS Safe temporary cleanup target
+PASS Privacy fixture MANIFEST.sha256
+PASS Privacy fixture embed.md
+PASS Privacy fixture privacy-receipt.json
+PASS Privacy fixture share-card.png
+PASS Privacy fixture workprint.html
+PASS Privacy fixture workprint.json
+PASS Privacy fixture workprint.svg
+RELEASE_CHECK PASS · 139 checks
+
+RECORDED_EXIT_CODE=0
+

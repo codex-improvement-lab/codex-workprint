@@ -1,0 +1,87 @@
+{
+  "schemaVersion": "0.1",
+  "receiptType": "real-codex-input-public-projection",
+  "sourceCapturedAtDate": "2026-08-29",
+  "projectionRebuiltAtDate": "2026-08-30",
+  "candidate": "0.1.0-rc.3",
+  "environment": {
+    "operatingSystem": "Windows 11 10.0.26200 x64",
+    "codexCli": "codex-cli 0.145.0",
+    "captureMode": "global --ask-for-approval never; exec --ephemeral --sandbox workspace-write --color never --json",
+    "workspace": "two new small no-secret Git repositories in a gitignored local evidence directory",
+    "stdoutAndStderrSeparated": true
+  },
+  "sourceBoundary": {
+    "rawJsonlRetainedLocally": true,
+    "rawJsonlPublished": false,
+    "rawJsonlDigestPublished": false,
+    "rawPromptPublished": false,
+    "rawCommandOrOutputPublished": false,
+    "eventsHandEditedBeforeBuild": false
+  },
+  "shapeIdentityBoundary": {
+    "derivation": [
+      "ordered eventType",
+      "pseudonymized item association",
+      "itemType",
+      "explicit status and integer exitCode",
+      "afterObservedFailure"
+    ],
+    "publicCopyExcluded": true,
+    "provesAuthenticity": false,
+    "provesCorrectness": false
+  },
+  "runs": [
+    {
+      "id": "A",
+      "codexExecExitCode": 0,
+      "publicTitle": "Change one tiny status and observe the check",
+      "shapeSha256": "272932db435165f5b8d64c42356067d6e8069a3ab093bd7450f54aa3866ff874",
+      "publicIrSha256": "0afa1b7883989858b7517425e8b7d418cde4c9ea2c634a5d20debbedf3074e93",
+      "observations": 11,
+      "summary": {
+        "itemStarted": 3,
+        "itemCompleted": 3,
+        "itemFailed": 0,
+        "itemStatusNotObserved": 2,
+        "completionAfterObservedFailure": 0,
+        "unknown": 0
+      },
+      "publicBundle": "examples/alternate-workprint",
+      "manifestSha256": "7181334969d05619123b35a8d81e5b004726f833c08bbf1175081654882c8e9b",
+      "svgSha256": "daf295a1c9d8d22abf36a9c28833c7179b5457d64d988fbd585c4e6296606f1a",
+      "shareCardSha256": "88e16877d04516bab6831adeff4522d9d6d484f9f5f1a4b95bca1e6c4bba96e7",
+      "verify": "observed pass"
+    },
+    {
+      "id": "B",
+      "codexExecExitCode": 0,
+      "publicTitle": "Create a marker after an expected failed check",
+      "shapeSha256": "21fc1fde4c98b640a21ca5250733687aaa40f8a1cbabaa29e018cc4ddbc07872",
+      "publicIrSha256": "614080189701cb097b3be313f1e996aaf7aa0fe6821b6f302802fa6ce6f7ed5a",
+      "observations": 12,
+      "summary": {
+        "itemStarted": 3,
+        "itemCompleted": 2,
+        "itemFailed": 1,
+        "itemStatusNotObserved": 3,
+        "completionAfterObservedFailure": 1,
+        "unknown": 0
+      },
+      "publicBundle": "demo",
+      "manifestSha256": "d0bd5dc5ada9ef5e1f13c897b88aa18bae375a07641c68c75cbba8af100a4add",
+      "svgSha256": "30912bd4ab9fd294c85c4f4ec5558baeb1226e362e71e19112920631c5521816",
+      "shareCardSha256": "a43007c5a28022516324d0df956d9e7cf12a42243fe49ffe3bd3a2cb3d65b922",
+      "verify": "observed pass"
+    }
+  ],
+  "differentShapeObservation": {
+    "shapeSha256Different": true,
+    "publicIrDifferent": true,
+    "observationCountDifferent": true,
+    "svgBytesDifferent": true,
+    "shareCardBytesDifferent": true,
+    "visualReview": "A has no failed item or later-completion arc; B has one explicit failed item and one completion-after-failure arc. Both use the rc.3 Run Sheet layers."
+  },
+  "claimCeiling": "These are direct local projections of two captured inputs on Windows Codex CLI 0.145.0. The receipt does not prove the raw inputs authentic, complete across Codex versions, correct as tasks, authored by a named person, or valid on macOS."
+}

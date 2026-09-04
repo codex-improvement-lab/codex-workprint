@@ -1,0 +1,81 @@
+{
+  "schemaVersion": 1,
+  "evidenceClass": "user-supplied external macOS final retest report with incomplete host metadata",
+  "importedOn": "2026-08-30",
+  "sourceAttachment": {
+    "originalFile": "Codex-Improvement-Lab-macOS-Intake-final-retest-report-v2-2026-08-30.md",
+    "bytes": 3347,
+    "lines": 62,
+    "sha256": "27a008e94bd2a2dd1659c53ea4d555348baa47c78f532af81671113f913986e6",
+    "attachmentInstructionsTreatedAsAuthorization": false
+  },
+  "repositoryCopy": {
+    "file": "INTAKE_FINAL_RETEST_REPORT_V2_2026-08-30.md",
+    "bytes": 3343,
+    "lines": 62,
+    "sha256": "645e851bccee95c5fe4e97d8ca359b5e136130367703e41cef552b9eba59258b",
+    "byteForByte": false,
+    "normalization": "Removed four trailing Markdown spaces from the two blockquote metadata lines; all text, line order, identities, counts, and verdicts are unchanged."
+  },
+  "reviewedArchive": {
+    "file": "Codex-Improvement-Lab-macOS-Intake-final-retest-v2-2026-08-30.zip",
+    "bytes": 552070,
+    "sha256": "198a45ee111bee7804f191653c6ec3dd0f3b31f11877d61d9115f147a0a139bb",
+    "localArchiveIdentityMatched": true,
+    "manifest": "65/65 PASS before and after release gate",
+    "sourceSnapshot": {
+      "files": 59,
+      "bytes": 716422,
+      "sha256": "d95026b00a87d795aeb298673203b3b687518bb9e88af5f5223487896308dc49"
+    },
+    "wholeSnapshotSha256": "a48b804e5f35d0cf8894291fe58a356ac2fa0f294ad6c73ab35ae4b5da4a6476"
+  },
+  "candidate": {
+    "id": "codex-intake@0.1.0+codex.20260826170524",
+    "contentSha256": "74883da55dae3e581fdb22e4cb1db7a58894c38a0041fe4aed69b99e2974454e",
+    "identityMatchedControlSourceAndGeneratedPackage": true,
+    "secondMarketplacePrepareStable": true
+  },
+  "reportedExecution": {
+    "platform": "macOS",
+    "workspace": "clean extraction on external workspace",
+    "releaseCheckExitCode": 0,
+    "projectGate": "28 files / 9 traceable findings / 0 raw fixture leaks",
+    "vitest": "15/15 pass, including platform 5/5",
+    "build": "PASS",
+    "playwright": "5/5 pass",
+    "marketplace": "PASS",
+    "networkScope": "browser used loopback 127.0.0.1; dependency install reported 0 downloads",
+    "hardwareModel": "NOT_RECORDED_IN_REPORT",
+    "architecture": "NOT_RECORDED_IN_REPORT",
+    "macosVersion": "NOT_RECORDED_IN_REPORT",
+    "nodeVersion": "NOT_RECORDED_IN_REPORT",
+    "pnpmVersion": "NOT_RECORDED_IN_REPORT"
+  },
+  "verdict": {
+    "codexIntakeExactCandidateMacosFunctionalAcceptance": "PASS",
+    "labPortfolio": "5_PASS_0_FAIL",
+    "wholeLabAcceptance": "PASS"
+  },
+  "auditDecision": {
+    "mayRecordScopedMacosFunctionalPass": true,
+    "mayRecordLabPortfolioFiveOfFive": true,
+    "mayRecordSpecificAppleSiliconHardwarePassFromThisReport": false,
+    "mayRecordIntelHardwarePassFromThisReport": false,
+    "mayRecordSpecificMacosVersionPassFromThisReport": false,
+    "importerDirectlyWitnessedExecution": false
+  },
+  "claimCeiling": [
+    "The report supports a scoped macOS functional acceptance PASS for the exact Intake archive and candidate identities.",
+    "Together with the two earlier bound reports, the Lab portfolio may be recorded as 5/5 PASS in its defined automated acceptance scope.",
+    "The report omitted hardware model, architecture, macOS version, Node version, and pnpm version, so it cannot independently support a hardware- or version-specific validation claim.",
+    "The browser and workflow observations are automated and synthetic, not real-user evidence.",
+    "The report is external evidence and was not directly witnessed by the importer; it is not cryptographic attestation, external CI, production, adoption, or market evidence."
+  ],
+  "externalActions": {
+    "commit": false,
+    "push": false,
+    "publish": false,
+    "upload": false
+  }
+}

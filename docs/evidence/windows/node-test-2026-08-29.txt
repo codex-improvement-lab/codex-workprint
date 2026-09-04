@@ -1,0 +1,25 @@
+✔ adapts the observed Codex CLI 0.145.0 shape without publishing private fields (272.6556ms)
+✔ retains failure and a later completion as observations without claiming recovery (2.0103ms)
+✔ only explicit public annotations add semantic phases (2.1256ms)
+✔ LF and CRLF inputs produce identical public IR semantics (2.1309ms)
+✔ recognizes the currently observed file_change item type but never infers edit (1.2307ms)
+✔ malformed, non-object, missing, and unknown events remain visible without raw values (1.4035ms)
+✔ inspect, build, and verify form the narrow CLI loop (3012.5483ms)
+✔ build requires an explicit public title (0.7944ms)
+✔ build is byte-deterministic and verify detects drift and unexpected files (7661.8592ms)
+✔ exports a versioned renderer id (1.0397ms)
+✔ renders a PNG with the required signature and 1200x630 IHDR (376.4415ms)
+✔ renders identical bytes for identical IR (900.8745ms)
+✔ changes bytes when the IR changes (761.3612ms)
+✔ safely rasterizes non-ASCII title text (347.3749ms)
+✔ privacy attack values do not enter any public bundle artifact (842.4928ms)
+✔ HTML and SVG are self-contained, escaped, and observation-bounded (322.1555ms)
+ℹ tests 16
+ℹ suites 0
+ℹ pass 16
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 9454.4915
+RECORDED_EXIT_CODE=0

@@ -1,0 +1,79 @@
+{
+  "schema": "codex-workprint/github-publication-prep-audit/v1",
+  "recordedAt": "2026-08-30T02:08:29+08:00",
+  "candidate": "0.1.0-rc.2",
+  "platform": "win32",
+  "node": "v24.19.0",
+  "localChecks": {
+    "nodeTest": "PASS_19_OF_19",
+    "releaseCheck": "PASS_139_OF_139",
+    "heroBundleVerify": "PASS_7_OF_7",
+    "alternateBundleVerify": "PASS_7_OF_7",
+    "githubPreparationStaticAudit": "PASS_21_OF_21",
+    "relativeLinksChecked": 62,
+    "brokenRelativeLinks": 0,
+    "jsonFilesParsedBeforeReceipt": 15,
+    "jsonParseFailures": 0
+  },
+  "repositoryPreparation": {
+    "readme": true,
+    "license": "MIT",
+    "contributing": true,
+    "support": true,
+    "securityPolicy": true,
+    "privacyModel": true,
+    "issueForms": [
+      "bug_report.yml",
+      "feature_request.yml"
+    ],
+    "pullRequestTemplate": true,
+    "dependabotGithubActions": true,
+    "githubReleaseRunbook": true,
+    "codeOfConduct": "pending real private enforcement contact"
+  },
+  "actions": {
+    "permissions": "contents:read",
+    "checkoutPersistCredentials": false,
+    "timeoutMinutes": 10,
+    "concurrencyCancellation": true,
+    "matrix": "windows-latest/macos-latest x Node 22.x/24.x",
+    "checkoutCommit": "11d5960a326750d5838078e36cf38b85af677262",
+    "setupNodeCommit": "49933ea5288caeca8642d1e84afbd3f7d6820020",
+    "hostedRun": "configured / not observed"
+  },
+  "socialPreview": {
+    "path": "docs/assets/github-social-preview.png",
+    "format": "PNG",
+    "bytes": 11897,
+    "width": 1200,
+    "height": 630,
+    "sha256": "004855d16f965350f40e0f9061a75229d05c9c9a0b12617cbd9fdebfe346f10d",
+    "decodedPixelScanlinesMatchHeroShareCard": true
+  },
+  "publicInventoryBeforeThisReceipt": {
+    "files": 103,
+    "bytes": 5277709,
+    "filesOver1MiB": 2,
+    "largestFileBytes": 2268868,
+    "reparsePoints": 0,
+    "localIdentityOrWorkspacePathMatches": 0,
+    "secretPatternMatches": "intentional fake privacy-attack fixture and its assertions only"
+  },
+  "gitState": {
+    "branch": "main",
+    "headExists": false,
+    "trackedFiles": 0,
+    "remotes": 0,
+    "tags": 0,
+    "result": "NOT_READY_TO_PUBLISH_UNTIL_USER_CREATES_FIRST_COMMIT_AND_REMOTE"
+  },
+  "notObserved": {
+    "npmPackDryRun": "npm unavailable locally",
+    "hostedGithubActions": true,
+    "githubRepositorySettings": true,
+    "publicRepository": true,
+    "tagOrRelease": true,
+    "realUsersOrMarket": true
+  },
+  "claimCeiling": "This receipt establishes local file preparation and Windows checks only. It does not establish a GitHub repository, hosted CI, account settings, a staged or committed tree, a tag, a published release, npm contents, users, adoption, or market evidence."
+}

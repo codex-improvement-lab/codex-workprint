@@ -1,0 +1,194 @@
+{
+  "schemaVersion": "workprint-run-receipt-browser-qa/0.1",
+  "receiptType": "browser-visual-qa",
+  "recordedAt": "2026-08-30T23:30:00+08:00",
+  "candidate": "0.3.0-rc.1",
+  "browser": {
+    "surface": "Codex In-app Browser",
+    "version": "not exposed by the browser runtime"
+  },
+  "loopbackServer": {
+    "urlDuringQa": "http://127.0.0.1:54839/",
+    "status": 200,
+    "identityHeader": "X-Codex-Workprint-QA: 0.3.0-rc.1",
+    "cacheControl": "no-store",
+    "stoppedAfterQa": true
+  },
+  "artifacts": [
+    {
+      "id": "run-receipt",
+      "title": "Create a marker after an expected failed check",
+      "path": "demo/workprint.html",
+      "shapeSha256": "21fc1fde4c98b640a21ca5250733687aaa40f8a1cbabaa29e018cc4ddbc07872",
+      "publicIrSha256": "a250ad24dad04eab88dd3525fc42a7ff2fda4909d6521748ce842d00c9c5d53e",
+      "htmlSha256": "93d18bf7ef1fdb4974c28afb84404c64eeedfc12e6dba26879e7303e5af4b7ff",
+      "svgSha256": "30912bd4ab9fd294c85c4f4ec5558baeb1226e362e71e19112920631c5521816",
+      "manifestSha256": "13454484db6cd67afb1aa9ed95d0240443cb6671eaf7c40f74d8da14d628632e",
+      "desktop": {
+        "requestedPageViewport": { "width": 1440, "height": 900 },
+        "observedPageViewport": { "width": 1440, "height": 900 },
+        "capturedPixelViewport": { "width": 1425, "height": 891 },
+        "documentClientWidth": 1425,
+        "documentScrollWidth": 1425,
+        "documentScrollHeight": 2733,
+        "horizontalOverflow": false,
+        "visibleOutOfViewportElements": 0,
+        "copySourceElementsIntentionallyOffscreen": 2,
+        "hero": { "top": 70, "bottom": 542.0104370117188, "width": 1355.5625 },
+        "titleObserved": true,
+        "storyObserved": "1 failed item -> 1 later completion",
+        "privacyMarkObserved": "8 private categories excluded by default",
+        "initialSelection": { "sequence": 5, "status": "failed", "exitCode": 1 },
+        "consoleErrorsAndWarnings": 0,
+        "screenshot": {
+          "path": "docs/evidence/browser/run-receipt-desktop-1440x900-2026-08-30-0.3.0-rc.1.jpg",
+          "actualFormat": "JPEG/JFIF",
+          "magicHex": "ffd8ffe000104a46",
+          "bytes": 114556,
+          "sha256": "d4979d6311ca191bb4d513b35cb55fced254c0941d195c48677679e702c4269d"
+        }
+      },
+      "narrow": {
+        "requestedPageViewport": { "width": 390, "height": 844 },
+        "observedPageViewport": { "width": 390, "height": 844 },
+        "capturedPixelViewport": { "width": 375, "height": 812 },
+        "documentClientWidth": 375,
+        "documentScrollWidth": 375,
+        "documentScrollHeight": 3532,
+        "horizontalOverflow": false,
+        "visibleOutOfViewportElements": 0,
+        "actionButtonsWithinViewport": true,
+        "hero": { "top": 66, "bottom": 804.7291870117188, "width": 350.66668701171875 },
+        "nativeVerticalRoute": { "visible": true, "desktopSvgHidden": true, "stations": 12, "top": 822.7291870117188 },
+        "titleObserved": true,
+        "storyObserved": "1 failed item -> 1 later completion",
+        "privacyMarkObserved": "8 private categories excluded by default",
+        "consoleErrorsAndWarnings": 0,
+        "screenshot": {
+          "path": "docs/evidence/browser/run-receipt-narrow-390x844-2026-08-30-0.3.0-rc.1.jpg",
+          "actualFormat": "JPEG/JFIF",
+          "magicHex": "ffd8ffe000104a46",
+          "bytes": 47277,
+          "sha256": "e2e6484deadcfbdd05729300a39c4a963db088d836d6f1ed9b2ae72ccdb3582e"
+        }
+      },
+      "interactions": {
+        "share": {
+          "buttonObserved": true,
+          "result": "local clipboard path reported by page",
+          "independentClipboardReadback": "not established for the share click; the browser clipboard surface returned an empty string",
+          "externalTransmission": false
+        },
+        "copyCaptionFallback": {
+          "result": "fallback-selection",
+          "selectedExpectedCaption": true
+        },
+        "verify": {
+          "result": "clipboard",
+          "independentClipboardReadback": "codex-workprint verify ./workprint"
+        },
+        "downloadCard": {
+          "href": "share-card.png",
+          "downloadAttribute": true,
+          "browserDownloadEventObserved": true,
+          "pageResult": "local-file"
+        },
+        "theme": { "paperModeObserved": true, "carbonModeRestored": true },
+        "replay": { "result": "station-by-station", "completed": true, "finalStep": 12 },
+        "trace": { "selectedSequence": 8, "status": "completed", "relation": "completion observed after a failed item" }
+      }
+    },
+    {
+      "id": "unicode-run-receipt",
+      "title": "修复登录失败并验证发布",
+      "path": "examples/unicode-run-receipt/workprint/workprint.html",
+      "shapeSha256": "d8d549d7608456df9ebcdac201125a01fc2f29b3036b75d3a59e3cc18c9b9dd2",
+      "publicIrSha256": "f61ae25cacc72b1444a874551cf269970ecec9312cd4eedf13a4c4c396c61a6b",
+      "htmlSha256": "90397268cd071e143d8d5b9f567fedf9ecd3727a2b30e43b74e7f81ce2048622",
+      "svgSha256": "4cf5d2fce44d644540f268639397407d153457a0e112f9f8da3ea5ac9ea72ba5",
+      "manifestSha256": "2b98e2225091a0967a641053048c5739b1f305d66c51771c0e48183b8e1aace4",
+      "desktop": {
+        "requestedPageViewport": { "width": 1440, "height": 900 },
+        "observedPageViewport": { "width": 1440, "height": 900 },
+        "capturedPixelViewport": { "width": 1425, "height": 891 },
+        "documentClientWidth": 1425,
+        "documentScrollWidth": 1425,
+        "documentScrollHeight": 2688,
+        "horizontalOverflow": false,
+        "visibleOutOfViewportElements": 0,
+        "heroBottom": 498.125,
+        "titleObservedExactly": true,
+        "replacementCharacterObserved": false,
+        "consoleErrorsAndWarnings": 0,
+        "screenshot": {
+          "path": "docs/evidence/browser/unicode-run-receipt-desktop-1440x900-2026-08-30-0.3.0-rc.1.jpg",
+          "actualFormat": "JPEG/JFIF",
+          "magicHex": "ffd8ffe000104a46",
+          "bytes": 111770,
+          "sha256": "da3bdc68abae579667a1726fd5b01c29e20fe8250de3af4eb9ea385a2f69c58c"
+        }
+      },
+      "narrow": {
+        "requestedPageViewport": { "width": 390, "height": 844 },
+        "observedPageViewport": { "width": 390, "height": 844 },
+        "capturedPixelViewport": { "width": 375, "height": 812 },
+        "documentClientWidth": 375,
+        "documentScrollWidth": 375,
+        "documentScrollHeight": 3212,
+        "horizontalOverflow": false,
+        "visibleOutOfViewportElements": 0,
+        "heroBottom": 722.375,
+        "nativeVerticalRoute": { "visible": true, "desktopSvgHidden": true, "stations": 8, "top": 740.375 },
+        "titleObservedExactly": true,
+        "replacementCharacterObserved": false,
+        "consoleErrorsAndWarnings": 0,
+        "screenshot": {
+          "path": "docs/evidence/browser/unicode-run-receipt-narrow-390x844-2026-08-30-0.3.0-rc.1.jpg",
+          "actualFormat": "JPEG/JFIF",
+          "magicHex": "ffd8ffe000104a46",
+          "bytes": 46818,
+          "sha256": "f9f007c3cb4488a46602de91a613c086f140e34708a1a4f48f40b3d630d175fd"
+        }
+      },
+      "bitmapShareCard": {
+        "path": "examples/unicode-run-receipt/workprint/share-card.png",
+        "renderer": "workprint-png-v4/indexed-stored-deflate/unifont-17.0.05",
+        "actualFormat": "PNG indexed color",
+        "magicHex": "89504e470d0a1a0a",
+        "pixelWidth": 1200,
+        "pixelHeight": 630,
+        "bytes": 756798,
+        "sha256": "fee9f336bbc2fa9a15fdf1fa49325526707476581cbfc70b3f980ba1bf270ee2",
+        "publicTitleGlyphCoverage": { "supported": 11, "missing": 0 },
+        "replacementQuestionMarkObservedInVisualReview": false
+      }
+    }
+  ],
+  "assetInventory": {
+    "method": "in-app Browser pageAssets inventory after each load",
+    "pagesChecked": 4,
+    "inlineSvgPerPage": 1,
+    "localFaviconPerPage": 1,
+    "remoteAssetUrls": [],
+    "externalScript": 0,
+    "externalFont": 0,
+    "externalImage": 0,
+    "externalStylesheet": 0,
+    "externalVideo": 0
+  },
+  "network": {
+    "remoteRequestCount": 0,
+    "basis": "Observed page resource inventory plus connect-src 'none' and source checks; the browser surface did not expose a packet-level event log."
+  },
+  "aggregate": {
+    "artifactsChecked": 2,
+    "viewportChecks": 4,
+    "screenshots": 4,
+    "horizontalOverflowFailures": 0,
+    "visibleOutOfViewportElements": 0,
+    "consoleErrorsAndWarnings": 0,
+    "remoteAssetUrls": 0,
+    "replacementCharactersInUnicodeTitle": 0
+  },
+  "claimCeiling": "Automated real-browser observation on this Windows host. It establishes the recorded local viewport, interaction, rendering, and resource observations only; it does not establish human comprehension, source authenticity, task correctness, physical-macOS behavior, real-user success, adoption, market evidence, or production behavior."
+}

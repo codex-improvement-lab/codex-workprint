@@ -1,0 +1,52 @@
+CODEX WORKPRINT INSPECT · run-b-v1.jsonl
+Public observations: 12 (12 recognized events, 0 visible unknown, 0 malformed)
+Timing: not-observed; no duration or offsets emitted
+Public IR: 9b19dd77f7de5f6ae4cb432340f9dd7d3d018ac35cd8357c73fac58abe4ccded
+
+RETAINED
++ recognized root event type
++ pseudonymized item id for sequence association
++ recognized item type
++ explicit item status and integer exit code
++ started and completed observations in source order
++ explicit public title, labels, and phase annotations
++ visible unknown observations without source values
+
+EXCLUDED
+- prompts and instructions
+- assistant message text and reasoning
+- command text
+- stdout, stderr, aggregated output, and tool responses
+- absolute paths, file content, environment, and host metadata
+- thread id, usage, token counts, model, account, organization, and implicit identity
+- all unlisted nested fields
+- raw JSONL digest
+
+EXCLUDED FIELD OCCURRENCES (COUNTS ONLY)
+- assistantOrReasoningText: 3
+- commandText: 4
+- identityOrUsage: 7
+- outputText: 4
+- pathEnvironmentOrContent: 4
+- prompt: 0
+- unlistedNestedOrTiming: 0
+
+ORDERED PUBLIC PREVIEW
+#1 thread.started run status=observed exit=not-observed phase=not-annotated
+#2 turn.started turn status=observed exit=not-observed phase=not-annotated
+#3 item.completed agent_message status=not-observed exit=not-observed phase=not-annotated
+#4 item.started command_execution status=in_progress exit=not-observed phase=not-annotated
+#5 item.completed command_execution status=failed exit=1 phase=verify
+#6 item.completed agent_message status=not-observed exit=not-observed phase=not-annotated
+#7 item.started file_change status=in_progress exit=not-observed phase=edit
+#8 item.completed file_change status=completed exit=not-observed phase=not-annotated
+#9 item.started command_execution status=in_progress exit=not-observed phase=not-annotated
+#10 item.completed command_execution status=completed exit=0 phase=verify
+#11 item.completed agent_message status=not-observed exit=not-observed phase=deliver
+#12 turn.completed turn status=observed exit=not-observed phase=not-annotated
+
+CLAIM CEILING
+Command text and output are not used to infer inspect/edit/verify/recover/deliver.
+A completed turn is an observed event, not proof of correctness. A post-failure completion is not a recovery claim.
+Run build with only the title, labels, and annotations you intend to publish.
+RECORDED_EXIT_CODE=0

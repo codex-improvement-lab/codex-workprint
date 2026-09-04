@@ -1,0 +1,36 @@
+COMMAND=node --test
+NODE=v24.19.0
+CANDIDATE=0.1.0-rc.3
+PLATFORM=Windows 11 10.0.26200 x64
+
+✔ adapts the observed Codex CLI 0.145.0 shape without publishing private fields (35.1551ms)
+✔ retains failure and a later completion as observations without claiming recovery (2.1293ms)
+✔ only explicit public annotations add semantic phases (6.7933ms)
+✔ UTF-8 BOM, LF, and CRLF inputs produce identical public IR semantics (2.0139ms)
+✔ recognizes the currently observed file_change item type but never infers edit (1.249ms)
+✔ malformed, non-object, missing, and unknown events remain visible without raw values (1.262ms)
+✔ inspect, build, and verify form the narrow CLI loop (578.7641ms)
+✔ build requires an explicit public title (0.6799ms)
+✔ build is byte-deterministic and verify detects drift and unexpected files (1214.2233ms)
+✔ exports a versioned renderer id (0.9086ms)
+✔ renders a PNG with the required signature and 1200x630 IHDR (250.1954ms)
+✔ renders identical bytes for identical IR (427.1699ms)
+✔ changes bytes when the IR changes (412.0397ms)
+✔ safely rasterizes non-ASCII title text (167.4498ms)
+✔ privacy attack values do not enter any public bundle artifact (302.2987ms)
+✔ HTML and SVG are self-contained, escaped, and observation-bounded (19.2967ms)
+✔ Run Sheet derives item threads, turn ranges, and bounded turning points from public IR (16.3528ms)
+✔ long runs fold into a deterministic serpentine route without dropping observations (2.1122ms)
+✔ public copy and annotations change public IR but never shape identity or geometry (22.4737ms)
+✔ different observed event streams have different shape identities (2.7225ms)
+✔ IR integrity rejects a shape digest that is not bound to observations (2.71ms)
+ℹ tests 21
+ℹ suites 0
+ℹ pass 21
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1536.565
+
+RECORDED_EXIT_CODE=0

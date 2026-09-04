@@ -1,0 +1,31 @@
+{
+  "artifact": "codex-workprint-profile-bundle",
+  "assurance": "receipt-not-attestation",
+  "boundaries": {
+    "provesCausality": false,
+    "provesCorrectness": false,
+    "provesModelInfluence": false,
+    "provesSourceAuthenticity": false,
+    "suppliedPublicProjectionOnly": true,
+    "telemetry": false,
+    "thirdPartyRequests": false,
+    "unknownExtensionsPublished": false
+  },
+  "bundleType": "profile",
+  "inputSchemaVersion": "workprint-profile/0.1",
+  "profile": "continuity",
+  "profileIrSha256": "5d892ecc7f19ddf1075f0be33088d6510ca9f71c77560ac43855ebb626342b22",
+  "renderer": {
+    "png": "workprint-profile-png-v1/stored-deflate/bitmap-5x7",
+    "profile": "profile-print-0.1.0"
+  },
+  "retainedFields": [
+    "profile, title, sourceRevision",
+    "source id, label, revision",
+    "finding id, kind, verdict, subject, sourceRefs",
+    "allowlisted profile-specific finding fields",
+    "summary headline and allowlisted counts"
+  ],
+  "schemaVersion": "workprint-profile-receipt/0.1",
+  "sourceRevision": "archive-migration/migration-brief@brief-r14+data-policy@policy-r09+migration-evidence@evidence-r31+migration-issues@issues-r08"
+}

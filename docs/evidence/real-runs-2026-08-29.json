@@ -1,0 +1,70 @@
+{
+  "schemaVersion": "0.1",
+  "receiptType": "real-codex-input-public-projection",
+  "observedAtDate": "2026-08-29",
+  "environment": {
+    "operatingSystem": "Windows 11 10.0.26200 x64",
+    "codexCli": "codex-cli 0.145.0",
+    "captureMode": "global --ask-for-approval never; exec --ephemeral --sandbox workspace-write --color never --json",
+    "workspace": "two new small no-secret Git repositories in a gitignored local evidence directory",
+    "stdoutAndStderrSeparated": true
+  },
+  "sourceBoundary": {
+    "rawJsonlRetainedLocally": true,
+    "rawJsonlPublished": false,
+    "rawJsonlDigestPublished": false,
+    "rawPromptPublished": false,
+    "rawCommandOrOutputPublished": false,
+    "eventsHandEditedBeforeBuild": false
+  },
+  "runs": [
+    {
+      "id": "A",
+      "codexExecExitCode": 0,
+      "publicTitle": "Change one tiny status and observe the check",
+      "publicIrSha256": "6fe6b79e0586d3bde95db820b93e2920afe5632363954f49aef8392fd72b7f44",
+      "observations": 11,
+      "summary": {
+        "itemStarted": 3,
+        "itemCompleted": 3,
+        "itemFailed": 0,
+        "itemStatusNotObserved": 2,
+        "completionAfterObservedFailure": 0,
+        "unknown": 0
+      },
+      "publicBundle": "examples/alternate-workprint",
+      "manifestSha256": "4c44e675600e7b3fc858446dabf12340de4aa6adec6b3436bc52467e4e4215d1",
+      "svgSha256": "3f6c1d8f6861c50764345f7c1dd16ed58038b2279df3d8fa3ce56563c4e354a4",
+      "shareCardSha256": "895e4d6021deee8f0b8f00991be7e135a9b30e6422a2a3ac7d3118fe70735854",
+      "verify": "observed pass"
+    },
+    {
+      "id": "B",
+      "codexExecExitCode": 0,
+      "publicTitle": "Create a marker after an expected failed check",
+      "publicIrSha256": "9b19dd77f7de5f6ae4cb432340f9dd7d3d018ac35cd8357c73fac58abe4ccded",
+      "observations": 12,
+      "summary": {
+        "itemStarted": 3,
+        "itemCompleted": 2,
+        "itemFailed": 1,
+        "itemStatusNotObserved": 3,
+        "completionAfterObservedFailure": 1,
+        "unknown": 0
+      },
+      "publicBundle": "demo",
+      "manifestSha256": "f6738eb22100ccde6a03b95efa125be2b904f830504142e33f1f80336aa47bab",
+      "svgSha256": "c8be47187f045e2f49a47314bbd2cde94daf81d1bf4040de2b3e2c530c55a885",
+      "shareCardSha256": "ddaa25df489e1b62e2855dae35b119729b17ec9eaa1d99108b60009ae49177f6",
+      "verify": "observed pass"
+    }
+  ],
+  "differentShapeObservation": {
+    "publicIrDifferent": true,
+    "observationCountDifferent": true,
+    "svgBytesDifferent": true,
+    "shareCardBytesDifferent": true,
+    "visualReview": "A has no failed item or return arc; B has one explicit failed item and one completion-after-failure return arc."
+  },
+  "claimCeiling": "These are direct local observations for two captured inputs on Windows Codex CLI 0.145.0. The receipt does not prove the raw inputs authentic, unedited by another actor, complete across Codex versions, correct as tasks, authored by a named person, or valid on macOS."
+}

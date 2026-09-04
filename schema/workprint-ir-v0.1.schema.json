@@ -1,0 +1,93 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:codex-workprint:schema:0.1",
+  "title": "Codex Workprint IR v0.1",
+  "description": "A default-deny public projection of ordered Codex JSONL observations. It is not an authenticity, correctness, recovery, identity, or timing attestation.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "source", "run", "observations", "summary", "privacy", "render"],
+  "properties": {
+    "schemaVersion": { "const": "0.1" },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["kind", "adapterVersion", "shapeSha256", "publicIrSha256", "parsedRecords", "malformedRecords", "recognizedEvents", "unknownEvents", "timing"],
+      "properties": {
+        "kind": { "const": "codex-exec-jsonl" },
+        "adapterVersion": { "type": "string" },
+        "shapeSha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$",
+          "description": "SHA-256 of the ordered shape projection: eventType, pseudonymized item association, itemType, explicit status/exitCode, and afterObservedFailure only. Public copy and annotations are excluded."
+        },
+        "publicIrSha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+        "parsedRecords": { "type": "integer", "minimum": 0 },
+        "malformedRecords": { "type": "integer", "minimum": 0 },
+        "recognizedEvents": { "type": "integer", "minimum": 0 },
+        "unknownEvents": { "type": "integer", "minimum": 0 },
+        "timing": { "const": "not-observed" }
+      }
+    },
+    "run": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["publicTitle", "publicLabels", "turnCompletion", "durationMs"],
+      "properties": {
+        "publicTitle": { "type": "string", "maxLength": 120 },
+        "publicLabels": { "type": "array", "maxItems": 8, "items": { "type": "string", "maxLength": 48 } },
+        "turnCompletion": { "enum": ["observed", "not-observed"] },
+        "durationMs": { "type": "null" }
+      }
+    },
+    "observations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["sequence", "eventType", "itemId", "itemType", "status", "exitCode", "publicPhase", "publicLabel", "afterObservedFailure"],
+        "properties": {
+          "sequence": { "type": "integer", "minimum": 1 },
+          "eventType": { "enum": ["thread.started", "turn.started", "item.started", "item.completed", "turn.completed", "unknown"] },
+          "itemId": { "oneOf": [{ "type": "null" }, { "type": "string", "pattern": "^item-[1-9][0-9]*$" }] },
+          "itemType": { "enum": ["run", "turn", "command_execution", "file_change", "agent_message", "unknown", null] },
+          "status": { "enum": ["observed", "in_progress", "completed", "failed", "not-observed"] },
+          "exitCode": { "type": ["integer", "null"] },
+          "publicPhase": { "enum": ["inspect", "edit", "verify", "recover", "deliver", null] },
+          "publicLabel": { "type": ["string", "null"], "maxLength": 64 },
+          "afterObservedFailure": { "type": "boolean" }
+        }
+      }
+    },
+    "summary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["runObservations", "turnObservations", "itemStarted", "itemCompleted", "itemFailed", "itemStatusNotObserved", "commandStarted", "commandCompleted", "commandFailed", "commandOutcomeNotObserved", "fileChangeObservations", "agentMessageObservations", "unknown", "completionAfterObservedFailure", "publicInspect", "publicEdit", "publicVerify", "publicRecover", "publicDeliver"],
+      "properties": {
+        "runObservations": { "$ref": "#/$defs/count" },
+        "turnObservations": { "$ref": "#/$defs/count" },
+        "itemStarted": { "$ref": "#/$defs/count" },
+        "itemCompleted": { "$ref": "#/$defs/count" },
+        "itemFailed": { "$ref": "#/$defs/count" },
+        "itemStatusNotObserved": { "$ref": "#/$defs/count" },
+        "commandStarted": { "$ref": "#/$defs/count" },
+        "commandCompleted": { "$ref": "#/$defs/count" },
+        "commandFailed": { "$ref": "#/$defs/count" },
+        "commandOutcomeNotObserved": { "$ref": "#/$defs/count" },
+        "fileChangeObservations": { "$ref": "#/$defs/count" },
+        "agentMessageObservations": { "$ref": "#/$defs/count" },
+        "unknown": { "$ref": "#/$defs/count" },
+        "completionAfterObservedFailure": { "$ref": "#/$defs/count" },
+        "publicInspect": { "$ref": "#/$defs/count" },
+        "publicEdit": { "$ref": "#/$defs/count" },
+        "publicVerify": { "$ref": "#/$defs/count" },
+        "publicRecover": { "$ref": "#/$defs/count" },
+        "publicDeliver": { "$ref": "#/$defs/count" }
+      }
+    },
+    "privacy": { "type": "object" },
+    "render": { "type": "object" }
+  },
+  "$defs": {
+    "count": { "type": "integer", "minimum": 0 }
+  }
+}

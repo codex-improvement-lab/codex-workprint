@@ -1,0 +1,37 @@
+{
+  "schemaVersion": "codex-workprint-macos-evidence-acceptance-closure/0.1",
+  "closureDate": "2026-09-05",
+  "candidate": "0.3.0-rc.2",
+  "priorVerdict": "PENDING_SCREENSHOT_IDENTITY",
+  "currentVerdict": "PASS",
+  "confirmation": {
+    "authority": "user",
+    "statement": "忽略截图问题，我确认一致",
+    "interpretation": "The user explicitly confirms that the delivered transformed screenshots correspond to the original screenshots named by the external Mac report and directs that transfer-format/hash drift not block the scoped result."
+  },
+  "acceptedBindings": {
+    "archiveSha256": "98a50a8aca3b3ace7b7eb1c4687bbd5ffa3b0dbf073327e2ef1a5c84044d1091",
+    "internalManifestSha256": "d5c01affa5d723770202cacf9b2d8aa9c162c477edebd0296afebb85fc283339",
+    "automatedReceiptSha256": "04f6ad6765dac33737050bb5fc65e70d5ec93cf606317e0f65f76c3de42dc232",
+    "reportSha256": "58cecb3e5f6b604d8b43964c3de1778a068c82f53f7428220fb2c59798604fff",
+    "candidateVersionsMatch": true,
+    "shapeAndPublicIrMatch": true,
+    "artifactSha256Matches": 7,
+    "artifactSha256Mismatches": 0,
+    "reportedAutomatedResult": "AUTOMATED_IMPLEMENTATION_PASS",
+    "reportedBrowserResult": "PASS"
+  },
+  "screenshotBoundary": {
+    "reportedOriginalPngBytesReceived": false,
+    "deliveredJpegTransformBytesRetained": true,
+    "cryptographicEqualityBetweenPngAndJpeg": false,
+    "correspondence": "USER_CONFIRMED",
+    "acceptanceRule": "User confirmation closes screenshot correspondence for this scoped external acceptance; it does not convert transformed JPEG hashes into the reported original PNG hashes."
+  },
+  "verdict": {
+    "status": "PASS",
+    "scope": "Exact-package physical-Darwin implementation and reported local-Chrome browser behavior for Codex Workprint 0.3.0-rc.2.",
+    "evidenceMode": "Externally supplied execution; package and public artifacts machine-bound; screenshot correspondence user-confirmed; Codex did not witness the Mac run."
+  },
+  "claimCeiling": "This closure supports a scoped external physical-Mac PASS for the exact candidate. It does not establish cryptographic equality of transformed screenshots, fresh live Codex input, source authenticity, task correctness, human comprehension, production behavior, independent-user success, adoption, or market demand."
+}

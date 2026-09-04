@@ -1,0 +1,8 @@
+{"type":"thread.started","thread_id":"01999999-3333-7444-8555-cccccccccccc","prompt":"LEAK_PROMPT_6ca8","model":"PRIVATE_MODEL_6ca8","environment":{"OPENAI_API_KEY":"sk-proj-FAKE-ATTACK-6ca8"},"cwd":"C:\\Users\\alice\\Top Secret"}
+{"type":"turn.started","instructions":"LEAK_INSTRUCTION_6ca8","timestamp":"2026-08-29T00:00:00Z"}
+{"type":"item.started","item":{"id":"C:\\Users\\alice\\item-secret-6ca8","type":"command_execution","command":"type C:\\Users\\alice\\secret-6ca8.txt","aggregated_output":"","exit_code":null,"status":"in_progress","env":{"TOKEN":"FAKE_TOKEN_6ca8"}}}
+{"type":"item.completed","item":{"id":"C:\\Users\\alice\\item-secret-6ca8","type":"command_execution","command":"type C:\\Users\\alice\\secret-6ca8.txt","aggregated_output":"STDOUT_SECRET_6ca8 sk-proj-FAKE-ATTACK-6ca8","stderr":"STDERR_SECRET_6ca8","exit_code":1,"status":"failed","file_path":"C:\\Users\\alice\\secret-6ca8.txt"}}
+{"type":"item.completed","item":{"id":"message-secret-6ca8","type":"agent_message","text":"ASSISTANT_SECRET_6ca8"}}
+{"type":"future.private.event","payload":{"token":"FAKE_UNKNOWN_SECRET_6ca8","absolute_path":"C:\\Users\\alice\\unknown-6ca8"}}
+{"type":"turn.completed","usage":{"input_tokens":999999,"cached_input_tokens":1,"cache_write_input_tokens":2,"output_tokens":3,"reasoning_output_tokens":4},"organization":"PRIVATE_ORG_6ca8"}
+

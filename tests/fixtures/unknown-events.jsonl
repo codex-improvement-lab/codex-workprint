@@ -1,0 +1,7 @@
+not json at all SECRET_UNKNOWN_LINE
+42
+{"thread_id":"missing-type"}
+{"type":"item.started","item":{"type":"command_execution","status":"in_progress"}}
+{"type":"item.completed","item":{"id":"item-x","type":"future_tool","secret":"UNKNOWN_ITEM_SECRET"}}
+{"type":"future.event","payload":"UNKNOWN_EVENT_SECRET"}
+

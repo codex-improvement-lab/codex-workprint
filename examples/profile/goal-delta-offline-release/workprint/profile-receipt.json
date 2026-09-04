@@ -1,0 +1,31 @@
+{
+  "artifact": "codex-workprint-profile-bundle",
+  "assurance": "receipt-not-attestation",
+  "boundaries": {
+    "provesCausality": false,
+    "provesCorrectness": false,
+    "provesModelInfluence": false,
+    "provesSourceAuthenticity": false,
+    "suppliedPublicProjectionOnly": true,
+    "telemetry": false,
+    "thirdPartyRequests": false,
+    "unknownExtensionsPublished": false
+  },
+  "bundleType": "profile",
+  "inputSchemaVersion": "workprint-profile/0.1",
+  "profile": "goal-delta",
+  "profileIrSha256": "2bbea8803939cf0c4f907794a248bbfb2a3aeea1397e1761ebe3981cd0dca0ab",
+  "renderer": {
+    "png": "workprint-profile-png-v1/stored-deflate/bitmap-5x7",
+    "profile": "profile-print-0.1.0"
+  },
+  "retainedFields": [
+    "profile, title, sourceRevision",
+    "source id, label, revision",
+    "finding id, kind, verdict, subject, sourceRefs",
+    "allowlisted profile-specific finding fields",
+    "summary headline and allowlisted counts"
+  ],
+  "schemaVersion": "workprint-profile-receipt/0.1",
+  "sourceRevision": "offline-release-2026.08..offline-release-2026.09"
+}

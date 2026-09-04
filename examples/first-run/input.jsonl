@@ -1,0 +1,9 @@
+{"type":"thread.started","thread_id":"synthetic-first-run"}
+{"type":"turn.started"}
+{"type":"item.started","item":{"id":"check-1","type":"command_execution","status":"in_progress"}}
+{"type":"item.completed","item":{"id":"check-1","type":"command_execution","status":"failed","exit_code":1}}
+{"type":"item.started","item":{"id":"edit-1","type":"file_change","status":"in_progress"}}
+{"type":"item.completed","item":{"id":"edit-1","type":"file_change","status":"completed"}}
+{"type":"item.started","item":{"id":"check-2","type":"command_execution","status":"in_progress"}}
+{"type":"item.completed","item":{"id":"check-2","type":"command_execution","status":"completed","exit_code":0}}
+{"type":"turn.completed"}

@@ -1,0 +1,46 @@
+name: core-semantic
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  semantic:
+    name: ${{ matrix.os }} / Node ${{ matrix.node }}
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 10
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [windows-latest, macos-latest]
+        node: ['22.x', '24.x']
+
+    steps:
+      - name: Check out source
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+
+      - name: Set up Node.js
+        uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        with:
+          node-version: ${{ matrix.node }}
+
+      - name: Run core semantic tests
+        run: node --test
+
+      - name: Run release check
+        run: node ./scripts/release-check.mjs
+
+      - name: Build JavaScript distribution
+        run: node ./scripts/build-dist.mjs
+
+      - name: Inspect package contents without publishing
+        run: npm pack --dry-run --ignore-scripts

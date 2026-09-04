@@ -1,0 +1,74 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:codex-workprint:profile-ir:0.1",
+  "title": "Codex Workprint Profile IR v0.1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "artifact", "profile", "question", "visualForm", "title", "sourceRevision", "sources", "findings", "summary", "source", "render"],
+  "properties": {
+    "schemaVersion": { "const": "workprint-profile-ir/0.1" },
+    "artifact": { "const": "codex-workprint-profile" },
+    "profile": { "enum": ["continuity", "goal-delta", "context-receipt"] },
+    "question": { "type": "string" },
+    "visualForm": { "enum": ["seam", "fault", "slice"] },
+    "title": { "type": "string", "minLength": 1 },
+    "sourceRevision": { "type": "string", "minLength": 1 },
+    "sources": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "label", "revision"],
+        "properties": { "id": { "type": "string" }, "label": { "type": "string" }, "revision": { "type": "string" } }
+      }
+    },
+    "findings": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "kind", "verdict", "subject", "sourceRefs"],
+        "properties": {
+          "id": { "type": "string" },
+          "kind": { "type": "string" },
+          "verdict": { "enum": ["carried", "lost", "stale", "invented", "added", "removed", "changed", "unchanged", "prepared", "observed", "excluded", "not_observed", "conflict"] },
+          "subject": { "type": "string" },
+          "sourceRefs": { "type": "array", "uniqueItems": true, "items": { "type": "string" } },
+          "affectedEvidenceIds": { "type": "array", "items": { "type": "string" } },
+          "reasonCode": { "type": "string" },
+          "currentRevision": { "type": "string" },
+          "expectedRevision": { "type": "string" },
+          "resolved": { "type": "boolean" }
+        }
+      }
+    },
+    "summary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["headline", "counts"],
+      "properties": { "headline": { "type": "string" }, "counts": { "type": "object", "additionalProperties": { "type": "integer", "minimum": 0 } } }
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["kind", "schemaVersion", "profileIrSha256"],
+      "properties": {
+        "kind": { "const": "workprint-profile-public-projection" },
+        "schemaVersion": { "const": "workprint-profile/0.1" },
+        "profileIrSha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" }
+      }
+    },
+    "render": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["rendererVersion", "pngRenderer", "palette"],
+      "properties": {
+        "rendererVersion": { "const": "profile-print-0.1.0" },
+        "pngRenderer": { "const": "workprint-profile-png-v1/stored-deflate/bitmap-5x7" },
+        "palette": { "const": "workprint-profile-family-v1" }
+      }
+    }
+  }
+}

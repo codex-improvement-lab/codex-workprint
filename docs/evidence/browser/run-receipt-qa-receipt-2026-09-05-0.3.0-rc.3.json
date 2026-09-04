@@ -1,0 +1,428 @@
+{
+  "schemaVersion": "workprint-run-receipt-browser-qa/0.2",
+  "receiptType": "browser-visual-qa",
+  "recordedAt": "2026-09-04T19:40:52.425Z",
+  "candidate": "0.3.0-rc.3",
+  "browser": {
+    "surface": "Codex In-app Browser",
+    "version": "not exposed by the browser runtime"
+  },
+  "artifacts": [
+    {
+      "id": "run-receipt",
+      "path": "demo/workprint.html",
+      "desktop": {
+        "buttonTextOverflow": [],
+        "detailObserved": "12 public observations · 0 items left open · 3 status-absent observations · 8 private categories excluded",
+        "documentClientWidth": 1425,
+        "documentScrollHeight": 2733,
+        "documentScrollWidth": 1425,
+        "hero": {
+          "bottom": 542.0104370117188,
+          "top": 70,
+          "width": 1355.5625
+        },
+        "horizontalOverflow": false,
+        "nativeVerticalRoute": {
+          "desktopSvgHidden": false,
+          "stations": 12,
+          "top": 0,
+          "visible": false
+        },
+        "observedPageViewport": {
+          "height": 900,
+          "width": 1440
+        },
+        "outlierTags": [],
+        "privacyMarkObserved": "8 private categories excluded by default",
+        "resourceObservationScope": "DOM referenced assets; not a packet capture",
+        "resourceUrls": [],
+        "storyObserved": "1 failed item → 1 later completion",
+        "theme": "carbon",
+        "title": "Create a marker after an expected failed check",
+        "titleObserved": true,
+        "verifyLabelObserved": "Copy verify command",
+        "visibleOutOfViewportElements": 0,
+        "screenshot": {
+          "path": "docs/evidence/browser/run-receipt-desktop-1440x900-2026-09-05-0.3.0-rc.3.jpg",
+          "actualFormat": "JPEG/JFIF",
+          "magicHex": "ffd8ffe000104a46",
+          "bytes": 115666,
+          "sha256": "09c63648c0609e0673a8b2d3a4f07c7284e185541b0bdcdf9b46d6e8adeaf635",
+          "capturedPixelViewport": {
+            "height": 891,
+            "width": 1425
+          }
+        },
+        "capturedPixelViewport": {
+          "height": 891,
+          "width": 1425
+        },
+        "requestedPageViewport": {
+          "width": 1440,
+          "height": 900
+        },
+        "consoleErrorsAndWarnings": 0
+      },
+      "interactions": {
+        "share": {
+          "result": "clipboard",
+          "independentClipboardReadback": "Create a marker after an expected failed check — 1 failed item → 1 later completion. 12 public observations; 8 private categories excluded. CORAL TRACE · 21FC. Receipt, not attestation.",
+          "captionLength": 185,
+          "urlOccurrences": 0,
+          "externalTransmission": false
+        },
+        "verify": {
+          "label": "Copy verify command",
+          "independentClipboardReadback": "codex-workprint verify ./workprint"
+        },
+        "downloadCard": {
+          "browserDownloadEventObserved": true
+        },
+        "copyCaptionFallback": {
+          "result": "visible-fallback",
+          "desktopFitsViewport": true,
+          "desktopSelection": {
+            "fits": true,
+            "selected": 185,
+            "textLength": 185,
+            "visible": true
+          },
+          "screenshots": [
+            {
+              "path": "docs/evidence/browser/copy-fallback-desktop-1440x900-2026-09-05-0.3.0-rc.3.jpg",
+              "actualFormat": "JPEG/JFIF",
+              "magicHex": "ffd8ffe000104a46",
+              "bytes": 79615,
+              "sha256": "d00cd4037617d2b4cd04f4be90497bf2ea5f393241fd8c7fdc49e7197f7a0a20",
+              "capturedPixelViewport": {
+                "height": 891,
+                "width": 1425
+              }
+            },
+            {
+              "path": "docs/evidence/browser/copy-fallback-narrow-390x844-2026-09-05-0.3.0-rc.3.jpg",
+              "actualFormat": "JPEG/JFIF",
+              "magicHex": "ffd8ffe000104a46",
+              "bytes": 35313,
+              "sha256": "8fb50f503bb2ddbd906a82fc3d90123ccbc574262fb04f27607f4342d3e2f687",
+              "capturedPixelViewport": {
+                "height": 812,
+                "width": 375
+              }
+            }
+          ],
+          "narrowFitsViewport": true,
+          "narrowSelection": {
+            "fits": true,
+            "selected": 185,
+            "textLength": 185,
+            "visible": true
+          }
+        },
+        "theme": {
+          "paperModeObserved": true,
+          "carbonModeRestored": true
+        },
+        "replay": {
+          "completed": true
+        },
+        "trace": {
+          "detail": "SELECTED OBSERVATION\n\nObservation 8\nEVENT\nitem.completed\nITEM\nfile_change\nEXPLICIT STATUS\ncompleted\nEXIT CODE\nnot observed\nPUBLIC PHASE\nnot annotated\nOBSERVED RELATION\ncompletion observed after a failed item\n\nOnly whitelisted metadata is shown. A completion event is not proof of correctness; a post-failure completion is not a recovery claim.",
+          "relation": "completion observed after a failed item"
+        }
+      },
+      "narrow": {
+        "buttonTextOverflow": [],
+        "detailObserved": "12 public observations · 0 items left open · 3 status-absent observations · 8 private categories excluded",
+        "documentClientWidth": 375,
+        "documentScrollHeight": 3543,
+        "documentScrollWidth": 375,
+        "hero": {
+          "bottom": 834.1041870117188,
+          "top": 66,
+          "width": 350.66668701171875
+        },
+        "horizontalOverflow": false,
+        "nativeVerticalRoute": {
+          "desktopSvgHidden": true,
+          "stations": 12,
+          "top": 852.1041870117188,
+          "visible": true
+        },
+        "observedPageViewport": {
+          "height": 844,
+          "width": 390
+        },
+        "outlierTags": [],
+        "privacyMarkObserved": "8 private categories excluded by default",
+        "resourceObservationScope": "DOM referenced assets; not a packet capture",
+        "resourceUrls": [],
+        "storyObserved": "1 failed item → 1 later completion",
+        "theme": "carbon",
+        "title": "Create a marker after an expected failed check",
+        "titleObserved": true,
+        "verifyLabelObserved": "Copy verify command",
+        "visibleOutOfViewportElements": 0,
+        "requestedPageViewport": {
+          "width": 390,
+          "height": 844
+        },
+        "screenshot": {
+          "path": "docs/evidence/browser/run-receipt-narrow-390x844-2026-09-05-0.3.0-rc.3.jpg",
+          "actualFormat": "JPEG/JFIF",
+          "magicHex": "ffd8ffe000104a46",
+          "bytes": 42667,
+          "sha256": "0c0ba0322360120f638d1124a5ae45c0c11d027c07968aa96a6ed31d72d0d62a",
+          "capturedPixelViewport": {
+            "height": 812,
+            "width": 375
+          }
+        },
+        "capturedPixelViewport": {
+          "height": 812,
+          "width": 375
+        },
+        "consoleErrorsAndWarnings": 0
+      },
+      "publicIrSha256": "d8a0e621bedacceff134306af4e00e5a93407ae522c831f274825bd53f4e6aa8",
+      "shapeSha256": "21fc1fde4c98b640a21ca5250733687aaa40f8a1cbabaa29e018cc4ddbc07872",
+      "htmlSha256": "905934609295a86d248e564fca59c7476ef9311b61eec782f703c2dfa44e4c45",
+      "svgSha256": "30912bd4ab9fd294c85c4f4ec5558baeb1226e362e71e19112920631c5521816",
+      "manifestSha256": "a8da85dccaef9439099c5415294d62b43f1a7dc3403ae9c4befe2b42b73f02b7",
+      "bitmapShareCard": {
+        "allVisiblePublicTextGlyphCoverage": {
+          "missing": 0,
+          "details": {
+            "supported": true,
+            "missingByField": []
+          }
+        },
+        "publicTitleGlyphCoverage": {
+          "missing": 0,
+          "details": {
+            "characters": 46,
+            "supported": 46,
+            "missingCodePoints": []
+          }
+        },
+        "headlineObserved": "1 failed item → 1 later completion",
+        "replacementQuestionMarkObservedInVisualReview": false
+      }
+    },
+    {
+      "id": "unicode-run-receipt",
+      "path": "examples/unicode-run-receipt/workprint/workprint.html",
+      "narrow": {
+        "buttonTextOverflow": [],
+        "detailObserved": "8 public observations · 0 items left open · 1 status-absent observation · 8 private categories excluded",
+        "documentClientWidth": 375,
+        "documentScrollHeight": 3225,
+        "documentScrollWidth": 375,
+        "hero": {
+          "bottom": 735.25,
+          "top": 66,
+          "width": 350.66668701171875
+        },
+        "horizontalOverflow": false,
+        "nativeVerticalRoute": {
+          "desktopSvgHidden": true,
+          "stations": 8,
+          "top": 753.25,
+          "visible": true
+        },
+        "observedPageViewport": {
+          "height": 844,
+          "width": 390
+        },
+        "outlierTags": [],
+        "privacyMarkObserved": "8 private categories excluded by default",
+        "resourceObservationScope": "DOM referenced assets; not a packet capture",
+        "resourceUrls": [],
+        "storyObserved": "1 failed item → 1 later completion",
+        "theme": "carbon",
+        "title": "修复登录失败并验证发布",
+        "titleObserved": true,
+        "verifyLabelObserved": "Copy verify command",
+        "visibleOutOfViewportElements": 0,
+        "requestedPageViewport": {
+          "width": 390,
+          "height": 844
+        },
+        "titleObservedExactly": true,
+        "replacementCharacterObserved": false,
+        "screenshot": {
+          "path": "docs/evidence/browser/unicode-run-receipt-narrow-390x844-2026-09-05-0.3.0-rc.3.jpg",
+          "actualFormat": "JPEG/JFIF",
+          "magicHex": "ffd8ffe000104a46",
+          "bytes": 48239,
+          "sha256": "7092ee9668637cf6dab8fc34f68947ca1868d7befe82f6376b2384d5184688aa",
+          "capturedPixelViewport": {
+            "height": 812,
+            "width": 375
+          }
+        },
+        "capturedPixelViewport": {
+          "height": 812,
+          "width": 375
+        },
+        "consoleErrorsAndWarnings": 0
+      },
+      "desktop": {
+        "buttonTextOverflow": [],
+        "detailObserved": "8 public observations · 0 items left open · 1 status-absent observation · 8 private categories excluded",
+        "documentClientWidth": 1425,
+        "documentScrollHeight": 2701,
+        "documentScrollWidth": 1425,
+        "hero": {
+          "bottom": 511.3125,
+          "top": 70,
+          "width": 1355.5625
+        },
+        "horizontalOverflow": false,
+        "nativeVerticalRoute": {
+          "desktopSvgHidden": false,
+          "stations": 8,
+          "top": 0,
+          "visible": false
+        },
+        "observedPageViewport": {
+          "height": 900,
+          "width": 1440
+        },
+        "outlierTags": [],
+        "privacyMarkObserved": "8 private categories excluded by default",
+        "resourceObservationScope": "DOM referenced assets; not a packet capture",
+        "resourceUrls": [],
+        "storyObserved": "1 failed item → 1 later completion",
+        "theme": "carbon",
+        "title": "修复登录失败并验证发布",
+        "titleObserved": true,
+        "verifyLabelObserved": "Copy verify command",
+        "visibleOutOfViewportElements": 0,
+        "requestedPageViewport": {
+          "width": 1440,
+          "height": 900
+        },
+        "titleObservedExactly": true,
+        "replacementCharacterObserved": false,
+        "screenshot": {
+          "path": "docs/evidence/browser/unicode-run-receipt-desktop-1440x900-2026-09-05-0.3.0-rc.3.jpg",
+          "actualFormat": "JPEG/JFIF",
+          "magicHex": "ffd8ffe000104a46",
+          "bytes": 108856,
+          "sha256": "3f86f47d7b2531ca60af90b6adf4e8ca62ab579c9ee78b4cdfa05daf14903d47",
+          "capturedPixelViewport": {
+            "height": 891,
+            "width": 1425
+          }
+        },
+        "capturedPixelViewport": {
+          "height": 891,
+          "width": 1425
+        },
+        "consoleErrorsAndWarnings": 0
+      },
+      "publicIrSha256": "a266f22c1e7d3d5812267ca0dde461f414d8ad815e0f6ebe89c8fee3edd02e72",
+      "shapeSha256": "d8d549d7608456df9ebcdac201125a01fc2f29b3036b75d3a59e3cc18c9b9dd2",
+      "htmlSha256": "646174d2439fdc326b203c8d92900498bf43c801b57f783a4f7a141cbe7c61fe",
+      "svgSha256": "4cf5d2fce44d644540f268639397407d153457a0e112f9f8da3ea5ac9ea72ba5",
+      "manifestSha256": "f58ae045d3d07547b68ff61fc59bc994a2e859a76d9e0ab1853f6fc1248ed805",
+      "bitmapShareCard": {
+        "allVisiblePublicTextGlyphCoverage": {
+          "missing": 0,
+          "details": {
+            "supported": true,
+            "missingByField": []
+          }
+        },
+        "publicTitleGlyphCoverage": {
+          "missing": 0,
+          "details": {
+            "characters": 11,
+            "supported": 11,
+            "missingCodePoints": []
+          }
+        },
+        "headlineObserved": "1 failed item → 1 later completion",
+        "replacementQuestionMarkObservedInVisualReview": false
+      }
+    }
+  ],
+  "extraViewports": [
+    {
+      "buttonTextOverflow": [],
+      "detailObserved": "12 public observations · 0 items left open · 3 status-absent observations · 8 private categories excluded",
+      "documentClientWidth": 1265,
+      "documentScrollHeight": 2631,
+      "documentScrollWidth": 1265,
+      "hero": {
+        "bottom": 500.8958435058594,
+        "top": 70,
+        "width": 1203.229248046875
+      },
+      "horizontalOverflow": false,
+      "nativeVerticalRoute": {
+        "desktopSvgHidden": false,
+        "stations": 12,
+        "top": 0,
+        "visible": false
+      },
+      "observedPageViewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "outlierTags": [],
+      "privacyMarkObserved": "8private categories excluded by default",
+      "resourceObservationScope": "DOM referenced assets; not a packet capture",
+      "resourceUrls": [],
+      "storyObserved": "1 failed item → 1 later completion",
+      "theme": "carbon",
+      "title": "Create a marker after an expected failed check",
+      "titleObserved": true,
+      "verifyLabelObserved": "Copy verify command",
+      "visibleOutOfViewportElements": 0,
+      "screenshot": {
+        "path": "docs/evidence/browser/release-prep-after-1280-2026-09-05-0.3.0-rc.3.jpg",
+        "actualFormat": "JPEG/JFIF",
+        "magicHex": "ffd8ffe000104a46",
+        "bytes": 95353,
+        "sha256": "a65a19c3168fe77e4d5a73d88efbf1762318da2d2975134a7c67367ce46384e1",
+        "capturedPixelViewport": {
+          "height": 712,
+          "width": 1265
+        }
+      },
+      "consoleErrorsAndWarnings": 0
+    }
+  ],
+  "loopbackServer": {
+    "urls": [
+      "http://127.0.0.1:43181/",
+      "http://127.0.0.1:43182/"
+    ],
+    "purpose": "selected public bundle directories only",
+    "stoppedAfterQa": true,
+    "diagnostics": [
+      "Browser requested a nonexistent loopback favicon (404); no product asset failed."
+    ]
+  },
+  "aggregate": {
+    "artifactsChecked": 2,
+    "viewportChecks": 5,
+    "screenshots": 7,
+    "horizontalOverflowFailures": 0,
+    "visibleOutOfViewportElements": 0,
+    "consoleErrorsAndWarnings": 0,
+    "remoteAssetUrls": 0,
+    "replacementCharactersInUnicodeTitle": 0,
+    "visibleFallbackViewportFailures": 0,
+    "buttonTextOverflow": 0,
+    "shareCardMissingGlyphFields": 0
+  },
+  "assetInventory": {
+    "scope": "dom-referenced-assets",
+    "remoteAssetUrls": [],
+    "note": "Measured from current DOM resource references in all five views. Not a network packet capture."
+  }
+}

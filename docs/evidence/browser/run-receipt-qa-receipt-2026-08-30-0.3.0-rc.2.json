@@ -1,0 +1,238 @@
+{
+  "schemaVersion": "workprint-run-receipt-browser-qa/0.2",
+  "receiptType": "browser-visual-qa",
+  "recordedAt": "2026-08-30T23:59:00+08:00",
+  "candidate": "0.3.0-rc.2",
+  "browser": {
+    "surface": "Codex In-app Browser",
+    "version": "not exposed by the browser runtime"
+  },
+  "loopbackServer": {
+    "urlDuringQa": "http://127.0.0.1:55137/",
+    "status": 200,
+    "identityHeader": "X-Codex-Workprint-QA: 0.3.0-rc.2",
+    "cacheControl": "no-store",
+    "stoppedAfterQa": true
+  },
+  "artifacts": [
+    {
+      "id": "run-receipt",
+      "title": "Create a marker after an expected failed check",
+      "path": "demo/workprint.html",
+      "shapeSha256": "21fc1fde4c98b640a21ca5250733687aaa40f8a1cbabaa29e018cc4ddbc07872",
+      "publicIrSha256": "5bc530cfba595c45a6ae1ee4443e5abb21d15d3ec7a3dbb0836f1fa2be176424",
+      "htmlSha256": "1c334dd158bf8ff3cd4ea87ec775f8364109093c9c8134a39c62cc10cffffae4",
+      "svgSha256": "30912bd4ab9fd294c85c4f4ec5558baeb1226e362e71e19112920631c5521816",
+      "manifestSha256": "28f114a13e39ad604c9eee03270a7e86543233b5f2c1a55a5691040a5ee5cdf5",
+      "desktop": {
+        "requestedPageViewport": { "width": 1440, "height": 900 },
+        "observedPageViewport": { "width": 1440, "height": 900 },
+        "capturedPixelViewport": { "width": 1425, "height": 891 },
+        "documentClientWidth": 1425,
+        "documentScrollWidth": 1425,
+        "documentScrollHeight": 2733,
+        "horizontalOverflow": false,
+        "visibleOutOfViewportElements": 0,
+        "hero": { "top": 70, "bottom": 542.0104370117188, "width": 1355.5625 },
+        "titleObserved": true,
+        "storyObserved": "1 failed item → 1 later completion",
+        "detailObserved": "12 public observations · 0 items left open · 3 status-absent observations · 8 private categories excluded",
+        "privacyMarkObserved": "8 private categories excluded by default",
+        "verifyLabelObserved": "Copy verify command",
+        "consoleErrorsAndWarnings": 0,
+        "screenshot": {
+          "path": "docs/evidence/browser/run-receipt-desktop-1440x900-2026-08-30-0.3.0-rc.2.jpg",
+          "actualFormat": "JPEG/JFIF",
+          "magicHex": "ffd8ffe000104a46",
+          "bytes": 115894,
+          "sha256": "835f94bae8ba19ce0f432088efc7aef2ec295e1c8a83803c48a1d93eda141abc"
+        }
+      },
+      "narrow": {
+        "requestedPageViewport": { "width": 390, "height": 844 },
+        "observedPageViewport": { "width": 390, "height": 844 },
+        "capturedPixelViewport": { "width": 375, "height": 812 },
+        "documentClientWidth": 375,
+        "documentScrollWidth": 375,
+        "documentScrollHeight": 3534,
+        "horizontalOverflow": false,
+        "visibleOutOfViewportElements": 0,
+        "actionButtonsWithinViewport": true,
+        "hero": { "top": 66, "bottom": 824.2291870117188, "width": 350.66668701171875 },
+        "nativeVerticalRoute": { "visible": true, "desktopSvgHidden": true, "stations": 12, "top": 842.2291870117188 },
+        "titleObserved": true,
+        "storyObserved": "1 failed item → 1 later completion",
+        "detailObserved": "12 public observations · 0 items left open · 3 status-absent observations · 8 private categories excluded",
+        "privacyMarkObserved": "8 private categories excluded by default",
+        "verifyLabelObserved": "Copy verify command",
+        "consoleErrorsAndWarnings": 0,
+        "screenshot": {
+          "path": "docs/evidence/browser/run-receipt-narrow-390x844-2026-08-30-0.3.0-rc.2.jpg",
+          "actualFormat": "JPEG/JFIF",
+          "magicHex": "ffd8ffe000104a46",
+          "bytes": 47700,
+          "sha256": "08a8e4cb267ebfc31b213f873e6fb3c2b5211a4f287f94b1ce34548f24d1d21c"
+        }
+      },
+      "interactions": {
+        "share": {
+          "buttonObserved": true,
+          "result": "clipboard",
+          "independentClipboardReadback": "Create a marker after an expected failed check — 1 failed item → 1 later completion. 12 public observations; 8 private categories excluded. CORAL TRACE · 21FC. Receipt, not attestation.",
+          "captionLength": 185,
+          "urlOccurrences": 0,
+          "externalTransmission": false
+        },
+        "copyCaptionFallback": {
+          "result": "visible-fallback",
+          "selectedExpectedCaption": true,
+          "desktopFitsViewport": true,
+          "narrowFitsViewport": true,
+          "instructionObserved": "Text is selected. Press Ctrl/Cmd+C to copy. On mobile, long-press the text area and choose Copy.",
+          "screenshots": [
+            {
+              "path": "docs/evidence/browser/copy-fallback-desktop-1440x900-2026-08-30-0.3.0-rc.2.jpg",
+              "actualFormat": "JPEG/JFIF",
+              "magicHex": "ffd8ffe000104a46",
+              "capturedPixelViewport": { "width": 1425, "height": 891 },
+              "bytes": 80002,
+              "sha256": "71ae3e8cdf7166d1a45135407ac4c9349157b515740329a2fea03c4cfd981339"
+            },
+            {
+              "path": "docs/evidence/browser/copy-fallback-narrow-390x844-2026-08-30-0.3.0-rc.2.jpg",
+              "actualFormat": "JPEG/JFIF",
+              "magicHex": "ffd8ffe000104a46",
+              "capturedPixelViewport": { "width": 375, "height": 812 },
+              "bytes": 35694,
+              "sha256": "1449ca2df3969fc45afbd54c7f8fd8907970c679e7b8c549145d418b89cef7ca"
+            }
+          ]
+        },
+        "verify": {
+          "label": "Copy verify command",
+          "result": "clipboard",
+          "independentClipboardReadback": "codex-workprint verify ./workprint"
+        },
+        "downloadCard": {
+          "href": "share-card.png",
+          "downloadAttribute": true,
+          "browserDownloadEventObserved": true,
+          "pageResult": "local-file"
+        },
+        "theme": { "paperModeObserved": true, "carbonModeRestored": true },
+        "replay": { "result": "station-by-station", "completed": true, "finalStep": 12 },
+        "trace": { "selectedSequence": 8, "status": "completed", "relation": "completion observed after a failed item" }
+      },
+      "bitmapShareCard": {
+        "path": "demo/share-card.png",
+        "renderer": "workprint-png-v5/indexed-stored-deflate/unifont-17.0.05",
+        "actualFormat": "PNG indexed color",
+        "magicHex": "89504e470d0a1a0a",
+        "pixelWidth": 1200,
+        "pixelHeight": 630,
+        "bytes": 756798,
+        "sha256": "fc3d7c49c1d33ed590db07683cb07a2d0a26d075d21ea22370e0da0cac5bf6f6",
+        "headlineObserved": "1 failed item → 1 later completion",
+        "allVisiblePublicTextGlyphCoverage": { "supported": true, "missing": 0 },
+        "replacementQuestionMarkObservedInVisualReview": false
+      }
+    },
+    {
+      "id": "unicode-run-receipt",
+      "title": "修复登录失败并验证发布",
+      "path": "examples/unicode-run-receipt/workprint/workprint.html",
+      "shapeSha256": "d8d549d7608456df9ebcdac201125a01fc2f29b3036b75d3a59e3cc18c9b9dd2",
+      "publicIrSha256": "f43edb4c89bef92256ad8834e967cb05b9d9da07995d0ab72d2053cfd5facaac",
+      "htmlSha256": "2bb57365267a1b3df36d2007b5c619fb479ad13ce00a615ad1a754495f4e77ae",
+      "svgSha256": "4cf5d2fce44d644540f268639397407d153457a0e112f9f8da3ea5ac9ea72ba5",
+      "manifestSha256": "37339445b63202a7773c1046d02fd210bb9eb3f78756cdfeb5563b7a2a37fd37",
+      "desktop": {
+        "requestedPageViewport": { "width": 1440, "height": 900 },
+        "observedPageViewport": { "width": 1440, "height": 900 },
+        "capturedPixelViewport": { "width": 1425, "height": 891 },
+        "documentClientWidth": 1425,
+        "documentScrollWidth": 1425,
+        "documentScrollHeight": 2688,
+        "horizontalOverflow": false,
+        "visibleOutOfViewportElements": 0,
+        "heroBottom": 498.125,
+        "titleObservedExactly": true,
+        "storyObserved": "1 failed item → 1 later completion",
+        "replacementCharacterObserved": false,
+        "consoleErrorsAndWarnings": 0,
+        "screenshot": {
+          "path": "docs/evidence/browser/unicode-run-receipt-desktop-1440x900-2026-08-30-0.3.0-rc.2.jpg",
+          "actualFormat": "JPEG/JFIF",
+          "magicHex": "ffd8ffe000104a46",
+          "bytes": 112473,
+          "sha256": "6f06602e573c9b6386455547fde9c8cfe213b759d561d44652c8f109813f4b75"
+        }
+      },
+      "narrow": {
+        "requestedPageViewport": { "width": 390, "height": 844 },
+        "observedPageViewport": { "width": 390, "height": 844 },
+        "capturedPixelViewport": { "width": 375, "height": 812 },
+        "documentClientWidth": 375,
+        "documentScrollWidth": 375,
+        "documentScrollHeight": 3231,
+        "horizontalOverflow": false,
+        "visibleOutOfViewportElements": 0,
+        "heroBottom": 741.875,
+        "nativeVerticalRoute": { "visible": true, "desktopSvgHidden": true, "stations": 8, "top": 759.875 },
+        "titleObservedExactly": true,
+        "storyObserved": "1 failed item → 1 later completion",
+        "replacementCharacterObserved": false,
+        "consoleErrorsAndWarnings": 0,
+        "screenshot": {
+          "path": "docs/evidence/browser/unicode-run-receipt-narrow-390x844-2026-08-30-0.3.0-rc.2.jpg",
+          "actualFormat": "JPEG/JFIF",
+          "magicHex": "ffd8ffe000104a46",
+          "bytes": 47797,
+          "sha256": "4a3796de60cdedc43ec1fd8e69145fb0baa91ab3e7522668e892ef9f65f1de47"
+        }
+      },
+      "bitmapShareCard": {
+        "path": "examples/unicode-run-receipt/workprint/share-card.png",
+        "renderer": "workprint-png-v5/indexed-stored-deflate/unifont-17.0.05",
+        "actualFormat": "PNG indexed color",
+        "magicHex": "89504e470d0a1a0a",
+        "pixelWidth": 1200,
+        "pixelHeight": 630,
+        "bytes": 756798,
+        "sha256": "588a495319901fe88278d71612a8b1a1f08e4d977ce547670711d3c6871f8df0",
+        "publicTitleGlyphCoverage": { "supported": 11, "missing": 0 },
+        "allVisiblePublicTextGlyphCoverage": { "supported": true, "missing": 0 },
+        "replacementQuestionMarkObservedInVisualReview": false
+      }
+    }
+  ],
+  "assetInventory": {
+    "method": "in-app Browser pageAssets inventory after each load",
+    "pagesChecked": 4,
+    "inlineSvgPerPage": 1,
+    "localFaviconPerPage": 1,
+    "remoteAssetUrls": [],
+    "externalScript": 0,
+    "externalFont": 0,
+    "externalImage": 0,
+    "externalStylesheet": 0,
+    "externalVideo": 0
+  },
+  "network": {
+    "remoteRequestCount": 0,
+    "basis": "Observed page resource inventory plus connect-src 'none' and source checks; the browser surface did not expose a packet-level event log."
+  },
+  "aggregate": {
+    "artifactsChecked": 2,
+    "viewportChecks": 4,
+    "screenshots": 6,
+    "horizontalOverflowFailures": 0,
+    "visibleOutOfViewportElements": 0,
+    "consoleErrorsAndWarnings": 0,
+    "remoteAssetUrls": 0,
+    "replacementCharactersInUnicodeTitle": 0,
+    "shareCardMissingGlyphFields": 0,
+    "visibleFallbackViewportFailures": 0
+  },
+  "claimCeiling": "Automated real-browser observation on this Windows host. It establishes the recorded local viewport, interaction, rendering, and resource observations only; it does not establish human comprehension, source authenticity, task correctness, physical-macOS behavior, real-user success, adoption, market evidence, or production behavior."
+}

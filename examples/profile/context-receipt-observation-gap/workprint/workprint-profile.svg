@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="profile-title profile-desc" class="profile-artifact profile-context-receipt">
+  <title id="profile-title">Research handoff with a three-item observation gap — Codex Workprint context-receipt</title>
+  <desc id="profile-desc">What context was prepared, observed, or absent? 2 of 5 planned items have current observed evidence; 3 items remain outside that evidence boundar… Findings trace only to the source labels and revisions supplied in this public projection.</desc>
+  <style>
+    .profile-artifact{background:#f1ecdf;font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif}.eyebrow,.profile-tag,.question,.headline-label,.source-label,.verdict,.micro,.footer,.count-label{font-family:"Arial Narrow",Inter,ui-sans-serif,system-ui,sans-serif;font-weight:800;letter-spacing:1.45px}.eyebrow{font-size:11px;fill:#24251f}.profile-tag{font-size:10px;fill:#aeb4ad}.title{font-family:Georgia,"Times New Roman",serif;font-weight:700;fill:#f1ecdf}.question{font-size:14px;fill:#c7ff36}.headline-label{font-size:9px;fill:#aeb4ad}.headline{font-family:Georgia,"Times New Roman",serif;font-size:24px;font-weight:700;fill:#f1ecdf}.finding-label{font-size:10px;font-weight:700;fill:#f1ecdf}.verdict{font-size:8px}.micro{font-size:8px;fill:#aeb4ad}.source-label{font-size:8px;fill:#f1ecdf}.footer{font-size:9px;fill:#24251f}.count{font-size:19px;font-weight:850}.count-label{font-size:7px;fill:#aeb4ad}.profile-node:focus{outline:none}.profile-node:focus .focus-ring,.profile-node[aria-pressed="true"] .focus-ring{opacity:1}.profile-node,.profile-source{cursor:pointer}.profile-source.is-traced .source-hit,.profile-node.is-traced .trace-hit{opacity:1}
+  </style>
+  <rect width="1200" height="760" fill="#f1ecdf"/>
+  <path d="M0 0H1200V9H0Z" fill="#2457ff"/><path d="M770 0H1000V9H770Z" fill="#c7ff36"/><path d="M1000 0H1200V9H1000Z" fill="#ff665c"/>
+  <text x="34" y="28" class="eyebrow">CODEX WORKPRINT · THREE QUESTIONS. ONE WORKPRINT.</text>
+  <text x="1166" y="28" text-anchor="end" class="eyebrow">THE WORK HAS A STATE.</text>
+  <rect x="24" y="42" width="1152" height="660" rx="3" fill="#11120f"/>
+  <text x="58" y="76" class="profile-tag">CONTEXT-RECEIPT / SLICE PROFILE</text>
+  <text x="1142" y="76" text-anchor="end" class="profile-tag">PROFILE IR 6CFC0AFE8FB7</text>
+  <text x="58" y="127" class="title" style="font-size:32px">Research handoff with a three-item observation gap</text>
+  <text x="58" y="160" class="question">What context was prepared, observed, or absent?</text>
+  <text x="58" y="198" class="headline-label">PUBLIC SUMMARY / SUPPLIED PROJECTION</text>
+  <text x="58" y="226" class="headline" style="font-size:19px">2 of 5 planned items have current observed evidence; 3 items remain outside that evidence boundar…</text>
+  <g transform="translate(684 174)"><text class="count" fill="#2457ff">1</text><text y="18" class="count-label">PREPARED</text></g><g transform="translate(758 174)"><text class="count" fill="#c7ff36">2</text><text y="18" class="count-label">OBSERVED</text></g><g transform="translate(832 174)"><text class="count" fill="#aeb4ad">1</text><text y="18" class="count-label">EXCLUDED</text></g><g transform="translate(906 174)"><text class="count" fill="#ff665c">1</text><text y="18" class="count-label">NOT OBSERVED</text></g><g transform="translate(980 174)"><text class="count" fill="#ffb340">0</text><text y="18" class="count-label">STALE</text></g><g transform="translate(1054 174)"><text class="count" fill="#ffb340">0</text><text y="18" class="count-label">CONFLICT</text></g>
+  <path d="M58 250H1142" stroke="#383a32" stroke-width="1"/>
+  <g aria-label="Context Receipt x-ray slice visualization">
+    <rect x="64" y="278" width="1072" height="276" rx="2" fill="#1a1c17" stroke="#383a32"/>
+    <text x="84" y="301" class="micro">OBSERVATION BOUNDARY / X-RAY SLICE</text><text x="1116" y="301" text-anchor="end" class="micro">PREPARED IS NOT OBSERVED · ABSENCE REMAINS VISIBLE</text>
+    <ellipse cx="600" cy="414" rx="255" ry="82" fill="#22251e" stroke="#aeb4ad" stroke-width="1"/>
+    <ellipse cx="600" cy="414" rx="198" ry="62" fill="#11120f" stroke="#2457ff" stroke-width="3" opacity=".95"/>
+    <ellipse cx="600" cy="414" rx="130" ry="40" fill="#171914" stroke="#c7ff36" stroke-width="3"/>
+    <path d="M350 414H850" stroke="#f1ecdf" stroke-width="1" opacity=".25"/><path d="M600 334V494" stroke="#f1ecdf" stroke-width="1" opacity=".25"/>
+    <text x="600" y="418" text-anchor="middle" class="profile-tag">OBSERVED CORE</text>
+    <g class="profile-node" data-finding-id="ambient-memory-item" data-source-refs="ambient-memory">
+      <rect class="trace-hit" x="88.28" y="301.62" width="244" height="47" rx="2" fill="#aeb4ad" opacity="0"/>
+      <circle class="focus-ring" cx="332.28" cy="324.62" r="18" fill="none" stroke="#f1ecdf" stroke-width="2" opacity="0"/>
+      <path d="M444.47 356.98L332.28 324.62" stroke="#aeb4ad" stroke-width="2" stroke-dasharray="4 6"/>
+      <circle cx="332.28" cy="324.62" r="9" fill="#aeb4ad" stroke="#11120f" stroke-width="4"/>
+      <text x="316.28" y="321.62" text-anchor="end" class="verdict" fill="#aeb4ad">EXCLUDED</text>
+      <text x="316.28" y="337.62" text-anchor="end" class="finding-label">Unscoped ambient memory candidate</text>
+    </g><g class="profile-node" data-finding-id="archived-method-note" data-source-refs="archive-index">
+      <rect class="trace-hit" x="778.83" y="286.04" width="244" height="47" rx="2" fill="#ff665c" opacity="0"/>
+      <circle class="focus-ring" cx="778.83" cy="309.04" r="18" fill="none" stroke="#f1ecdf" stroke-width="2" opacity="0"/>
+      <path d="M703.89 347.04L778.83 309.04" stroke="#ff665c" stroke-width="2" stroke-dasharray="4 6"/>
+      <circle cx="778.83" cy="309.04" r="9" fill="#ff665c" stroke="#11120f" stroke-width="4"/>
+      <text x="794.83" y="306.04" text-anchor="start" class="verdict" fill="#ff665c">NOT OBSERVED</text>
+      <text x="794.83" y="322.04" text-anchor="start" class="finding-label">Archived method note assumed to be av…</text>
+    </g><g class="profile-node" data-finding-id="repo-boundary" data-source-refs="repo-instructions">
+      <rect class="trace-hit" x="876" y="391" width="244" height="47" rx="2" fill="#c7ff36" opacity="0"/>
+      <circle class="focus-ring" cx="1020" cy="414" r="18" fill="none" stroke="#f1ecdf" stroke-width="2" opacity="0"/>
+      <path d="M844 414L1020 414" stroke="#c7ff36" stroke-width="2" />
+      <circle cx="1020" cy="414" r="9" fill="#c7ff36" stroke="#11120f" stroke-width="4"/>
+      <text x="1004" y="411" text-anchor="end" class="verdict" fill="#c7ff36">OBSERVED</text>
+      <text x="1004" y="427" text-anchor="end" class="finding-label">Repository scope and evidence…</text>
+    </g><g class="profile-node" data-finding-id="style-guidance" data-source-refs="style-pack">
+      <rect class="trace-hit" x="778.83" y="495.96" width="244" height="47" rx="2" fill="#2457ff" opacity="0"/>
+      <circle class="focus-ring" cx="778.83" cy="518.96" r="18" fill="none" stroke="#f1ecdf" stroke-width="2" opacity="0"/>
+      <path d="M703.89 480.96L778.83 518.96" stroke="#2457ff" stroke-width="2" />
+      <circle cx="778.83" cy="518.96" r="9" fill="#2457ff" stroke="#11120f" stroke-width="4"/>
+      <text x="794.83" y="515.96" text-anchor="start" class="verdict" fill="#2457ff">PREPARED</text>
+      <text x="794.83" y="531.96" text-anchor="start" class="finding-label">Optional long-form writing guidance</text>
+    </g><g class="profile-node" data-finding-id="task-objective" data-source-refs="task-brief">
+      <rect class="trace-hit" x="88.28" y="480.38" width="244" height="47" rx="2" fill="#c7ff36" opacity="0"/>
+      <circle class="focus-ring" cx="332.28" cy="503.38" r="18" fill="none" stroke="#f1ecdf" stroke-width="2" opacity="0"/>
+      <path d="M444.47 471.02L332.28 503.38" stroke="#c7ff36" stroke-width="2" />
+      <circle cx="332.28" cy="503.38" r="9" fill="#c7ff36" stroke="#11120f" stroke-width="4"/>
+      <text x="316.28" y="500.38" text-anchor="end" class="verdict" fill="#c7ff36">OBSERVED</text>
+      <text x="316.28" y="516.38" text-anchor="end" class="finding-label">Current research objective and accept…</text>
+    </g>
+  </g>
+  <g transform="translate(80 578)" aria-label="Source evidence rail">
+    <text y="0" class="micro">SOURCE EVIDENCE RAIL / CLICK A FINDING OR SOURCE IN HTML TO TRACE</text>
+    <path d="M0 25H1040" stroke="#aeb4ad" stroke-width="2"/>
+    <g class="profile-source" transform="translate(104 25)"><circle class="source-hit" r="15" fill="#c7ff36" opacity="0"/><circle r="6" fill="#f1ecdf" stroke="#11120f" stroke-width="3"/><text y="23" text-anchor="middle" class="source-label">Ambient memory candidate</text><text y="36" text-anchor="middle" class="micro">memory-r5</text></g><g class="profile-source" transform="translate(312 25)"><circle class="source-hit" r="15" fill="#c7ff36" opacity="0"/><circle r="6" fill="#f1ecdf" stroke="#11120f" stroke-width="3"/><text y="23" text-anchor="middle" class="source-label">Archived research index</text><text y="36" text-anchor="middle" class="micro">archive-r21</text></g><g class="profile-source" transform="translate(520 25)"><circle class="source-hit" r="15" fill="#c7ff36" opacity="0"/><circle r="6" fill="#f1ecdf" stroke="#11120f" stroke-width="3"/><text y="23" text-anchor="middle" class="source-label">Repository instructions</text><text y="36" text-anchor="middle" class="micro">repo-r6</text></g><g class="profile-source" transform="translate(728 25)"><circle class="source-hit" r="15" fill="#c7ff36" opacity="0"/><circle r="6" fill="#f1ecdf" stroke="#11120f" stroke-width="3"/><text y="23" text-anchor="middle" class="source-label">Optional writing style pack</text><text y="36" text-anchor="middle" class="micro">style-r3</text></g><g class="profile-source" transform="translate(936 25)"><circle class="source-hit" r="15" fill="#c7ff36" opacity="0"/><circle r="6" fill="#f1ecdf" stroke="#11120f" stroke-width="3"/><text y="23" text-anchor="middle" class="source-label">Explicit research task brief</text><text y="36" text-anchor="middle" class="micro">brief-r9</text></g>
+  </g>
+  <text x="34" y="730" class="footer">WORKPRINT IS A DETERMINISTIC DISPLAY · NOT A NEW FACT SOURCE · NOT AN ATTESTATION</text>
+  <text x="1166" y="730" text-anchor="end" class="footer">SOURCE REVISION sha256:f783f6f8307fd6041cadfb4879b4a7c638642c851ee136f1aa05ecdb5a9dec30</text>
+</svg>

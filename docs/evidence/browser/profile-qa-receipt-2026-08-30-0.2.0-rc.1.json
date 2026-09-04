@@ -1,0 +1,467 @@
+{
+  "aggregate": {
+    "consoleAndPageErrors": 0,
+    "findingTraceInteractions": 6,
+    "horizontalOverflowFailures": 0,
+    "inlineSvgPerPage": 1,
+    "outOfViewportElements": 0,
+    "profilesChecked": 3,
+    "remoteAssetUrls": 0,
+    "screenshots": 6,
+    "sourceTraceInteractions": 6,
+    "themeRoundTrips": 6,
+    "viewportChecks": 6
+  },
+  "browser": {
+    "captureBoundary": "Screenshots contain the rendered page viewport excluding browser scrollbar chrome; requested viewport and captured pixels are recorded separately.",
+    "engineVersion": "not exposed by browser runtime",
+    "requestedViewports": {
+      "desktop": {
+        "height": 900,
+        "width": 1440
+      },
+      "narrow": {
+        "height": 844,
+        "width": 390
+      }
+    },
+    "surface": "Codex In-app Browser"
+  },
+  "candidate": "0.2.0-rc.1",
+  "claimCeiling": [
+    "A browser viewport is browser evidence, not physical-device or human-comprehension evidence.",
+    "The profile inputs are synthetic-scenario public projections; this receipt does not validate their judgments.",
+    "Finding-source traces show declared references, not source authenticity, correctness, model influence, or causality."
+  ],
+  "evidenceClass": "Windows Codex in-app browser automation",
+  "networkBoundary": {
+    "cspConnectSrcNone": true,
+    "networkApisInGeneratedHtml": false,
+    "observation": "Browser page-assets inventory and generated-source inspection observed no external resource URLs. This is not packet capture.",
+    "pageAssetsRemoteUrls": []
+  },
+  "observedAt": "2026-08-30T01:40:10.273Z",
+  "profiles": [
+    {
+      "artifact": {
+        "example": "examples/profile/continuity-archive-migration",
+        "htmlSha256": "c9b82d3318830d8732add1c711e8419b6738b164db600e954e0086004e67a194",
+        "manifestSha256": "960511ae577a59ac2195e7229b0cb0bc9cb3a6c049b8ae567487354b17d73587",
+        "profileIrSha256": "5d892ecc7f19ddf1075f0be33088d6510ca9f71c77560ac43855ebb626342b22",
+        "svgSha256": "31883918c589c6b9002cd8c3b2ab316d6196c253ddb274e7a65b7835f677f98b"
+      },
+      "assets": {
+        "inlineSvgCount": 1,
+        "remoteUrls": [],
+        "summary": {
+          "byKind": {
+            "font": 0,
+            "image": 0,
+            "other": 0,
+            "script": 0,
+            "stylesheet": 0,
+            "video": 0
+          },
+          "inlineSvgCount": 1,
+          "totalCount": 0
+        },
+        "urls": []
+      },
+      "desktop": {
+        "consoleAndPageErrors": 0,
+        "findingTrace": {
+          "findingCount": null,
+          "id": "archive-migration:rebuild-invented",
+          "sourceCount": "0",
+          "type": "finding"
+        },
+        "initial": {
+          "artifactVisible": true,
+          "csp": "default-src 'none'; style-src 'unsafe-inline'; script-src 'unsafe-inline'; img-src data:; font-src 'none'; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'",
+          "document": {
+            "clientWidth": 1425,
+            "scrollHeight": 1779,
+            "scrollWidth": 1425
+          },
+          "headline": "7 loss points · 2 continuity faults",
+          "horizontalOverflow": false,
+          "mobileHeroVisible": false,
+          "outliers": [],
+          "question": "What still holds after handoff?",
+          "scrollY": 0,
+          "title": "Handoff Receipt — Research archive migration — Codex Workprint",
+          "trace": {
+            "findingCount": null,
+            "id": "archive-migration:retention-question",
+            "sourceCount": "1",
+            "type": "finding"
+          },
+          "url": "http://127.0.0.1:51519/continuity/",
+          "viewport": {
+            "height": 900,
+            "width": 1440
+          }
+        },
+        "screenshot": {
+          "bytes": 112916,
+          "capturedPixelHeight": 891,
+          "capturedPixelWidth": 1425,
+          "format": "jpeg",
+          "magic": [
+            255,
+            216,
+            255
+          ],
+          "path": "docs/evidence/browser/profile-continuity-desktop-1440x900-2026-08-30.jpg",
+          "sha256": "5c42adea7118c13643e248882b4a4e82de0f3baa392ec039eef3e5f595dcf3db"
+        },
+        "sourceTrace": {
+          "findingCount": "3",
+          "id": "migration-brief",
+          "sourceCount": "0",
+          "type": "source"
+        },
+        "themeRoundTripRestored": true
+      },
+      "narrow": {
+        "consoleAndPageErrors": 0,
+        "findingTrace": {
+          "findingCount": null,
+          "id": "archive-migration:rebuild-invented",
+          "sourceCount": "0",
+          "type": "finding"
+        },
+        "initial": {
+          "artifactVisible": false,
+          "csp": "default-src 'none'; style-src 'unsafe-inline'; script-src 'unsafe-inline'; img-src data:; font-src 'none'; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'",
+          "document": {
+            "clientWidth": 375,
+            "scrollHeight": 2324,
+            "scrollWidth": 375
+          },
+          "headline": "7 loss points · 2 continuity faults",
+          "horizontalOverflow": false,
+          "mobileHeroVisible": true,
+          "outliers": [],
+          "question": "What still holds after handoff?",
+          "scrollY": 0,
+          "title": "Handoff Receipt — Research archive migration — Codex Workprint",
+          "trace": {
+            "findingCount": null,
+            "id": "archive-migration:retention-question",
+            "sourceCount": "1",
+            "type": "finding"
+          },
+          "url": "http://127.0.0.1:51519/continuity/",
+          "viewport": {
+            "height": 844,
+            "width": 390
+          }
+        },
+        "screenshot": {
+          "bytes": 51970,
+          "capturedPixelHeight": 812,
+          "capturedPixelWidth": 375,
+          "format": "jpeg",
+          "magic": [
+            255,
+            216,
+            255
+          ],
+          "path": "docs/evidence/browser/profile-continuity-narrow-390x844-2026-08-30.jpg",
+          "sha256": "b1817056a60dd777c80e39bcc48598c4ff5d267f23a5296638c8b915e307c069"
+        },
+        "sourceTrace": {
+          "findingCount": "3",
+          "id": "migration-brief",
+          "sourceCount": "0",
+          "type": "source"
+        },
+        "themeRoundTripRestored": true
+      },
+      "profile": "continuity",
+      "url": "http://127.0.0.1:51519/continuity/"
+    },
+    {
+      "artifact": {
+        "example": "examples/profile/goal-delta-offline-release",
+        "htmlSha256": "110077889a988c81fdc44e4bc4a8547d06621e3b32e8e20e1ee862b7b392e600",
+        "manifestSha256": "15db1bc7aa4448c6c5bc7c91e667f3f574a91bbb10a3e5e0004a53360096d6d8",
+        "profileIrSha256": "2bbea8803939cf0c4f907794a248bbfb2a3aeea1397e1761ebe3981cd0dca0ab",
+        "svgSha256": "b40ca3c4a3c278d467f2c59b49540b3d692c21b766d7cad78631e3d60f4a1aa4"
+      },
+      "assets": {
+        "inlineSvgCount": 1,
+        "remoteUrls": [],
+        "summary": {
+          "byKind": {
+            "font": 0,
+            "image": 0,
+            "other": 0,
+            "script": 0,
+            "stylesheet": 0,
+            "video": 0
+          },
+          "inlineSvgCount": 1,
+          "totalCount": 0
+        },
+        "urls": []
+      },
+      "desktop": {
+        "consoleAndPageErrors": 0,
+        "findingTrace": {
+          "findingCount": null,
+          "id": "goal-delta-LEGACY-01",
+          "sourceCount": "1",
+          "type": "finding"
+        },
+        "initial": {
+          "artifactVisible": true,
+          "csp": "default-src 'none'; style-src 'unsafe-inline'; script-src 'unsafe-inline'; img-src data:; font-src 'none'; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'",
+          "document": {
+            "clientWidth": 1425,
+            "scrollHeight": 1706,
+            "scrollWidth": 1425
+          },
+          "headline": "2 contract changes make 1 previously verified proof line stale.",
+          "horizontalOverflow": false,
+          "mobileHeroVisible": false,
+          "outliers": [],
+          "question": "What evidence stops carrying when the goal changes?",
+          "scrollY": 0,
+          "title": "Goal Delta · Offline release acceptance contract — Codex Workprint",
+          "trace": {
+            "findingCount": null,
+            "id": "goal-delta-LEGACY-01",
+            "sourceCount": "1",
+            "type": "finding"
+          },
+          "url": "http://127.0.0.1:51519/goal-delta/",
+          "viewport": {
+            "height": 900,
+            "width": 1440
+          }
+        },
+        "screenshot": {
+          "bytes": 113388,
+          "capturedPixelHeight": 891,
+          "capturedPixelWidth": 1425,
+          "format": "jpeg",
+          "magic": [
+            255,
+            216,
+            255
+          ],
+          "path": "docs/evidence/browser/profile-goal-delta-desktop-1440x900-2026-08-30.jpg",
+          "sha256": "35c04082a4ad93029530ec8dd2ff48c136f44e3cb6b7d45a36c304fd069abb4f"
+        },
+        "sourceTrace": {
+          "findingCount": "3",
+          "id": "contract-before",
+          "sourceCount": "1",
+          "type": "source"
+        },
+        "themeRoundTripRestored": true
+      },
+      "narrow": {
+        "consoleAndPageErrors": 0,
+        "findingTrace": {
+          "findingCount": null,
+          "id": "goal-delta-LEGACY-01",
+          "sourceCount": "1",
+          "type": "finding"
+        },
+        "initial": {
+          "artifactVisible": false,
+          "csp": "default-src 'none'; style-src 'unsafe-inline'; script-src 'unsafe-inline'; img-src data:; font-src 'none'; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'",
+          "document": {
+            "clientWidth": 375,
+            "scrollHeight": 1776,
+            "scrollWidth": 375
+          },
+          "headline": "2 contract changes make 1 previously verified proof line stale.",
+          "horizontalOverflow": false,
+          "mobileHeroVisible": true,
+          "outliers": [],
+          "question": "What evidence stops carrying when the goal changes?",
+          "scrollY": 0,
+          "title": "Goal Delta · Offline release acceptance contract — Codex Workprint",
+          "trace": {
+            "findingCount": null,
+            "id": "goal-delta-LEGACY-01",
+            "sourceCount": "1",
+            "type": "finding"
+          },
+          "url": "http://127.0.0.1:51519/goal-delta/",
+          "viewport": {
+            "height": 844,
+            "width": 390
+          }
+        },
+        "screenshot": {
+          "bytes": 54407,
+          "capturedPixelHeight": 812,
+          "capturedPixelWidth": 375,
+          "format": "jpeg",
+          "magic": [
+            255,
+            216,
+            255
+          ],
+          "path": "docs/evidence/browser/profile-goal-delta-narrow-390x844-2026-08-30.jpg",
+          "sha256": "f7b0278cbd2d12bbe704e44bedc1e2af3ece0faabeb6bc93031c5091a24c955d"
+        },
+        "sourceTrace": {
+          "findingCount": "3",
+          "id": "contract-before",
+          "sourceCount": "1",
+          "type": "source"
+        },
+        "themeRoundTripRestored": true
+      },
+      "profile": "goal-delta",
+      "url": "http://127.0.0.1:51519/goal-delta/"
+    },
+    {
+      "artifact": {
+        "example": "examples/profile/context-receipt-observation-gap",
+        "htmlSha256": "e557a6715e1c801c841604d83ed57f598326941d597e83e68ca5442f4fef2e0f",
+        "manifestSha256": "ba77453fe52d2e336df6cdaa550f21af3669ae883c0d45d79dd9b99a79c7335a",
+        "profileIrSha256": "6cfc0afe8fb732d8ab9805c7303b9cde9d7aed776145d0eb528fc60cb3a56db2",
+        "svgSha256": "8c3ae95a84c8e3479a947d27475ca8ce915211fd9c65d9fabefce419935ed898"
+      },
+      "assets": {
+        "inlineSvgCount": 1,
+        "remoteUrls": [],
+        "summary": {
+          "byKind": {
+            "font": 0,
+            "image": 0,
+            "other": 0,
+            "script": 0,
+            "stylesheet": 0,
+            "video": 0
+          },
+          "inlineSvgCount": 1,
+          "totalCount": 0
+        },
+        "urls": []
+      },
+      "desktop": {
+        "consoleAndPageErrors": 0,
+        "findingTrace": {
+          "findingCount": null,
+          "id": "archived-method-note",
+          "sourceCount": "1",
+          "type": "finding"
+        },
+        "initial": {
+          "artifactVisible": true,
+          "csp": "default-src 'none'; style-src 'unsafe-inline'; script-src 'unsafe-inline'; img-src data:; font-src 'none'; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'",
+          "document": {
+            "clientWidth": 1425,
+            "scrollHeight": 1706,
+            "scrollWidth": 1425
+          },
+          "headline": "2 of 5 planned items have current observed evidence; 3 items remain outside that evidence boundary.",
+          "horizontalOverflow": false,
+          "mobileHeroVisible": false,
+          "outliers": [],
+          "question": "What context was prepared, observed, or absent?",
+          "scrollY": 0,
+          "title": "Research handoff with a three-item observation gap — Codex Workprint",
+          "trace": {
+            "findingCount": null,
+            "id": "archived-method-note",
+            "sourceCount": "1",
+            "type": "finding"
+          },
+          "url": "http://127.0.0.1:51519/context-receipt/",
+          "viewport": {
+            "height": 900,
+            "width": 1440
+          }
+        },
+        "screenshot": {
+          "bytes": 128099,
+          "capturedPixelHeight": 891,
+          "capturedPixelWidth": 1425,
+          "format": "jpeg",
+          "magic": [
+            255,
+            216,
+            255
+          ],
+          "path": "docs/evidence/browser/profile-context-receipt-desktop-1440x900-2026-08-30.jpg",
+          "sha256": "bf1ba7c67106c6974847b74a12985f8023c5c3ebc30a4bc689badc80980f231e"
+        },
+        "sourceTrace": {
+          "findingCount": "1",
+          "id": "archive-index",
+          "sourceCount": "1",
+          "type": "source"
+        },
+        "themeRoundTripRestored": true
+      },
+      "narrow": {
+        "consoleAndPageErrors": 0,
+        "findingTrace": {
+          "findingCount": null,
+          "id": "archived-method-note",
+          "sourceCount": "1",
+          "type": "finding"
+        },
+        "initial": {
+          "artifactVisible": false,
+          "csp": "default-src 'none'; style-src 'unsafe-inline'; script-src 'unsafe-inline'; img-src data:; font-src 'none'; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'",
+          "document": {
+            "clientWidth": 375,
+            "scrollHeight": 1984,
+            "scrollWidth": 375
+          },
+          "headline": "2 of 5 planned items have current observed evidence; 3 items remain outside that evidence boundary.",
+          "horizontalOverflow": false,
+          "mobileHeroVisible": true,
+          "outliers": [],
+          "question": "What context was prepared, observed, or absent?",
+          "scrollY": 0,
+          "title": "Research handoff with a three-item observation gap — Codex Workprint",
+          "trace": {
+            "findingCount": null,
+            "id": "archived-method-note",
+            "sourceCount": "1",
+            "type": "finding"
+          },
+          "url": "http://127.0.0.1:51519/context-receipt/",
+          "viewport": {
+            "height": 844,
+            "width": 390
+          }
+        },
+        "screenshot": {
+          "bytes": 57680,
+          "capturedPixelHeight": 812,
+          "capturedPixelWidth": 375,
+          "format": "jpeg",
+          "magic": [
+            255,
+            216,
+            255
+          ],
+          "path": "docs/evidence/browser/profile-context-receipt-narrow-390x844-2026-08-30.jpg",
+          "sha256": "c3758126b7e7ac55f50e17e862661271d88f8d57fb8bfb104c9ea00dba705f76"
+        },
+        "sourceTrace": {
+          "findingCount": "1",
+          "id": "archive-index",
+          "sourceCount": "1",
+          "type": "source"
+        },
+        "themeRoundTripRestored": true
+      },
+      "profile": "context-receipt",
+      "url": "http://127.0.0.1:51519/context-receipt/"
+    }
+  ],
+  "schemaVersion": "workprint-profile-browser-qa/0.1"
+}

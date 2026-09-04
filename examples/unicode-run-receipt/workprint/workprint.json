@@ -1,0 +1,176 @@
+{
+  "observations": [
+    {
+      "afterObservedFailure": false,
+      "eventType": "thread.started",
+      "exitCode": null,
+      "itemId": null,
+      "itemType": "run",
+      "publicLabel": null,
+      "publicPhase": null,
+      "sequence": 1,
+      "status": "observed"
+    },
+    {
+      "afterObservedFailure": false,
+      "eventType": "turn.started",
+      "exitCode": null,
+      "itemId": null,
+      "itemType": "turn",
+      "publicLabel": null,
+      "publicPhase": null,
+      "sequence": 2,
+      "status": "observed"
+    },
+    {
+      "afterObservedFailure": false,
+      "eventType": "item.started",
+      "exitCode": null,
+      "itemId": "item-1",
+      "itemType": "command_execution",
+      "publicLabel": null,
+      "publicPhase": null,
+      "sequence": 3,
+      "status": "in_progress"
+    },
+    {
+      "afterObservedFailure": false,
+      "eventType": "item.completed",
+      "exitCode": 1,
+      "itemId": "item-1",
+      "itemType": "command_execution",
+      "publicLabel": null,
+      "publicPhase": null,
+      "sequence": 4,
+      "status": "failed"
+    },
+    {
+      "afterObservedFailure": false,
+      "eventType": "item.started",
+      "exitCode": null,
+      "itemId": "item-2",
+      "itemType": "command_execution",
+      "publicLabel": null,
+      "publicPhase": null,
+      "sequence": 5,
+      "status": "in_progress"
+    },
+    {
+      "afterObservedFailure": true,
+      "eventType": "item.completed",
+      "exitCode": 0,
+      "itemId": "item-2",
+      "itemType": "command_execution",
+      "publicLabel": null,
+      "publicPhase": null,
+      "sequence": 6,
+      "status": "completed"
+    },
+    {
+      "afterObservedFailure": false,
+      "eventType": "item.completed",
+      "exitCode": null,
+      "itemId": "item-3",
+      "itemType": "agent_message",
+      "publicLabel": null,
+      "publicPhase": null,
+      "sequence": 7,
+      "status": "not-observed"
+    },
+    {
+      "afterObservedFailure": false,
+      "eventType": "turn.completed",
+      "exitCode": null,
+      "itemId": null,
+      "itemType": "turn",
+      "publicLabel": null,
+      "publicPhase": null,
+      "sequence": 8,
+      "status": "observed"
+    }
+  ],
+  "privacy": {
+    "assurance": "receipt-not-guarantee",
+    "excludedCategories": [
+      "prompts and instructions",
+      "assistant message text and reasoning",
+      "command text",
+      "stdout, stderr, aggregated output, and tool responses",
+      "absolute paths, file content, environment, and host metadata",
+      "thread id, usage, token counts, model, account, organization, and implicit identity",
+      "all unlisted nested fields",
+      "raw JSONL digest"
+    ],
+    "excludedFieldOccurrences": {
+      "assistantOrReasoningText": 1,
+      "commandText": 4,
+      "identityOrUsage": 7,
+      "outputText": 4,
+      "pathEnvironmentOrContent": 0,
+      "prompt": 0,
+      "unlistedNestedOrTiming": 0
+    },
+    "explicitPublicFields": [
+      "run.publicTitle",
+      "run.publicIdentity.project",
+      "run.publicIdentity.release",
+      "run.publicIdentity.language"
+    ],
+    "itemIds": "pseudonymized-for-sequence-association",
+    "mode": "default-deny-public-projection",
+    "policyVersion": "0.1",
+    "rawInputHashPublished": false,
+    "rawValuesRetained": false
+  },
+  "render": {
+    "palette": "the-run-has-a-shape-v1",
+    "pngRenderer": "workprint-png-v5/indexed-stored-deflate/unifont-17.0.05",
+    "rendererVersion": "workline-0.4.2"
+  },
+  "run": {
+    "durationMs": null,
+    "publicIdentity": {
+      "by": null,
+      "language": "zh-Hans",
+      "project": "Workprint 示例",
+      "publicUrl": null,
+      "release": "0.3.0-rc.3"
+    },
+    "publicLabels": [],
+    "publicTitle": "修复登录失败并验证发布",
+    "turnCompletion": "observed"
+  },
+  "schemaVersion": "0.2",
+  "source": {
+    "adapterVersion": "0.2.0",
+    "kind": "codex-exec-jsonl",
+    "malformedRecords": 0,
+    "parsedRecords": 8,
+    "publicIrSha256": "a266f22c1e7d3d5812267ca0dde461f414d8ad815e0f6ebe89c8fee3edd02e72",
+    "recognizedEvents": 8,
+    "shapeSha256": "d8d549d7608456df9ebcdac201125a01fc2f29b3036b75d3a59e3cc18c9b9dd2",
+    "timing": "not-observed",
+    "unknownEvents": 0
+  },
+  "summary": {
+    "agentMessageObservations": 1,
+    "commandCompleted": 1,
+    "commandFailed": 1,
+    "commandOutcomeNotObserved": 0,
+    "commandStarted": 2,
+    "completionAfterObservedFailure": 1,
+    "fileChangeObservations": 0,
+    "itemCompleted": 1,
+    "itemFailed": 1,
+    "itemStarted": 2,
+    "itemStatusNotObserved": 1,
+    "publicDeliver": 0,
+    "publicEdit": 0,
+    "publicInspect": 0,
+    "publicRecover": 0,
+    "publicVerify": 0,
+    "runObservations": 1,
+    "turnObservations": 2,
+    "unknown": 0
+  }
+}

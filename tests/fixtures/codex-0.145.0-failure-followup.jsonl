@@ -1,0 +1,9 @@
+{"type":"thread.started","thread_id":"01999999-2222-7333-8444-bbbbbbbbbbbb"}
+{"type":"turn.started"}
+{"type":"item.started","item":{"id":"item_a","type":"command_execution","command":"Invoke-PrivateFailure","aggregated_output":"","exit_code":null,"status":"in_progress"}}
+{"type":"item.completed","item":{"id":"item_a","type":"command_execution","command":"Invoke-PrivateFailure","aggregated_output":"expected synthetic failure","exit_code":1,"status":"failed"}}
+{"type":"item.started","item":{"id":"item_b","type":"command_execution","command":"Invoke-PrivateFollowup","aggregated_output":"","exit_code":null,"status":"in_progress"}}
+{"type":"item.completed","item":{"id":"item_b","type":"command_execution","command":"Invoke-PrivateFollowup","aggregated_output":"follow-up completion observed","exit_code":0,"status":"completed"}}
+{"type":"item.completed","item":{"id":"item_c","type":"agent_message","text":"Do not call this verified or recovered."}}
+{"type":"turn.completed","usage":{"input_tokens":200,"cached_input_tokens":0,"cache_write_input_tokens":0,"output_tokens":50,"reasoning_output_tokens":10}}
+

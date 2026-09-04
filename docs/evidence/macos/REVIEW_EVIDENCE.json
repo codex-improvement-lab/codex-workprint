@@ -1,0 +1,112 @@
+{
+  "schemaVersion": 1,
+  "evidenceLabel": "REAL MAC DEVICE / AUTOMATED SOURCE AND LOCAL BROWSER REVIEW",
+  "candidate": {
+    "name": "codex-workprint",
+    "version": "0.1.0-rc.2",
+    "archiveBytes": 421238,
+    "archiveSha256": "185e4bcdf789abd7fb7ab61ab357ee33fa468d6d4fc7195fda787bf4f7792c58",
+    "sidecarMatched": true,
+    "extractedFiles": 88,
+    "postReviewFileMismatches": 0
+  },
+  "environment": {
+    "macOS": "15.5 (24F74)",
+    "darwin": "24.5.0",
+    "architecture": "arm64",
+    "hardwareModel": "Mac15,6",
+    "shell": "zsh 5.9",
+    "defaultNode": "20.20.2",
+    "validationNode": "24.19.0",
+    "validationNodeAlreadyPresent": true,
+    "dependencyInstallPerformed": false
+  },
+  "publicIdentities": {
+    "adapter": "0.1.1",
+    "worklineRenderer": "workline-0.2.0",
+    "pngRenderer": "workprint-png-v2/stored-deflate/bitmap-5x7",
+    "heroShapeSha256": "21fc1fde4c98b640a21ca5250733687aaa40f8a1cbabaa29e018cc4ddbc07872",
+    "heroPublicIrSha256": "20611506ef395410cbada5942297d0fa907d79ba6332678c3bd22dacc95706a3",
+    "alternateShapeSha256": "272932db435165f5b8d64c42356067d6e8069a3ab093bd7450f54aa3866ff874",
+    "alternatePublicIrSha256": "8da00e8d67db9a76f8dfaea4362f0a485d6ef256781daa1d473f826cd445750c"
+  },
+  "sourceGates": {
+    "nodeTest": {
+      "passed": 19,
+      "failed": 0,
+      "result": "PASS"
+    },
+    "releaseCheck": {
+      "checks": 139,
+      "result": "PASS"
+    },
+    "macosImplementationGate": {
+      "lfCrLfBomPublicIr": "BYTE_IDENTICAL",
+      "doubleBuild": "BYTE_IDENTICAL",
+      "png": "SIGNATURE_OK_1200x630",
+      "tamper": "REJECTED",
+      "result": "PASS"
+    },
+    "heroBundleVerify": "PASS_7_OF_7",
+    "alternateBundleVerify": "PASS_7_OF_7",
+    "result": "PASS"
+  },
+  "browser": {
+    "evidenceClass": "REAL MAC DEVICE / AUTOMATED CODEX IN-APP BROWSER OBSERVATION",
+    "browser": "Codex In-app Browser",
+    "browserVersion": "not exposed by the control surface",
+    "desktop": {
+      "viewport": "1440x900",
+      "horizontalOverflow": false,
+      "artifactWithinViewport": true,
+      "consoleWarningsOrErrors": 0,
+      "screenshot": "workprint-desktop-1440x900.jpg",
+      "screenshotFormat": "JPEG",
+      "screenshotSha256": "510976482693e716a590d78fbcc6cb217819ee3813235cf23e7676c93584b7dc"
+    },
+    "narrow": {
+      "viewport": "390x844",
+      "horizontalOverflow": false,
+      "artifactWithinViewport": true,
+      "consoleWarningsOrErrors": 0,
+      "screenshot": "workprint-narrow-390x844.jpg",
+      "screenshotFormat": "JPEG",
+      "screenshotSha256": "d494c659d86c4616ed6ebfeb132602ef90d02f84fdfda26e9b2fe4c9d0a77d2e"
+    },
+    "replayClick": "PASS_ANIMATED",
+    "replayKeyboard": "PASS_ANIMATED",
+    "theme": "PASS_CARBON_PAPER_CARBON",
+    "clipboard": "PASS",
+    "shiftClickFallback": "PASS_COMMAND_SELECTED",
+    "stationSelection": "PASS_FAILED_TO_COMPLETED_DETAIL_CHANGE",
+    "alternateExample": {
+      "shapePrefix": "272932DB4351",
+      "horizontalOverflow": false,
+      "consoleWarningsOrErrors": 0,
+      "result": "PASS"
+    },
+    "observedAssets": {
+      "inlineSvg": 1,
+      "externalAssets": 0,
+      "remoteRequestsObserved": 0
+    },
+    "result": "PASS"
+  },
+  "optionalRealCodexInput": {
+    "status": "PENDING_POLICY",
+    "reason": "The candidate labels this gate optional; the active machine policy permits model prompts only through registered local Codex tasks, not raw CLI capture.",
+    "affectsScopedVerdict": false
+  },
+  "cleanup": {
+    "browserTabsClosed": true,
+    "viewportReset": true,
+    "localQaServersStopped": true,
+    "portsListeningAfterCleanup": [],
+    "generatedDsStoreFilesRemoved": 4,
+    "candidateFilesMatchArchive": "88_OF_88",
+    "result": "PASS"
+  },
+  "macReviewResult": "PASS",
+  "claimCeiling": "Observed behavior of the exact shipped source, fixtures, and browser UI on this physical Mac only; no fresh live Codex input, source authenticity, task correctness, human comprehension, identity, user, or market claim.",
+  "externalContactPerformed": false
+}

@@ -1,0 +1,81 @@
+{
+  "name": "codex-workprint",
+  "version": "0.3.0-rc.3",
+  "description": "Turn Codex runs into privacy-safe, verifiable visual receipts.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codex-improvement-lab/codex-workprint.git"
+  },
+  "homepage": "https://github.com/codex-improvement-lab/codex-workprint#readme",
+  "bugs": {
+    "url": "https://github.com/codex-improvement-lab/codex-workprint/issues"
+  },
+  "type": "module",
+  "bin": {
+    "codex-workprint": "./bin/codex-workprint.js"
+  },
+  "engines": {
+    "node": ">=22.18.0"
+  },
+  "files": [
+    "bin/codex-workprint.js",
+    "dist",
+    "src/runtime-check.js",
+    "assets/fonts/unifont-17.0.05.hex.gz",
+    "assets/fonts/OFL-1.1.txt",
+    "assets/fonts/README.md",
+    "schema/workprint-ir-v0.1.schema.json",
+    "schema/workprint-ir-v0.2.schema.json",
+    "schema/workprint-profile-v0.1.schema.json",
+    "schema/workprint-profile-ir-v0.1.schema.json",
+    "demo/workprint.svg",
+    "examples/alternate-workprint/workprint.svg",
+    "examples/unicode-run-receipt/README.md",
+    "examples/first-run/input.jsonl",
+    "examples/first-run/README.md",
+    "examples/unicode-run-receipt/workprint/share-card.png",
+    "examples/profile/README.md",
+    "examples/profile/continuity-archive-migration/profile.json",
+    "examples/profile/continuity-archive-migration/workprint/workprint-profile.svg",
+    "examples/profile/goal-delta-offline-release/profile.json",
+    "examples/profile/goal-delta-offline-release/workprint/workprint-profile.svg",
+    "examples/profile/context-receipt-observation-gap/profile.json",
+    "examples/profile/context-receipt-observation-gap/workprint/workprint-profile.svg",
+    "docs/assets/workprint-profile-triptych.png",
+    "docs/WORKPRINT_IR.md",
+    "docs/PROFILE_IR.md",
+    "docs/PLATFORM_SUPPORT.md",
+    "README.md",
+    "CHANGELOG.md",
+    "CONTRIBUTING.md",
+    "SUPPORT.md",
+    "RELEASE_NOTES.md",
+    "LICENSE",
+    "PRIVACY.md",
+    "SECURITY.md"
+  ],
+  "scripts": {
+    "build": "node ./scripts/build-dist.mjs",
+    "prepack": "node ./scripts/build-dist.mjs",
+    "test": "node --test",
+    "demo": "node ./scripts/build-demo.mjs",
+    "profiles": "node ./scripts/build-profile-examples.mjs",
+    "unicode": "node ./scripts/build-unicode-example.mjs",
+    "release:check": "node ./scripts/release-check.mjs",
+    "macos:gate": "node ./scripts/macos-gate.mjs",
+    "prepublishOnly": "node ./scripts/release-check.mjs"
+  },
+  "keywords": [
+    "codex",
+    "coding-agent",
+    "developer-tools",
+    "workflow-visualization",
+    "svg",
+    "cli",
+    "jsonl",
+    "visualization",
+    "privacy",
+    "provenance"
+  ],
+  "license": "MIT"
+}

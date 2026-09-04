@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 1,
+  "evidenceClass": "local Windows repair and packaging receipt",
+  "recordedOn": "2026-08-30",
+  "recordStatus": "historical pre-final-return",
+  "supersededBy": "INTAKE_FINAL_RETEST_V2_AUDIT_2026-08-30.json",
+  "triggerReportSha256": "81016253adc83f9ecba887f7b5be7670e9510b0f8df1b1d1c218d8249fc32cc0",
+  "repairs": {
+    "codex-intake": {
+      "changes": [
+        "The leading pnpm separator regression now asserts a Darwin-specific guard on Darwin and the non-Darwin refusal elsewhere.",
+        "The installed-copy assertion compares against realpath(installedRoot), covering macOS /var versus /private/var aliases."
+      ],
+      "candidateId": "codex-intake@0.1.0+codex.20260826170524",
+      "contentSha256": "32a15ab142dd6588a3e1e8f48c9e2dd5ce105002bb64710ee07c4f443589cd76",
+      "windowsValidation": {
+        "releaseCheckExitCode": 0,
+        "vitest": "15/15 pass",
+        "browser": "5/5 pass",
+        "build": "pass"
+      },
+      "physicalMacRetest": {
+        "result": "FAIL",
+        "platformTests": "15/15 pass",
+        "blockingFinding": ".agents/plugins/marketplace.json absent from delivered archive"
+      }
+    },
+    "codex-proofline": {
+      "changes": [
+        "PROOFLINE_REPORT.md is present at the candidate root.",
+        "PROOFLINE_REPORT.md is included in package.json files and checked by the release contract."
+      ],
+      "candidateId": "codex-proofline-macos-rc-9bdf7995a611f15e",
+      "contentSha256": "9bdf7995a611f15e6d012ce10da39075aea98ce7fc00516439056a1a6a99d746",
+      "windowsValidation": {
+        "tests": "35/35 pass",
+        "releaseFileGate": "28 artifacts pass",
+        "exitCode": 0
+      },
+      "physicalMacRetest": {
+        "result": "PASS in targeted Lab acceptance scope",
+        "tests": "34 pass / 0 fail / 1 Windows-only skip",
+        "releaseFileGate": "28/28 pass",
+        "standaloneFullGateV2": "not observed"
+      }
+    }
+  },
+  "targetedRetestPackage": {
+    "archive": "Codex-Improvement-Lab-macOS-targeted-retest-Intake-Proofline-2026-08-30.zip",
+    "bytes": 998436,
+    "sha256": "ccfebc7feccc878aa0fe13622957017a6b025536a88843be5b1e2e1f073599d2",
+    "zipFiles": 130,
+    "manifestLines": 129,
+    "manifestEntriesVerified": 129,
+    "sourceSnapshotFiles": 123,
+    "jsonDocumentsParsed": 13,
+    "prooflineReportIncluded": true,
+    "intakePortabilityRepairsIncluded": true,
+    "builtInMacPrompt": true,
+    "alreadyPassedProjectsExcluded": [
+      "codex-matchup",
+      "codex-tabs",
+      "codex-decision-inbox"
+    ]
+  },
+  "targetedRetestResult": {
+    "reportSha256": "a3354a21d8df44255966bce9bd68980528337fbbff635fe2c00efccf84f60770",
+    "wholeTwoProjectRetest": "FAIL",
+    "portfolioState": "4 PASS / 1 FAIL",
+    "proofline": "PASS in targeted Lab acceptance scope",
+    "intake": "FAIL because required repository marketplace file was absent"
+  },
+  "successorIntakePackage": {
+    "archive": "Codex-Improvement-Lab-macOS-Intake-final-retest-v2-2026-08-30.zip",
+    "bytes": 552070,
+    "sha256": "198a45ee111bee7804f191653c6ec3dd0f3b31f11877d61d9115f147a0a139bb",
+    "candidateId": "codex-intake@0.1.0+codex.20260826170524",
+    "contentSha256": "74883da55dae3e581fdb22e4cb1db7a58894c38a0041fe4aed69b99e2974454e",
+    "sourceSnapshotSha256": "d95026b00a87d795aeb298673203b3b687518bb9e88af5f5223487896308dc49",
+    "manifest": "65/65 before and after clean-copy release gate",
+    "windowsCleanCopy": "15/15 Vitest, build, 5/5 Playwright, stable second candidate preparation",
+    "physicalMacRetest": "pending exact archive"
+  },
+  "workprintRegression": {
+    "tests": "19/19 pass",
+    "releaseCheck": "139/139 pass",
+    "runtimeOrRendererChanged": false
+  },
+  "claimCeiling": {
+    "repairsImplemented": true,
+    "localRegressionPassed": true,
+    "packageIntegrityPassed": true,
+    "physicalMacRetestPassed": false,
+    "perProject": {
+      "codex-proofline": "targeted Lab scope passed",
+      "codex-intake": "failed delivered package; successor archive pending"
+    },
+    "reason": "Proofline closed its scoped lab blocker, while Intake still needs the exact successor archive to return from Darwin."
+  },
+  "externalActions": {
+    "commit": false,
+    "push": false,
+    "publish": false,
+    "upload": false
+  }
+}

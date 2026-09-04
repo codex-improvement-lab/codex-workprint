@@ -1,0 +1,2 @@
+MACOS_IMPLEMENTATION_GATE=FAIL: Darwin required; no macOS result recorded.
+RECORDED_GATE_EXIT_CODE=2

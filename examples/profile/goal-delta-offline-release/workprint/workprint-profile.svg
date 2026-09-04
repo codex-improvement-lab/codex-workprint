@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="profile-title profile-desc" class="profile-artifact profile-goal-delta">
+  <title id="profile-title">Goal Delta · Offline release acceptance contract — Codex Workprint goal-delta</title>
+  <desc id="profile-desc">What evidence stops carrying when the goal changes? 2 contract changes make 1 previously verified proof line stale. Findings trace only to the source labels and revisions supplied in this public projection.</desc>
+  <style>
+    .profile-artifact{background:#f1ecdf;font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif}.eyebrow,.profile-tag,.question,.headline-label,.source-label,.verdict,.micro,.footer,.count-label{font-family:"Arial Narrow",Inter,ui-sans-serif,system-ui,sans-serif;font-weight:800;letter-spacing:1.45px}.eyebrow{font-size:11px;fill:#24251f}.profile-tag{font-size:10px;fill:#aeb4ad}.title{font-family:Georgia,"Times New Roman",serif;font-weight:700;fill:#f1ecdf}.question{font-size:14px;fill:#c7ff36}.headline-label{font-size:9px;fill:#aeb4ad}.headline{font-family:Georgia,"Times New Roman",serif;font-size:24px;font-weight:700;fill:#f1ecdf}.finding-label{font-size:10px;font-weight:700;fill:#f1ecdf}.verdict{font-size:8px}.micro{font-size:8px;fill:#aeb4ad}.source-label{font-size:8px;fill:#f1ecdf}.footer{font-size:9px;fill:#24251f}.count{font-size:19px;font-weight:850}.count-label{font-size:7px;fill:#aeb4ad}.profile-node:focus{outline:none}.profile-node:focus .focus-ring,.profile-node[aria-pressed="true"] .focus-ring{opacity:1}.profile-node,.profile-source{cursor:pointer}.profile-source.is-traced .source-hit,.profile-node.is-traced .trace-hit{opacity:1}
+  </style>
+  <rect width="1200" height="760" fill="#f1ecdf"/>
+  <path d="M0 0H1200V9H0Z" fill="#2457ff"/><path d="M770 0H1000V9H770Z" fill="#c7ff36"/><path d="M1000 0H1200V9H1000Z" fill="#ff665c"/>
+  <text x="34" y="28" class="eyebrow">CODEX WORKPRINT · THREE QUESTIONS. ONE WORKPRINT.</text>
+  <text x="1166" y="28" text-anchor="end" class="eyebrow">THE WORK HAS A STATE.</text>
+  <rect x="24" y="42" width="1152" height="660" rx="3" fill="#11120f"/>
+  <text x="58" y="76" class="profile-tag">GOAL-DELTA / FAULT PROFILE</text>
+  <text x="1142" y="76" text-anchor="end" class="profile-tag">PROFILE IR 2BBEA8803939</text>
+  <text x="58" y="127" class="title" style="font-size:33px">Goal Delta · Offline release acceptance contract</text>
+  <text x="58" y="160" class="question">What evidence stops carrying when the goal changes?</text>
+  <text x="58" y="198" class="headline-label">PUBLIC SUMMARY / SUPPLIED PROJECTION</text>
+  <text x="58" y="226" class="headline" style="font-size:24px">2 contract changes make 1 previously verified proof line stale.</text>
+  <g transform="translate(832 174)"><text class="count" fill="#2457ff">1</text><text y="18" class="count-label">ADDED</text></g><g transform="translate(906 174)"><text class="count" fill="#aeb4ad">1</text><text y="18" class="count-label">REMOVED</text></g><g transform="translate(980 174)"><text class="count" fill="#ff665c">0</text><text y="18" class="count-label">CHANGED</text></g><g transform="translate(1054 174)"><text class="count" fill="#c7ff36">2</text><text y="18" class="count-label">UNCHANGED</text></g>
+  <path d="M58 250H1142" stroke="#383a32" stroke-width="1"/>
+  <g aria-label="Goal Delta fault and shockwave visualization">
+    <rect x="64" y="278" width="1072" height="276" rx="2" fill="#1a1c17" stroke="#383a32"/>
+    <text x="84" y="301" class="micro">CONTRACT REVISION / FAULT LINE</text><text x="1116" y="301" text-anchor="end" class="micro">ONLY EXPLICIT DEPENDENCY IMPACT IS SHOWN</text>
+    <ellipse cx="600" cy="417" rx="116" ry="104" fill="none" stroke="#ff665c" stroke-width="1" opacity=".42"/>
+    <ellipse cx="600" cy="417" rx="74" ry="68" fill="none" stroke="#ff665c" stroke-width="1" opacity=".66"/>
+    <path d="M612 292L580 337L617 365L584 403L626 435L582 469L610 538" fill="none" stroke="#ff665c" stroke-width="7"/>
+    <path d="M592 292L620 337L588 365L616 403L579 435L619 469L596 538" fill="none" stroke="#f1ecdf" stroke-width="1" opacity=".36"/>
+    <g class="profile-node" data-finding-id="goal-delta-A11Y-01" data-source-refs="contract-after">
+      <rect class="trace-hit" x="80" y="286" width="368" height="45" rx="2" fill="#2457ff" opacity="0"/>
+      <circle class="focus-ring" cx="145" cy="308" r="18" fill="none" stroke="#f1ecdf" stroke-width="2" opacity="0"/>
+      <path d="M145 308L548 316" stroke="#2457ff" stroke-width="1.5" />
+      <circle cx="145" cy="308" r="9" fill="#2457ff" stroke="#11120f" stroke-width="4"/>
+      <text x="165" y="305" text-anchor="start" class="verdict" fill="#2457ff">ADDED</text>
+      <text x="165" y="321" text-anchor="start" class="finding-label">A11Y-01 · Complete the primary workflow witho…</text>
+    </g><g class="profile-node" data-finding-id="goal-delta-LEGACY-01" data-source-refs="contract-before">
+      <rect class="trace-hit" x="752" y="286" width="368" height="45" rx="2" fill="#aeb4ad" opacity="0"/>
+      <circle class="focus-ring" cx="1055" cy="308" r="18" fill="none" stroke="#f1ecdf" stroke-width="2" opacity="0"/>
+      <path d="M1055 308L652 300" stroke="#aeb4ad" stroke-width="3" stroke-dasharray="6 6"/>
+      <circle cx="1055" cy="308" r="9" fill="#aeb4ad" stroke="#11120f" stroke-width="4"/>
+      <text x="1035" y="305" text-anchor="end" class="verdict" fill="#aeb4ad">REMOVED · 1 EVIDENCE</text>
+      <text x="1035" y="321" text-anchor="end" class="finding-label">LEGACY-01 · Retain XML v1 export compatibilit…</text>
+    </g><g class="profile-node" data-finding-id="goal-delta-SIGN-01" data-source-refs="contract-before contract-after">
+      <rect class="trace-hit" x="80" y="348" width="368" height="45" rx="2" fill="#c7ff36" opacity="0"/>
+      <circle class="focus-ring" cx="145" cy="370" r="18" fill="none" stroke="#f1ecdf" stroke-width="2" opacity="0"/>
+      <path d="M145 370L541 378" stroke="#c7ff36" stroke-width="1.5" />
+      <circle cx="145" cy="370" r="9" fill="#c7ff36" stroke="#11120f" stroke-width="4"/>
+      <text x="165" y="367" text-anchor="start" class="verdict" fill="#c7ff36">UNCHANGED</text>
+      <text x="165" y="383" text-anchor="start" class="finding-label">SIGN-01 · Keep the offline package inventory …</text>
+    </g><g class="profile-node" data-finding-id="goal-delta-WEB-01" data-source-refs="contract-before contract-after">
+      <rect class="trace-hit" x="752" y="348" width="368" height="45" rx="2" fill="#c7ff36" opacity="0"/>
+      <circle class="focus-ring" cx="1055" cy="370" r="18" fill="none" stroke="#f1ecdf" stroke-width="2" opacity="0"/>
+      <path d="M1055 370L659 362" stroke="#c7ff36" stroke-width="1.5" />
+      <circle cx="1055" cy="370" r="9" fill="#c7ff36" stroke="#11120f" stroke-width="4"/>
+      <text x="1035" y="367" text-anchor="end" class="verdict" fill="#c7ff36">UNCHANGED</text>
+      <text x="1035" y="383" text-anchor="end" class="finding-label">WEB-01 · Support the documented desktop and m…</text>
+    </g>
+  </g>
+  <g transform="translate(80 578)" aria-label="Source evidence rail">
+    <text y="0" class="micro">SOURCE EVIDENCE RAIL / CLICK A FINDING OR SOURCE IN HTML TO TRACE</text>
+    <path d="M0 25H1040" stroke="#aeb4ad" stroke-width="2"/>
+    <g class="profile-source" transform="translate(260 25)"><circle class="source-hit" r="15" fill="#c7ff36" opacity="0"/><circle r="6" fill="#f1ecdf" stroke="#11120f" stroke-width="3"/><text y="23" text-anchor="middle" class="source-label">Offline release acceptance contract</text><text y="36" text-anchor="middle" class="micro">offline-release-2026.08</text></g><g class="profile-source" transform="translate(780 25)"><circle class="source-hit" r="15" fill="#c7ff36" opacity="0"/><circle r="6" fill="#f1ecdf" stroke="#11120f" stroke-width="3"/><text y="23" text-anchor="middle" class="source-label">Offline release acceptance contract</text><text y="36" text-anchor="middle" class="micro">offline-release-2026.09</text></g>
+  </g>
+  <text x="34" y="730" class="footer">WORKPRINT IS A DETERMINISTIC DISPLAY · NOT A NEW FACT SOURCE · NOT AN ATTESTATION</text>
+  <text x="1166" y="730" text-anchor="end" class="footer">SOURCE REVISION offline-release-2026.08..offline-release-2026.09</text>
+</svg>

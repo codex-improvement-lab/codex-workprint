@@ -1,0 +1,58 @@
+{
+  "schemaVersion": "codex-workprint-macos-minimal-validation/0.1",
+  "result": "AUTOMATED_IMPLEMENTATION_PASS",
+  "observedAt": "2026-09-04T18:48:06.738Z",
+  "host": {
+    "platform": "darwin",
+    "macOSVersion": "15.5",
+    "darwinRelease": "24.5.0",
+    "architecture": "arm64",
+    "node": "24.19.0",
+    "shell": "bash",
+    "packageDirectoryBasename": "codex-workprint 0.3.0-rc.2 macOS validation 2026-09-05 attempt 2",
+    "pathContainsSpace": true
+  },
+  "packageIdentity": {
+    "internalManifestSha256": "d5c01affa5d723770202cacf9b2d8aa9c162c477edebd0296afebb85fc283339",
+    "externalArchiveSha256": "record the adjacent ZIP sidecar in MACOS_VALIDATION_REPORT.md"
+  },
+  "candidate": {
+    "package": "0.3.0-rc.2",
+    "node": ">=22.18.0",
+    "adapter": "0.2.0",
+    "runIr": "0.2",
+    "renderer": "workline-0.4.1",
+    "pngRenderer": "workprint-png-v5/indexed-stored-deflate/unifont-17.0.05"
+  },
+  "checks": {
+    "packageManifest": "VERIFIED",
+    "criticalIdentities": "VERIFIED",
+    "cliInspect": "PASS",
+    "lfCrlfBom": "BYTE_IDENTICAL",
+    "repeatedBuild": "BYTE_IDENTICAL",
+    "windowsPinnedArtifacts": "BYTE_IDENTICAL",
+    "untouchedVerify": "PASS",
+    "tamperVerify": "REJECTED",
+    "png": "PNG_1200x630_756798_BYTES",
+    "unicodeTitleAndHeadline": "PRESENT"
+  },
+  "publicOutput": {
+    "directory": "results/browser-bundle",
+    "shapeSha256": "d8d549d7608456df9ebcdac201125a01fc2f29b3036b75d3a59e3cc18c9b9dd2",
+    "publicIrSha256": "f43edb4c89bef92256ad8834e967cb05b9d9da07995d0ab72d2053cfd5facaac",
+    "artifactSha256": {
+      "MANIFEST.sha256": "37339445b63202a7773c1046d02fd210bb9eb3f78756cdfeb5563b7a2a37fd37",
+      "embed.md": "5ad4621db0210f00713ab4999ab1f4fe53f3a5df2ffa243dd9ea63002cfe5ab2",
+      "privacy-receipt.json": "2a31fc107faa5b381f1cd7c23edd58b7f14d8c02eee355164015cf4716d77b10",
+      "share-card.png": "588a495319901fe88278d71612a8b1a1f08e4d977ce547670711d3c6871f8df0",
+      "workprint.html": "2bb57365267a1b3df36d2007b5c619fb479ad13ce00a615ad1a754495f4e77ae",
+      "workprint.json": "8108b1434a3ad658eba59558a919582465c48ff77d0e7a7f1127175dc3b381a7",
+      "workprint.svg": "4cf5d2fce44d644540f268639397407d153457a0e112f9f8da3ea5ac9ea72ba5"
+    }
+  },
+  "browser": {
+    "status": "PENDING_MANUAL",
+    "instructions": "Complete MACOS_VALIDATION_REPORT.md using Safari or Chrome at desktop and 390x844."
+  },
+  "claimCeiling": "This automated result establishes implementation semantics and pinned public bytes on the named physical Darwin host. It is not a complete macOS validation until the browser checklist is recorded, and it does not establish source authenticity, task correctness, human comprehension, production behavior, user success, adoption, or market demand."
+}

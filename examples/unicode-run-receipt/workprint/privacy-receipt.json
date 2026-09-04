@@ -1,0 +1,62 @@
+{
+  "artifact": "codex-workprint-public-projection",
+  "assurance": "receipt-not-guarantee",
+  "boundaries": {
+    "provesAuthenticity": false,
+    "provesCorrectness": false,
+    "provesIdentity": false,
+    "provesRecovery": false,
+    "rawInputHashPublished": false,
+    "rawValuesRetained": false,
+    "shapeIdentityExcludesPublicCopy": true,
+    "telemetry": false,
+    "thirdPartyRequests": false,
+    "timing": "not-observed"
+  },
+  "excludedCategories": [
+    "prompts and instructions",
+    "assistant message text and reasoning",
+    "command text",
+    "stdout, stderr, aggregated output, and tool responses",
+    "absolute paths, file content, environment, and host metadata",
+    "thread id, usage, token counts, model, account, organization, and implicit identity",
+    "all unlisted nested fields",
+    "raw JSONL digest"
+  ],
+  "excludedFieldOccurrences": {
+    "assistantOrReasoningText": 1,
+    "commandText": 4,
+    "identityOrUsage": 7,
+    "outputText": 4,
+    "pathEnvironmentOrContent": 0,
+    "prompt": 0,
+    "unlistedNestedOrTiming": 0
+  },
+  "explicitPublicFields": [
+    "run.publicTitle",
+    "run.publicIdentity.project",
+    "run.publicIdentity.release",
+    "run.publicIdentity.language"
+  ],
+  "policy": {
+    "itemIds": "pseudonymized-for-sequence-association",
+    "mode": "default-deny-public-projection",
+    "version": "0.1"
+  },
+  "publicIrSha256": "a266f22c1e7d3d5812267ca0dde461f414d8ad815e0f6ebe89c8fee3edd02e72",
+  "renderer": {
+    "png": "workprint-png-v5/indexed-stored-deflate/unifont-17.0.05",
+    "workline": "workline-0.4.2"
+  },
+  "retainedCategories": [
+    "recognized event and item type",
+    "ordered observation sequence",
+    "pseudonymized item association",
+    "explicit status and integer exit code",
+    "aggregate public counts",
+    "explicit public title, labels, annotations, identity metadata, language, and public URL",
+    "shape digest derived only from ordered whitelisted observation structure"
+  ],
+  "schemaVersion": "0.1",
+  "shapeSha256": "d8d549d7608456df9ebcdac201125a01fc2f29b3036b75d3a59e3cc18c9b9dd2"
+}

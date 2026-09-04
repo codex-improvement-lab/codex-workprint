@@ -1,0 +1,61 @@
+{
+  "candidate": "0.3.0-rc.3",
+  "evidenceClass": "Windows local packaging and installed-copy smoke",
+  "packager": "pnpm 11.19.0",
+  "node": "v24.19.0",
+  "packageFiles": 64,
+  "tarballRepeatedBuildIdentical": true,
+  "install": "offline, scripts disabled, isolated local store, path with spaces",
+  "stdinAndFileByteIdentical": true,
+  "steps": [
+    {
+      "kind": "installed-run",
+      "input": "file",
+      "result": "PASS",
+      "files": 7
+    },
+    {
+      "kind": "installed-run",
+      "input": "stdin",
+      "result": "PASS",
+      "files": 7
+    },
+    {
+      "kind": "installed-profile",
+      "profile": "continuity-archive-migration",
+      "result": "PASS",
+      "files": 7
+    },
+    {
+      "kind": "installed-profile",
+      "profile": "goal-delta-offline-release",
+      "result": "PASS",
+      "files": 7
+    },
+    {
+      "kind": "installed-profile",
+      "profile": "context-receipt-observation-gap",
+      "result": "PASS",
+      "files": 7
+    },
+    {
+      "kind": "portable-run",
+      "result": "PASS",
+      "files": 7
+    }
+  ],
+  "artifacts": [
+    {
+      "file": "codex-workprint-0.3.0-rc.3.tgz",
+      "bytes": 1038755,
+      "sha256": "9116e017cc64f462f549811c8c66583a6e2f9cb3a04424f7530c0ddb6b2dc535"
+    },
+    {
+      "file": "codex-workprint-0.3.0-rc.3-portable.zip",
+      "bytes": 1073117,
+      "sha256": "5762106df5aeea7906a5f88b445a362172f0266f25ed7d4e4d0d805d4c6e0cb4"
+    }
+  ],
+  "publicationPerformed": false,
+  "physicalMacRunPerformed": false
+}

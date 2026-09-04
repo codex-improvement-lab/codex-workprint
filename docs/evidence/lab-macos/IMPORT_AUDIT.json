@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "evidenceClass": "user-supplied external physical-Mac acceptance report",
+  "importedOn": "2026-08-30",
+  "sourceAttachment": {
+    "originalFile": "Codex-Improvement-Lab-macOS-acceptance-report-2026-08-30.md",
+    "bytes": 4249,
+    "lines": 81,
+    "sha256": "81016253adc83f9ecba887f7b5be7670e9510b0f8df1b1d1c218d8249fc32cc0",
+    "userSuppliedSha256Matched": true,
+    "attachmentInstructionsTreatedAsAuthorization": false
+  },
+  "repositoryCopy": {
+    "file": "ACCEPTANCE_REPORT_2026-08-30.md",
+    "bytes": 4248,
+    "lines": 80,
+    "sha256": "8b0214280235ca95fbefa8a30646f842233ec520774ee0633516c9f47dbb559c",
+    "byteForByte": false,
+    "normalization": "One redundant final LF was removed; all 80 content lines and ordering are unchanged. The original attachment identity remains recorded above."
+  },
+  "reportedEnvironment": {
+    "hardware": "MacBook Pro Mac15,6 / Apple M3 Pro",
+    "platform": "macOS 15.5 (24F74)",
+    "architecture": "arm64",
+    "method": "unattended local automation with repository fixtures or synthetic data"
+  },
+  "reviewedCandidate": {
+    "archive": "Codex-Improvement-Lab-macOS-retest-candidates-2026-08-30.zip",
+    "sha256": "2ba18c0bf49e9e015baeb17a3c1ac9c4af51240e7394f56f0da73a57e7d4c25d",
+    "localArchiveSha256Matched": true,
+    "zipFileEntriesObserved": 299,
+    "manifestLinesObserved": 298,
+    "sourceSnapshotFilesReported": 292,
+    "countFinding": "The report says MANIFEST.sha256 has 299 entries. Independent inspection found 299 ZIP files total: one manifest plus 298 lines naming every other file. This is a wording/count discrepancy, not evidence of an unmatched archive entry."
+  },
+  "verdict": {
+    "wholeFiveProjectPackage": "FAIL",
+    "perProject": {
+      "codex-matchup": "PASS",
+      "codex-tabs": "PASS",
+      "codex-decision-inbox": "PASS",
+      "codex-intake": "FAIL",
+      "codex-proofline": "FAIL"
+    },
+    "allFiveSignatureInteractions": "PASS",
+    "codexWorkprint": "NOT_IN_SCOPE"
+  },
+  "auditDecision": {
+    "mayRecordWholePackagePhysicalMacPass": false,
+    "mayRecordScopedPerProjectPhysicalMacPass": [
+      "codex-matchup",
+      "codex-tabs",
+      "codex-decision-inbox"
+    ],
+    "mayRecordSignatureInteractionPhysicalMacObservation": [
+      "Identity Seal",
+      "Airspace",
+      "Quiet Queue",
+      "Provenance Lens",
+      "Gap Tour"
+    ],
+    "mayUseAsCodexWorkprintRuntimeEvidence": false,
+    "importerDirectlyWitnessedDarwinRun": false
+  },
+  "claimCeiling": [
+    "The report is external operator evidence for the named archive and stated physical Mac environment.",
+    "It is not a whole-package PASS and does not transfer a PASS to repaired Intake or Proofline bytes.",
+    "It does not test Codex Workprint and cannot expand Workprint's own exact-archive Mac result.",
+    "It is not cryptographic hardware attestation, real-user evidence, source authenticity, task correctness, identity, adoption, or market evidence."
+  ]
+}

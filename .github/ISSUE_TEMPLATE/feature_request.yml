@@ -1,0 +1,42 @@
+name: Feature request
+description: Propose a narrow improvement to the Workprint compilation loop.
+title: "[Feature] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        The first release is intentionally not a transcript viewer, live dashboard, generic diagrammer, agent scorer, hosted service, or multi-agent platform. Describe one concrete workflow pain and the smallest useful change.
+  - type: textarea
+    id: pain
+    attributes:
+      label: Workflow pain
+      description: What cannot be done clearly with inspect, build, or verify today?
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Smallest useful outcome
+      description: Describe observable acceptance conditions rather than a broad architecture.
+    validations:
+      required: true
+  - type: dropdown
+    id: layer
+    attributes:
+      label: Likely layer
+      options:
+        - Adapter or unknown-event handling
+        - Public IR or privacy projection
+        - HTML, SVG, or PNG rendering
+        - CLI workflow
+        - Documentation or release evidence
+        - Not sure
+    validations:
+      required: true
+  - type: textarea
+    id: privacy
+    attributes:
+      label: Privacy and evidence impact
+      description: Which fields or claims could become public, and how should missing evidence remain visible?
+    validations:
+      required: true

@@ -1,0 +1,8 @@
+COMMAND=node ./scripts/release-check.mjs
+NODE=v24.19.0
+CANDIDATE=0.1.0-rc.3
+PLATFORM=Windows 11 10.0.26200 x64
+
+RESULT=All named checks emitted PASS; no failing check was emitted.
+RELEASE_CHECK PASS · 181 checks
+RECORDED_EXIT_CODE=0

@@ -1,0 +1,76 @@
+name: Bug report
+description: Report a reproducible Codex Workprint defect using sanitized data.
+title: "[Bug] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Do not attach raw private JSONL, prompts, replies, reasoning, command text, stdout/stderr, tokens, usernames, or absolute paths. For a security or privacy vulnerability, stop and use the private route in SECURITY.md instead of this public form.
+  - type: input
+    id: version
+    attributes:
+      label: Workprint version
+      placeholder: 0.1.0-rc.2
+    validations:
+      required: true
+  - type: input
+    id: node
+    attributes:
+      label: Node.js version
+      description: Paste only the output of `node --version`.
+      placeholder: v24.19.0
+    validations:
+      required: true
+  - type: dropdown
+    id: operating-system
+    attributes:
+      label: Operating system
+      options:
+        - Windows
+        - macOS
+        - Linux
+        - Other
+    validations:
+      required: true
+  - type: dropdown
+    id: surface
+    attributes:
+      label: Affected surface
+      options:
+        - inspect
+        - build
+        - verify
+        - HTML interaction
+        - SVG or README embed
+        - PNG share card
+        - Documentation
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Sanitized reproduction
+      description: Provide the smallest safe fixture or steps. Replace all private values before submitting.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: observed
+    attributes:
+      label: Observed behavior
+    validations:
+      required: true
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Public-data confirmation
+      options:
+        - label: I removed prompts, replies, reasoning, commands, output, secrets, identity, and machine paths from this report.
+          required: true
+        - label: I understand that a public Workprint or hash does not prove source authenticity or task correctness.
+          required: true

@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en" data-theme="carbon" data-profile="goal-delta">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; script-src 'unsafe-inline'; img-src data:; font-src 'none'; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <meta name="color-scheme" content="dark light">
+  <title>Goal Delta · Offline release acceptance contract — Codex Workprint</title>
+  <style>
+    :root{--carbon:#11120f;--paper:#f1ecdf;--acid:#c7ff36;--cobalt:#2457ff;--coral:#ff665c;--silver:#aeb4ad;--amber:#ffb340;--ink:#24251f;--muted:#858b83;--rule:#35372f;color-scheme:dark}
+    html[data-theme="carbon"]{--page:#090a08;--surface:#151612;--text:#f1ecdf;--surface-rule:#33352e;color-scheme:dark}html[data-theme="paper"]{--page:#e7e0d2;--surface:#f6f1e7;--text:#24251f;--surface-rule:#c9c3b7;color-scheme:light}
+    *{box-sizing:border-box}html,body{margin:0;min-height:100%;overflow-x:hidden}body{background:var(--page);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.45}button{font:inherit}.topline{position:fixed;z-index:5;inset:0 0 auto;height:8px;background:linear-gradient(90deg,var(--cobalt) 0 64%,var(--acid) 64% 84%,var(--coral) 84%)}.page{width:min(1440px,100%);margin:auto;padding:18px clamp(12px,2.5vw,38px) 48px}.masthead{display:flex;justify-content:space-between;align-items:center;gap:18px;padding:16px 0 13px}.brand{font:800 11px/1.2 "Arial Narrow",ui-sans-serif,sans-serif;letter-spacing:.16em;text-transform:uppercase}.actions{display:flex;gap:8px}.control{border:1px solid var(--surface-rule);background:var(--surface);color:var(--text);padding:8px 11px;border-radius:2px;cursor:pointer;font-size:11px;font-weight:800;letter-spacing:.04em}.control:hover,.control:focus-visible{border-color:var(--acid);outline:none}.artifact-shell{padding:7px;background:var(--paper);box-shadow:0 22px 75px #0007}.artifact-shell svg{display:block;width:100%;height:auto}.mobile-hero{display:none}.section-tag{margin:0 0 8px;color:var(--muted);font:800 10px/1.2 "Arial Narrow",ui-sans-serif,sans-serif;letter-spacing:.15em;text-transform:uppercase}
+    .trace-plane{display:grid;grid-template-columns:minmax(290px,.82fr) minmax(0,1.18fr);gap:0;margin-top:24px;border-top:1px solid var(--surface-rule);border-bottom:1px solid var(--surface-rule)}.trace-detail{padding:24px clamp(16px,2.2vw,30px);border-right:1px solid var(--surface-rule);min-height:286px}.trace-detail h2{font-family:Georgia,"Times New Roman",serif;font-size:clamp(25px,3vw,39px);line-height:1.02;margin:0 0 12px}.trace-verdict{font:850 11px/1.2 "Arial Narrow",ui-sans-serif,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--coral)}.trace-subject{font-size:14px;max-width:46rem}.trace-meta{display:flex;flex-wrap:wrap;gap:7px 14px;margin-top:20px;color:var(--muted);font-size:11px}.boundary{margin:22px 0 0;padding-top:14px;border-top:1px solid var(--surface-rule);color:var(--muted);font-size:11px}.ledger{min-width:0}.finding-row,.source-row{width:100%;display:grid;align-items:center;border:0;border-bottom:1px solid var(--surface-rule);background:transparent;color:var(--text);text-align:left;cursor:pointer}.finding-row{grid-template-columns:90px minmax(0,1fr) auto;gap:14px;padding:12px 16px}.finding-row:last-child{border-bottom:0}.finding-row:hover,.finding-row:focus-visible,.finding-row[aria-pressed="true"],.finding-row.is-traced{outline:none;background:color-mix(in srgb,var(--surface) 88%,var(--acid) 12%)}.finding-row[aria-pressed="true"]{box-shadow:inset 4px 0 var(--acid)}.verdict{font:850 9px/1.2 "Arial Narrow",ui-sans-serif,sans-serif;letter-spacing:.1em;text-transform:uppercase;color:var(--silver)}.finding-row[data-verdict="carried"] .verdict,.finding-row[data-verdict="unchanged"] .verdict,.finding-row[data-verdict="observed"] .verdict{color:var(--acid)}.finding-row[data-verdict="lost"] .verdict,.finding-row[data-verdict="changed"] .verdict,.finding-row[data-verdict="not_observed"] .verdict{color:var(--coral)}.finding-row[data-verdict="added"] .verdict,.finding-row[data-verdict="prepared"] .verdict{color:#6f8cff}.finding-row[data-verdict="stale"] .verdict,.finding-row[data-verdict="conflict"] .verdict{color:var(--amber)}.finding-copy{min-width:0;font-size:12px;overflow-wrap:anywhere}.finding-refs{font:9px/1.2 ui-monospace,SFMono-Regular,Consolas,monospace;color:var(--muted);white-space:nowrap}.sources{margin-top:24px;border-top:4px solid var(--cobalt);background:var(--surface)}.source-head{padding:16px 18px 12px;display:flex;justify-content:space-between;gap:16px;border-bottom:1px solid var(--surface-rule)}.source-head h2{margin:0;font-family:Georgia,"Times New Roman",serif;font-size:25px}.source-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr))}.source-row{grid-template-columns:20px minmax(0,1fr);gap:11px;padding:14px 16px;border-right:1px solid var(--surface-rule)}.source-row:hover,.source-row:focus-visible,.source-row[aria-pressed="true"],.source-row.is-traced{outline:none;background:color-mix(in srgb,var(--surface) 86%,var(--cobalt) 14%)}.source-dot{width:10px;height:10px;border-radius:50%;background:var(--silver)}.source-row.is-traced .source-dot,.source-row[aria-pressed="true"] .source-dot{background:var(--acid);box-shadow:0 0 0 4px color-mix(in srgb,var(--acid) 24%,transparent)}.source-copy strong,.source-copy small{display:block}.source-copy strong{font-size:12px}.source-copy small{font:10px/1.4 ui-monospace,SFMono-Regular,Consolas,monospace;color:var(--muted);overflow-wrap:anywhere}.generate{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:12px;align-items:center;margin-top:24px;padding:20px;border-top:4px solid var(--acid);background:var(--surface)}.generate h2{margin:0 0 4px;font-family:Georgia,"Times New Roman",serif;font-size:25px}.generate p{margin:0;color:var(--muted);font-size:12px}.command{grid-column:1/-1;background:var(--carbon);color:var(--paper);border:1px solid #3c3e36;padding:12px 14px;white-space:pre-wrap;overflow-wrap:anywhere;font:11px/1.5 ui-monospace,SFMono-Regular,Consolas,monospace}.foot{display:flex;justify-content:space-between;gap:18px;margin-top:23px;color:var(--muted);font-size:10px}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+    @media(max-width:760px){.page{padding-top:14px}.masthead{align-items:flex-start;flex-wrap:wrap}.brand{width:100%}.actions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));width:100%}.artifact-shell{display:none}.mobile-hero{display:block;position:relative;background:var(--carbon);color:var(--paper);padding:20px 17px 18px;border-top:6px solid var(--cobalt);box-shadow:0 18px 55px #0006}.mobile-hero h1{font-family:Georgia,"Times New Roman",serif;font-size:clamp(27px,8vw,36px);line-height:1.02;margin:0 0 12px}.mobile-question{margin:0;color:var(--acid);font:850 11px/1.35 "Arial Narrow",ui-sans-serif,sans-serif;letter-spacing:.1em;text-transform:uppercase}.mobile-headline{font-family:Georgia,"Times New Roman",serif;font-size:20px;line-height:1.12;margin:16px 0}.mobile-signature{position:relative;height:62px;margin:12px 0 8px;border-top:1px solid #393b33;border-bottom:1px solid #393b33;overflow:hidden}.mobile-signature::before,.mobile-signature::after{content:"";position:absolute}[data-profile="continuity"] .mobile-signature::before{left:4%;right:4%;top:29px;border-top:3px dashed var(--silver)}[data-profile="continuity"] .mobile-signature::after{width:16px;height:40px;left:62%;top:10px;border-top:4px solid var(--coral);border-bottom:4px solid var(--coral);background:var(--carbon)}[data-profile="goal-delta"] .mobile-signature::before{left:49%;top:4px;width:6px;height:54px;background:var(--coral);transform:skew(-17deg)}[data-profile="goal-delta"] .mobile-signature::after{width:90px;height:42px;left:calc(50% - 45px);top:9px;border:1px solid var(--coral);border-radius:50%}[data-profile="context-receipt"] .mobile-signature::before{width:170px;height:42px;left:calc(50% - 85px);top:8px;border:3px solid var(--cobalt);border-radius:50%}[data-profile="context-receipt"] .mobile-signature::after{width:96px;height:24px;left:calc(50% - 48px);top:17px;border:3px solid var(--acid);border-radius:50%}.mobile-source-count{color:var(--muted);font-size:10px;letter-spacing:.08em;text-transform:uppercase}.trace-plane{grid-template-columns:1fr}.trace-detail{border-right:0;border-bottom:1px solid var(--surface-rule);min-height:0}.finding-row{grid-template-columns:84px minmax(0,1fr);gap:10px}.finding-refs{grid-column:2;white-space:normal}.source-list{grid-template-columns:1fr}.source-row{border-right:0}.generate{grid-template-columns:1fr}.foot{flex-direction:column}.foot span:last-child{text-align:left}}
+    @media(max-width:420px){.finding-row{padding:11px 10px;grid-template-columns:76px minmax(0,1fr)}.trace-detail{padding:18px 14px}.source-head{padding-inline:14px}}
+  </style>
+</head>
+<body>
+  <div class="topline" aria-hidden="true"></div>
+  <main class="page">
+    <header class="masthead"><div class="brand">Codex Workprint / goal-delta profile / fault</div><div class="actions"><button id="theme" class="control" type="button">Paper mode</button><button id="copy" class="control" type="button" title="Shift+click selects the command as a clipboard fallback">Copy command</button></div></header>
+    <section class="mobile-hero" aria-label="Profile summary"><p class="section-tag">Three questions. One Workprint.</p><h1>Goal Delta · Offline release acceptance contract</h1><p class="mobile-question">What evidence stops carrying when the goal changes?</p><p class="mobile-headline">2 contract changes make 1 previously verified proof line stale.</p><div class="mobile-signature" aria-hidden="true"></div><div class="mobile-source-count">4 findings · 2 sources · fault signature</div></section>
+    <section class="artifact-shell" aria-label="Profile Workprint visualization"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="profile-title profile-desc" class="profile-artifact profile-goal-delta">
+  <title id="profile-title">Goal Delta · Offline release acceptance contract — Codex Workprint goal-delta</title>
+  <desc id="profile-desc">What evidence stops carrying when the goal changes? 2 contract changes make 1 previously verified proof line stale. Findings trace only to the source labels and revisions supplied in this public projection.</desc>
+  <style>
+    .profile-artifact{background:#f1ecdf;font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif}.eyebrow,.profile-tag,.question,.headline-label,.source-label,.verdict,.micro,.footer,.count-label{font-family:"Arial Narrow",Inter,ui-sans-serif,system-ui,sans-serif;font-weight:800;letter-spacing:1.45px}.eyebrow{font-size:11px;fill:#24251f}.profile-tag{font-size:10px;fill:#aeb4ad}.title{font-family:Georgia,"Times New Roman",serif;font-weight:700;fill:#f1ecdf}.question{font-size:14px;fill:#c7ff36}.headline-label{font-size:9px;fill:#aeb4ad}.headline{font-family:Georgia,"Times New Roman",serif;font-size:24px;font-weight:700;fill:#f1ecdf}.finding-label{font-size:10px;font-weight:700;fill:#f1ecdf}.verdict{font-size:8px}.micro{font-size:8px;fill:#aeb4ad}.source-label{font-size:8px;fill:#f1ecdf}.footer{font-size:9px;fill:#24251f}.count{font-size:19px;font-weight:850}.count-label{font-size:7px;fill:#aeb4ad}.profile-node:focus{outline:none}.profile-node:focus .focus-ring,.profile-node[aria-pressed="true"] .focus-ring{opacity:1}.profile-node,.profile-source{cursor:pointer}.profile-source.is-traced .source-hit,.profile-node.is-traced .trace-hit{opacity:1}
+  </style>
+  <rect width="1200" height="760" fill="#f1ecdf"/>
+  <path d="M0 0H1200V9H0Z" fill="#2457ff"/><path d="M770 0H1000V9H770Z" fill="#c7ff36"/><path d="M1000 0H1200V9H1000Z" fill="#ff665c"/>
+  <text x="34" y="28" class="eyebrow">CODEX WORKPRINT · THREE QUESTIONS. ONE WORKPRINT.</text>
+  <text x="1166" y="28" text-anchor="end" class="eyebrow">THE WORK HAS A STATE.</text>
+  <rect x="24" y="42" width="1152" height="660" rx="3" fill="#11120f"/>
+  <text x="58" y="76" class="profile-tag">GOAL-DELTA / FAULT PROFILE</text>
+  <text x="1142" y="76" text-anchor="end" class="profile-tag">PROFILE IR 2BBEA8803939</text>
+  <text x="58" y="127" class="title" style="font-size:33px">Goal Delta · Offline release acceptance contract</text>
+  <text x="58" y="160" class="question">What evidence stops carrying when the goal changes?</text>
+  <text x="58" y="198" class="headline-label">PUBLIC SUMMARY / SUPPLIED PROJECTION</text>
+  <text x="58" y="226" class="headline" style="font-size:24px">2 contract changes make 1 previously verified proof line stale.</text>
+  <g transform="translate(832 174)"><text class="count" fill="#2457ff">1</text><text y="18" class="count-label">ADDED</text></g><g transform="translate(906 174)"><text class="count" fill="#aeb4ad">1</text><text y="18" class="count-label">REMOVED</text></g><g transform="translate(980 174)"><text class="count" fill="#ff665c">0</text><text y="18" class="count-label">CHANGED</text></g><g transform="translate(1054 174)"><text class="count" fill="#c7ff36">2</text><text y="18" class="count-label">UNCHANGED</text></g>
+  <path d="M58 250H1142" stroke="#383a32" stroke-width="1"/>
+  <g aria-label="Goal Delta fault and shockwave visualization">
+    <rect x="64" y="278" width="1072" height="276" rx="2" fill="#1a1c17" stroke="#383a32"/>
+    <text x="84" y="301" class="micro">CONTRACT REVISION / FAULT LINE</text><text x="1116" y="301" text-anchor="end" class="micro">ONLY EXPLICIT DEPENDENCY IMPACT IS SHOWN</text>
+    <ellipse cx="600" cy="417" rx="116" ry="104" fill="none" stroke="#ff665c" stroke-width="1" opacity=".42"/>
+    <ellipse cx="600" cy="417" rx="74" ry="68" fill="none" stroke="#ff665c" stroke-width="1" opacity=".66"/>
+    <path d="M612 292L580 337L617 365L584 403L626 435L582 469L610 538" fill="none" stroke="#ff665c" stroke-width="7"/>
+    <path d="M592 292L620 337L588 365L616 403L579 435L619 469L596 538" fill="none" stroke="#f1ecdf" stroke-width="1" opacity=".36"/>
+    <g class="profile-node" data-finding-id="goal-delta-A11Y-01" data-source-refs="contract-after" tabindex="0" role="button" aria-pressed="false" aria-label="added: A11Y-01 · Complete the primary workflow without pointer input.">
+      <rect class="trace-hit" x="80" y="286" width="368" height="45" rx="2" fill="#2457ff" opacity="0"/>
+      <circle class="focus-ring" cx="145" cy="308" r="18" fill="none" stroke="#f1ecdf" stroke-width="2" opacity="0"/>
+      <path d="M145 308L548 316" stroke="#2457ff" stroke-width="1.5" />
+      <circle cx="145" cy="308" r="9" fill="#2457ff" stroke="#11120f" stroke-width="4"/>
+      <text x="165" y="305" text-anchor="start" class="verdict" fill="#2457ff">ADDED</text>
+      <text x="165" y="321" text-anchor="start" class="finding-label">A11Y-01 · Complete the primary workflow witho…</text>
+    </g><g class="profile-node" data-finding-id="goal-delta-LEGACY-01" data-source-refs="contract-before" tabindex="0" role="button" aria-pressed="false" aria-label="removed: LEGACY-01 · Retain XML v1 export compatibility.">
+      <rect class="trace-hit" x="752" y="286" width="368" height="45" rx="2" fill="#aeb4ad" opacity="0"/>
+      <circle class="focus-ring" cx="1055" cy="308" r="18" fill="none" stroke="#f1ecdf" stroke-width="2" opacity="0"/>
+      <path d="M1055 308L652 300" stroke="#aeb4ad" stroke-width="3" stroke-dasharray="6 6"/>
+      <circle cx="1055" cy="308" r="9" fill="#aeb4ad" stroke="#11120f" stroke-width="4"/>
+      <text x="1035" y="305" text-anchor="end" class="verdict" fill="#aeb4ad">REMOVED · 1 EVIDENCE</text>
+      <text x="1035" y="321" text-anchor="end" class="finding-label">LEGACY-01 · Retain XML v1 export compatibilit…</text>
+    </g><g class="profile-node" data-finding-id="goal-delta-SIGN-01" data-source-refs="contract-before contract-after" tabindex="0" role="button" aria-pressed="false" aria-label="unchanged: SIGN-01 · Keep the offline package inventory inspectable.">
+      <rect class="trace-hit" x="80" y="348" width="368" height="45" rx="2" fill="#c7ff36" opacity="0"/>
+      <circle class="focus-ring" cx="145" cy="370" r="18" fill="none" stroke="#f1ecdf" stroke-width="2" opacity="0"/>
+      <path d="M145 370L541 378" stroke="#c7ff36" stroke-width="1.5" />
+      <circle cx="145" cy="370" r="9" fill="#c7ff36" stroke="#11120f" stroke-width="4"/>
+      <text x="165" y="367" text-anchor="start" class="verdict" fill="#c7ff36">UNCHANGED</text>
+      <text x="165" y="383" text-anchor="start" class="finding-label">SIGN-01 · Keep the offline package inventory …</text>
+    </g><g class="profile-node" data-finding-id="goal-delta-WEB-01" data-source-refs="contract-before contract-after" tabindex="0" role="button" aria-pressed="false" aria-label="unchanged: WEB-01 · Support the documented desktop and mobile widths.">
+      <rect class="trace-hit" x="752" y="348" width="368" height="45" rx="2" fill="#c7ff36" opacity="0"/>
+      <circle class="focus-ring" cx="1055" cy="370" r="18" fill="none" stroke="#f1ecdf" stroke-width="2" opacity="0"/>
+      <path d="M1055 370L659 362" stroke="#c7ff36" stroke-width="1.5" />
+      <circle cx="1055" cy="370" r="9" fill="#c7ff36" stroke="#11120f" stroke-width="4"/>
+      <text x="1035" y="367" text-anchor="end" class="verdict" fill="#c7ff36">UNCHANGED</text>
+      <text x="1035" y="383" text-anchor="end" class="finding-label">WEB-01 · Support the documented desktop and m…</text>
+    </g>
+  </g>
+  <g transform="translate(80 578)" aria-label="Source evidence rail">
+    <text y="0" class="micro">SOURCE EVIDENCE RAIL / CLICK A FINDING OR SOURCE IN HTML TO TRACE</text>
+    <path d="M0 25H1040" stroke="#aeb4ad" stroke-width="2"/>
+    <g class="profile-source" data-source-id="contract-before" tabindex="0" role="button" aria-pressed="false" aria-label="Source Offline release acceptance contract, revision offline-release-2026.08" transform="translate(260 25)"><circle class="source-hit" r="15" fill="#c7ff36" opacity="0"/><circle r="6" fill="#f1ecdf" stroke="#11120f" stroke-width="3"/><text y="23" text-anchor="middle" class="source-label">Offline release acceptance contract</text><text y="36" text-anchor="middle" class="micro">offline-release-2026.08</text></g><g class="profile-source" data-source-id="contract-after" tabindex="0" role="button" aria-pressed="false" aria-label="Source Offline release acceptance contract, revision offline-release-2026.09" transform="translate(780 25)"><circle class="source-hit" r="15" fill="#c7ff36" opacity="0"/><circle r="6" fill="#f1ecdf" stroke="#11120f" stroke-width="3"/><text y="23" text-anchor="middle" class="source-label">Offline release acceptance contract</text><text y="36" text-anchor="middle" class="micro">offline-release-2026.09</text></g>
+  </g>
+  <text x="34" y="730" class="footer">WORKPRINT IS A DETERMINISTIC DISPLAY · NOT A NEW FACT SOURCE · NOT AN ATTESTATION</text>
+  <text x="1166" y="730" text-anchor="end" class="footer">SOURCE REVISION offline-release-2026.08..offline-release-2026.09</text>
+</svg>
+</section>
+    <section class="trace-plane" aria-label="Interactive finding trace">
+      <div class="trace-detail" aria-live="polite"><p class="section-tag">Selected finding / source trace</p><div id="detailVerdict" class="trace-verdict">removed</div><h2 id="detailTitle">goal-delta-LEGACY-01</h2><p id="detailSubject" class="trace-subject">LEGACY-01 · Retain XML v1 export compatibility.</p><div class="trace-meta"><span id="detailKind">Kind contract-change</span><span id="detailSources">Sources contract-before</span><span id="detailExtra">Affected evidence AC-LEGACY/xml-v1-export</span></div><p class="boundary">This view traces the supplied public finding to supplied source labels and revisions. It does not establish source authenticity, correctness, model influence, or causality.</p></div>
+      <div class="ledger" id="findingLedger"><button class="finding-row" type="button" data-finding-id="goal-delta-A11Y-01" data-verdict="added" aria-pressed="false"><span class="verdict">added</span><span class="finding-copy">A11Y-01 · Complete the primary workflow without pointer input.</span><span class="finding-refs">1 source</span></button><button class="finding-row" type="button" data-finding-id="goal-delta-LEGACY-01" data-verdict="removed" aria-pressed="false"><span class="verdict">removed</span><span class="finding-copy">LEGACY-01 · Retain XML v1 export compatibility.</span><span class="finding-refs">1 source</span></button><button class="finding-row" type="button" data-finding-id="goal-delta-SIGN-01" data-verdict="unchanged" aria-pressed="false"><span class="verdict">unchanged</span><span class="finding-copy">SIGN-01 · Keep the offline package inventory inspectable.</span><span class="finding-refs">2 sources</span></button><button class="finding-row" type="button" data-finding-id="goal-delta-WEB-01" data-verdict="unchanged" aria-pressed="false"><span class="verdict">unchanged</span><span class="finding-copy">WEB-01 · Support the documented desktop and mobile widths.</span><span class="finding-refs">2 sources</span></button></div>
+    </section>
+    <section class="sources" aria-label="Source evidence rail"><div class="source-head"><div><p class="section-tag">Evidence rail</p><h2>Sources stay attached.</h2></div><span class="section-tag">revision-bound public labels</span></div><div class="source-list"><button class="source-row" type="button" data-source-id="contract-before" aria-pressed="false"><span class="source-dot" aria-hidden="true"></span><span class="source-copy"><strong>Offline release acceptance contract</strong><small>contract-before · offline-release-2026.08</small></span></button><button class="source-row" type="button" data-source-id="contract-after" aria-pressed="false"><span class="source-dot" aria-hidden="true"></span><span class="source-copy"><strong>Offline release acceptance contract</strong><small>contract-after · offline-release-2026.09</small></span></button></div></section>
+    <section class="generate"><div><p class="section-tag">Compile a public profile</p><h2>The work has a state.</h2><p>Inspect the public projection, then build a deterministic seven-file profile bundle locally.</p></div><button id="copyBottom" class="control" type="button">Copy</button><code id="command" class="command">codex-workprint profile build profile.json --out ./workprint</code></section>
+    <footer class="foot"><span>Made with Codex Workprint · supplied public projection, not attestation</span><span>Profile IR 2BBEA8803939 · source revision offline-release-2026.08..offline-release-2026.09</span></footer>
+  </main>
+  <script id="profile-data" type="application/json">{
+  "artifact": "codex-workprint-profile",
+  "findings": [
+    {
+      "affectedEvidenceIds": [],
+      "id": "goal-delta-A11Y-01",
+      "kind": "contract-change",
+      "sourceRefs": [
+        "contract-after"
+      ],
+      "subject": "A11Y-01 · Complete the primary workflow without pointer input.",
+      "verdict": "added"
+    },
+    {
+      "affectedEvidenceIds": [
+        "AC-LEGACY/xml-v1-export"
+      ],
+      "id": "goal-delta-LEGACY-01",
+      "kind": "contract-change",
+      "sourceRefs": [
+        "contract-before"
+      ],
+      "subject": "LEGACY-01 · Retain XML v1 export compatibility.",
+      "verdict": "removed"
+    },
+    {
+      "affectedEvidenceIds": [],
+      "id": "goal-delta-SIGN-01",
+      "kind": "contract-change",
+      "sourceRefs": [
+        "contract-before",
+        "contract-after"
+      ],
+      "subject": "SIGN-01 · Keep the offline package inventory inspectable.",
+      "verdict": "unchanged"
+    },
+    {
+      "affectedEvidenceIds": [],
+      "id": "goal-delta-WEB-01",
+      "kind": "contract-change",
+      "sourceRefs": [
+        "contract-before",
+        "contract-after"
+      ],
+      "subject": "WEB-01 · Support the documented desktop and mobile widths.",
+      "verdict": "unchanged"
+    }
+  ],
+  "profile": "goal-delta",
+  "question": "What evidence stops carrying when the goal changes?",
+  "render": {
+    "palette": "workprint-profile-family-v1",
+    "pngRenderer": "workprint-profile-png-v1/stored-deflate/bitmap-5x7",
+    "rendererVersion": "profile-print-0.1.0"
+  },
+  "schemaVersion": "workprint-profile-ir/0.1",
+  "source": {
+    "kind": "workprint-profile-public-projection",
+    "profileIrSha256": "2bbea8803939cf0c4f907794a248bbfb2a3aeea1397e1761ebe3981cd0dca0ab",
+    "schemaVersion": "workprint-profile/0.1"
+  },
+  "sourceRevision": "offline-release-2026.08..offline-release-2026.09",
+  "sources": [
+    {
+      "id": "contract-before",
+      "label": "Offline release acceptance contract",
+      "revision": "offline-release-2026.08"
+    },
+    {
+      "id": "contract-after",
+      "label": "Offline release acceptance contract",
+      "revision": "offline-release-2026.09"
+    }
+  ],
+  "summary": {
+    "counts": {
+      "added": 1,
+      "affectedEvidence": 1,
+      "changed": 0,
+      "newlyStaleEvidence": 1,
+      "removed": 1,
+      "rerunEvidence": 0,
+      "retireEvidence": 1,
+      "unchanged": 2,
+      "uncoveredAddedItems": 1,
+      "usableEvidence": 2
+    },
+    "headline": "2 contract changes make 1 previously verified proof line stale."
+  },
+  "title": "Goal Delta · Offline release acceptance contract",
+  "visualForm": "fault"
+}
+</script>
+  <script>
+    (() => {
+      const data = JSON.parse(document.getElementById('profile-data').textContent);
+      const findings = new Map(data.findings.map((finding) => [finding.id, finding]));
+      const sources = new Map(data.sources.map((source) => [source.id, source]));
+      const detail = { verdict: document.getElementById('detailVerdict'), title: document.getElementById('detailTitle'), subject: document.getElementById('detailSubject'), kind: document.getElementById('detailKind'), sources: document.getElementById('detailSources'), extra: document.getElementById('detailExtra') };
+      const extra = (finding) => finding.affectedEvidenceIds ? 'Affected evidence ' + (finding.affectedEvidenceIds.join(', ') || 'none supplied') : finding.reasonCode ? 'Reason ' + finding.reasonCode : 'No profile-specific extension';
+      const clearTrace = () => document.querySelectorAll('.is-traced,[aria-pressed="true"]').forEach((element) => { element.classList.remove('is-traced'); element.setAttribute('aria-pressed', 'false'); });
+      const selectFinding = (id) => {
+        const finding = findings.get(id); if (!finding) return; clearTrace();
+        document.querySelectorAll('[data-finding-id="' + CSS.escape(id) + '"]').forEach((element) => { element.classList.add('is-traced'); element.setAttribute('aria-pressed', 'true'); });
+        finding.sourceRefs.forEach((sourceId) => document.querySelectorAll('[data-source-id="' + CSS.escape(sourceId) + '"]').forEach((element) => element.classList.add('is-traced')));
+        detail.verdict.textContent = finding.verdict.replaceAll('_', ' '); detail.title.textContent = finding.id; detail.subject.textContent = finding.subject; detail.kind.textContent = 'Kind ' + finding.kind; detail.sources.textContent = 'Sources ' + (finding.sourceRefs.join(', ') || 'none supplied'); detail.extra.textContent = extra(finding);
+        document.body.dataset.traceType = 'finding'; document.body.dataset.traceId = finding.id; document.body.dataset.traceSourceCount = String(finding.sourceRefs.length);
+      };
+      const selectSource = (id) => {
+        const source = sources.get(id); if (!source) return; clearTrace();
+        document.querySelectorAll('[data-source-id="' + CSS.escape(id) + '"]').forEach((element) => { element.classList.add('is-traced'); element.setAttribute('aria-pressed', 'true'); });
+        const linked = data.findings.filter((finding) => finding.sourceRefs.includes(id)); linked.forEach((finding) => document.querySelectorAll('[data-finding-id="' + CSS.escape(finding.id) + '"]').forEach((element) => element.classList.add('is-traced')));
+        detail.verdict.textContent = 'source revision'; detail.title.textContent = source.label; detail.subject.textContent = 'Revision ' + source.revision; detail.kind.textContent = 'Source ' + source.id; detail.sources.textContent = linked.length + ' linked finding' + (linked.length === 1 ? '' : 's'); detail.extra.textContent = 'No source content is embedded';
+        document.body.dataset.traceType = 'source'; document.body.dataset.traceId = source.id; document.body.dataset.traceFindingCount = String(linked.length);
+      };
+      const bind = (selector, callback, key) => document.querySelectorAll(selector).forEach((element) => { element.addEventListener('click', () => callback(element.dataset[key])); element.addEventListener('keydown', (event) => { if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); callback(element.dataset[key]); } }); });
+      bind('[data-finding-id]', selectFinding, 'findingId'); bind('[data-source-id]', selectSource, 'sourceId'); selectFinding("goal-delta-LEGACY-01");
+      const theme = document.getElementById('theme'); theme.addEventListener('click', () => { const paper = document.documentElement.dataset.theme === 'paper'; document.documentElement.dataset.theme = paper ? 'carbon' : 'paper'; theme.textContent = paper ? 'Paper mode' : 'Carbon mode'; });
+      const command = document.getElementById('command').textContent; const copy = async (button, fallback = false) => { const original = button.textContent; try { if (fallback) throw new Error('fallback'); await navigator.clipboard.writeText(command); button.dataset.copyResult = 'clipboard'; button.textContent = 'Copied'; } catch { const range = document.createRange(); range.selectNodeContents(document.getElementById('command')); const selection = window.getSelection(); selection.removeAllRanges(); selection.addRange(range); button.dataset.copyResult = 'fallback-selection'; button.textContent = 'Selected'; } window.setTimeout(() => { button.textContent = original; }, 1200); };
+      document.getElementById('copy').addEventListener('click', (event) => copy(event.currentTarget, event.shiftKey)); document.getElementById('copyBottom').addEventListener('click', (event) => copy(event.currentTarget, event.shiftKey));
+    })();
+  </script>
+</body>
+</html>

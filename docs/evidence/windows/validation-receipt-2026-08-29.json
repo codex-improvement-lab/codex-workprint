@@ -1,0 +1,96 @@
+{
+  "schemaVersion": "0.1",
+  "receiptType": "windows-release-candidate-validation",
+  "recordedAt": "2026-08-29T23:23:46+08:00",
+  "finalRerunAt": "2026-08-29T23:44:02+08:00",
+  "candidate": {
+    "packageVersion": "0.1.0-rc.1",
+    "gitState": "independent uncommitted child repository; no commit identity exists yet",
+    "publicHeroIrSha256": "9b19dd77f7de5f6ae4cb432340f9dd7d3d018ac35cd8357c73fac58abe4ccded",
+    "publicAlternateIrSha256": "6fe6b79e0586d3bde95db820b93e2920afe5632363954f49aef8392fd72b7f44"
+  },
+  "environment": {
+    "operatingSystem": "Microsoft Windows 11 Home Chinese edition",
+    "osVersion": "10.0.26200",
+    "osBuild": "26200",
+    "architecture": "AMD64 / 64-bit",
+    "node": "v24.19.0",
+    "codexCli": "codex-cli 0.145.0",
+    "timezone": "Singapore Standard Time"
+  },
+  "observations": [
+    {
+      "gate": "core unit and integration suite",
+      "command": "node --test",
+      "result": "observed pass",
+      "exitCode": 0,
+      "tests": { "total": 16, "pass": 16, "fail": 0 },
+      "log": {
+        "path": "docs/evidence/windows/node-test-2026-08-29.txt",
+        "bytes": 1354,
+        "sha256": "f94b342cc1a310b4ca271a85692c39f474af6b6bb84da925a7365043d23f6e57"
+      }
+    },
+    {
+      "gate": "release package and evidence contract",
+      "command": "node ./scripts/release-check.mjs",
+      "result": "observed pass",
+      "exitCode": 0,
+      "checks": { "total": 89, "pass": 89, "fail": 0 },
+      "log": {
+        "path": "docs/evidence/windows/release-check-2026-08-29.txt",
+        "bytes": 3532,
+        "sha256": "d091b440c3deaca9fb42f4a10f981fce8de872db5f2be312624d876489a78017"
+      }
+    },
+    {
+      "gate": "two strict real-input public bundles",
+      "command": "codex-workprint verify ./demo; codex-workprint verify ./examples/alternate-workprint",
+      "result": "observed pass",
+      "exitCodes": [0, 0],
+      "checkedFilesPerBundle": 7,
+      "log": {
+        "path": "docs/evidence/windows/demo-verify-2026-08-29.txt",
+        "bytes": 145,
+        "sha256": "3490f4133bb651147619e894b208e44abba131b82c0bf45f9ab832159f215dcf"
+      }
+    },
+    {
+      "gate": "real-run public inspect preview",
+      "command": "codex-workprint inspect <private run B> with explicit public title, labels, and annotations",
+      "result": "observed pass",
+      "exitCode": 0,
+      "rawValuesInLog": false,
+      "publicIrSha256": "9b19dd77f7de5f6ae4cb432340f9dd7d3d018ac35cd8357c73fac58abe4ccded",
+      "log": {
+        "path": "docs/evidence/windows/real-run-b-inspect-2026-08-29.txt",
+        "bytes": 2477,
+        "sha256": "844165d63afacabc2c3e21d604dfe3b3f85484d2b02c791f411526596e171d9b"
+      }
+    },
+    {
+      "gate": "macOS gate rejects non-Darwin",
+      "command": "node ./scripts/macos-gate.mjs",
+      "result": "observed fail-closed refusal on Windows; not a macOS run",
+      "expectedExitCode": 2,
+      "observedExitCode": 2,
+      "log": {
+        "path": "docs/evidence/windows/macos-gate-refusal-2026-08-29.txt",
+        "bytes": 103,
+        "sha256": "7d72a0c923c36ef40d999d9013e4ea4b4409d8f0e204d9e75401b63a125b3570"
+      }
+    }
+  ],
+  "linkedReceipts": {
+    "realCodexRuns": "docs/evidence/real-runs-2026-08-29.json",
+    "browserQa": "docs/evidence/browser/qa-receipt-2026-08-29.json"
+  },
+  "notRun": {
+    "npmPackDryRun": "npm is not available in the local bundled PATH; deterministic package inventory is covered by the release check and hosted CI remains configured/not observed",
+    "externalGitHubActions": "configured / not observed",
+    "physicalMacos": "pending exact Darwin handoff",
+    "realUsersOrMarket": "pending",
+    "commitTagRemoteOrPublish": "pending user action"
+  },
+  "claimCeiling": "This receipt establishes automated Windows behavior for the named candidate bytes and linked public artifacts. It does not establish external CI, physical-macOS behavior, source authenticity, task correctness, author identity, independent-user success, adoption, or market demand."
+}

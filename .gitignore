@@ -1,0 +1,11 @@
+node_modules/
+dist/
+.workprint-private/
+.workprint-tmp/
+._audit/
+coverage/
+*.tgz
+release/*.zip
+expert-review/*.zip
+*.log
+.DS_Store

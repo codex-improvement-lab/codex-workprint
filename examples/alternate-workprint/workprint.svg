@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 980" role="img" aria-labelledby="workprint-title workprint-desc" class="workprint-artifact shape-reveal">
+  <title id="workprint-title">Change one tiny status and observe the check — Codex Workprint Run Sheet</title>
+  <desc id="workprint-desc">A privacy-first Run Sheet of 11 ordered Codex JSONL observations. Geometry expresses sequence and whitelisted observation structure, not time, correctness, recovery, identity, or authenticity.</desc>
+  <style>
+    .workprint-artifact{background:#f1ecdf;font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif}.eyebrow,.metric-label,.legend,.footer,.return-label,.quiet-label,.public-label,.panel-label,.moment-label,.structure-label,.fold-label,.turn-label{font-family:"Arial Narrow",Inter,ui-sans-serif,system-ui,sans-serif;font-weight:750;letter-spacing:1.7px}.eyebrow{font-size:13px;fill:#24251f}.run-title{font-family:Georgia,"Times New Roman",serif;font-weight:700;fill:#f1ecdf}.metric-number{font-size:34px;font-weight:780;fill:#f1ecdf}.metric-label{font-size:10px;fill:#aeb4ad}.legend{font-size:10px;fill:#aeb4ad}.footer{font-size:11px;fill:#24251f}.return-label{font-size:9px;fill:#ff665c}.quiet-label{font-size:9px;fill:#aeb4ad}.public-label{font-size:10px;fill:#24251f}.panel-label{font-size:10px;fill:#aeb4ad}.moment-seq{font-size:22px;font-weight:800;fill:#11120f}.moment-label{font-size:10px;fill:#f1ecdf}.moment-detail{font-size:11px;fill:#aeb4ad}.structure-number{font-size:25px;font-weight:800;fill:#f1ecdf}.structure-label{font-size:9px;fill:#aeb4ad}.station-label{font-size:8px;font-weight:760;fill:#f1ecdf;letter-spacing:.8px}.station-seq{font-size:8px;font-weight:800;fill:#11120f}.empty{font-size:14px;letter-spacing:2px;fill:#aeb4ad}.phase-text{font-size:8px;font-weight:800;letter-spacing:.7px;fill:#f1ecdf}.fold-label,.turn-label{font-size:8px;fill:#aeb4ad}.station:focus{outline:none}.station:focus .focus-ring,.workline-station.is-replay-current .focus-ring{opacity:1}.workline-segment{stroke-dasharray:1800;stroke-dashoffset:0}.fold-segment{stroke-width:4}.replay-running .workline-segment,.replay-running .workline-station{opacity:.12}.replay-running .workline-segment.is-revealed,.replay-running .workline-station.is-revealed{opacity:1}.workline-segment,.workline-station{transition:opacity .18s ease}.public-label+.public-label{margin-left:8px}
+    @media(prefers-reduced-motion:no-preference){.shape-reveal .workline-segment{animation:reveal 1.65s cubic-bezier(.2,.75,.2,1) both;animation-delay:calc(var(--segment) * 38ms)}.workline-station.is-replay-current .focus-ring{animation:pulse .72s ease-out both}@keyframes reveal{from{stroke-dashoffset:1800}to{stroke-dashoffset:0}}@keyframes pulse{0%{r:10;opacity:1}100%{r:20;opacity:.15}}}
+  </style>
+  <rect width="1600" height="980" fill="#f1ecdf"/>
+  <path d="M0 0H1600V12H0Z" fill="#2457ff"/>
+  <path d="M1040 0H1330V12H1040Z" fill="#c7ff36"/>
+  <path d="M1330 0H1600V12H1330Z" fill="#ff665c"/>
+  <g transform="translate(48 55)">
+    <text class="eyebrow">CODEX WORKPRINT · THE RUN HAS A SHAPE</text>
+    <text x="1504" text-anchor="end" class="eyebrow">RUN SHEET · SHAPE 272932DB4351</text>
+  </g>
+  <g transform="translate(30 82)">
+    <rect width="1540" height="822" rx="4" fill="#11120f"/>
+    <path d="M0 168H1540M0 590H1540" stroke="#34362f" stroke-width="1"/>
+    <text x="58" y="69" class="run-title" style="font-size:40px">Change one tiny status and observe the check</text>
+    <text x="60" y="111" class="panel-label">ONE EXPLICIT RUN · PUBLIC OBSERVATION STRUCTURE · TIMING NOT-OBSERVED</text>
+    <g transform="translate(1065 39)">
+      <g transform="translate(0 0)"><text y="34" class="metric-number" style="fill:#f1ecdf">3</text><text y="54" class="metric-label">STARTED</text></g>
+      <g transform="translate(112 0)"><text y="34" class="metric-number" style="fill:#f1ecdf">3</text><text y="54" class="metric-label">COMPLETED</text></g>
+      <g transform="translate(242 0)"><text y="34" class="metric-number" style="fill:#ff665c">0</text><text y="54" class="metric-label">FAILED</text></g>
+      <g transform="translate(345 0)"><text y="34" class="metric-number" style="fill:#aeb4ad">2</text><text y="54" class="metric-label">NO STATUS / UNKNOWN</text></g>
+    </g>
+    <g transform="translate(60 197)">
+      <text class="panel-label">01 · OBSERVED WORKLINE</text>
+      <text x="785" y="4" class="quiet-label">NO POST-FAIL COMPLETION OBSERVED</text>
+      <text x="1420" text-anchor="end" class="panel-label">1 FOLD · 11 ORDERED OBSERVATIONS</text>
+      <g transform="translate(0 24)">
+        <g><path d="M0 180.88H1420" stroke="#292b26" stroke-width="1"/><path d="M0 322H1420" stroke="#23241f" stroke-width="1" stroke-dasharray="3 9"/><text x="0" y="21" text-anchor="start" class="fold-label">FOLD 01 · LEFT → RIGHT</text></g>
+        <g class="turn-span" opacity="0.72"><path d="M 175.6 67.74V59.74H1378V67.74" fill="none" stroke="#aeb4ad" stroke-width="1"/><text x="776.8" y="54.74" text-anchor="middle" class="turn-label">TURN 01 · OBSERVED RANGE</text></g><path d="M 442.8 155.4 Q 509.6 240.52, 576.4 198.52" fill="none" stroke="#aeb4ad" stroke-width="1.5" stroke-dasharray="3 5" opacity="0.52"/><path d="M 710 196.56 Q 776.8 295.4, 843.6 253.4" fill="none" stroke="#aeb4ad" stroke-width="1.5" stroke-dasharray="3 5" opacity="0.52"/><path d="M 977.2 147.56 Q 1044 234.64, 1110.8 192.64" fill="none" stroke="#aeb4ad" stroke-width="1.5" stroke-dasharray="3 5" opacity="0.52"/><path d="M 42 70.14 C 98.11 70.14, 119.49 109.34, 175.6 109.34" fill="none" stroke="#f1ecdf" stroke-width="24" opacity="0.055" stroke-linecap="round"/><path class="workline-segment" data-step="2" style="--segment:0" d="M 42 70.14 C 98.11 70.14, 119.49 109.34, 175.6 109.34" fill="none" stroke="#f1ecdf" stroke-width="6" stroke-linecap="round"/><path d="M 175.6 109.34 C 231.71 109.34, 253.09 259.28, 309.2 259.28" fill="none" stroke="#aeb4ad" stroke-width="24" opacity="0.055" stroke-linecap="round"/><path class="workline-segment" data-step="3" style="--segment:1" d="M 175.6 109.34 C 231.71 109.34, 253.09 259.28, 309.2 259.28" fill="none" stroke="#aeb4ad" stroke-width="6" stroke-linecap="round"/><path d="M 309.2 259.28 C 365.31 259.28, 386.69 155.4, 442.8 155.4" fill="none" stroke="#2457ff" stroke-width="24" opacity="0.055" stroke-linecap="round"/><path class="workline-segment" data-step="4" style="--segment:2" d="M 309.2 259.28 C 365.31 259.28, 386.69 155.4, 442.8 155.4" fill="none" stroke="#2457ff" stroke-width="6" stroke-linecap="round"/><path d="M 442.8 155.4 C 498.91 155.4, 520.29 198.52, 576.4 198.52" fill="none" stroke="#c7ff36" stroke-width="24" opacity="0.055" stroke-linecap="round"/><path class="workline-segment" data-step="5" style="--segment:3" d="M 442.8 155.4 C 498.91 155.4, 520.29 198.52, 576.4 198.52" fill="none" stroke="#c7ff36" stroke-width="6" stroke-linecap="round"/><path d="M 576.4 198.52 C 632.51 198.52, 653.89 196.56, 710 196.56" fill="none" stroke="#2457ff" stroke-width="24" opacity="0.055" stroke-linecap="round"/><path class="workline-segment" data-step="6" style="--segment:4" d="M 576.4 198.52 C 632.51 198.52, 653.89 196.56, 710 196.56" fill="none" stroke="#2457ff" stroke-width="6" stroke-linecap="round"/><path d="M 710 196.56 C 766.11 196.56, 787.49 253.4, 843.6 253.4" fill="none" stroke="#c7ff36" stroke-width="24" opacity="0.055" stroke-linecap="round"/><path class="workline-segment" data-step="7" style="--segment:5" d="M 710 196.56 C 766.11 196.56, 787.49 253.4, 843.6 253.4" fill="none" stroke="#c7ff36" stroke-width="6" stroke-linecap="round"/><path d="M 843.6 253.4 C 899.71 253.4, 921.09 147.56, 977.2 147.56" fill="none" stroke="#2457ff" stroke-width="24" opacity="0.055" stroke-linecap="round"/><path class="workline-segment" data-step="8" style="--segment:6" d="M 843.6 253.4 C 899.71 253.4, 921.09 147.56, 977.2 147.56" fill="none" stroke="#2457ff" stroke-width="6" stroke-linecap="round"/><path d="M 977.2 147.56 C 1033.31 147.56, 1054.69 192.64, 1110.8 192.64" fill="none" stroke="#c7ff36" stroke-width="24" opacity="0.055" stroke-linecap="round"/><path class="workline-segment" data-step="9" style="--segment:7" d="M 977.2 147.56 C 1033.31 147.56, 1054.69 192.64, 1110.8 192.64" fill="none" stroke="#c7ff36" stroke-width="6" stroke-linecap="round"/><path d="M 1110.8 192.64 C 1166.91 192.64, 1188.29 257.32, 1244.4 257.32" fill="none" stroke="#aeb4ad" stroke-width="24" opacity="0.055" stroke-linecap="round"/><path class="workline-segment" data-step="10" style="--segment:8" d="M 1110.8 192.64 C 1166.91 192.64, 1188.29 257.32, 1244.4 257.32" fill="none" stroke="#aeb4ad" stroke-width="6" stroke-linecap="round"/><path d="M 1244.4 257.32 C 1300.51 257.32, 1321.89 89.74, 1378 89.74" fill="none" stroke="#f1ecdf" stroke-width="24" opacity="0.055" stroke-linecap="round"/><path class="workline-segment" data-step="11" style="--segment:9" d="M 1244.4 257.32 C 1300.51 257.32, 1321.89 89.74, 1378 89.74" fill="none" stroke="#f1ecdf" stroke-width="6" stroke-linecap="round"/><g transform="translate(42 70.14)" class="station workline-station" data-step="1" style="--station:0">
+    <circle class="focus-ring" r="15" fill="none" stroke="#f1ecdf" stroke-width="2" opacity="0"/>
+    <circle r="10" fill="#f1ecdf" stroke="#11120f" stroke-width="3"/>
+    <circle r="4" fill="#11120f"/>
+    <text y="3" text-anchor="middle" class="station-seq">1</text>
+    <text y="-16" text-anchor="middle" class="station-label">RUN</text>
+
+  </g><g transform="translate(175.6 109.34)" class="station workline-station" data-step="2" style="--station:1">
+    <circle class="focus-ring" r="15" fill="none" stroke="#f1ecdf" stroke-width="2" opacity="0"/>
+    <circle r="10" fill="#f1ecdf" stroke="#11120f" stroke-width="3"/>
+    <circle r="4" fill="#11120f"/>
+    <text y="3" text-anchor="middle" class="station-seq">2</text>
+    <text y="-16" text-anchor="middle" class="station-label">TURN</text>
+
+  </g><g transform="translate(309.2 259.28)" class="station workline-station" data-step="3" style="--station:2">
+    <circle class="focus-ring" r="15" fill="none" stroke="#f1ecdf" stroke-width="2" opacity="0"/>
+    <circle r="10" fill="#aeb4ad" stroke="#11120f" stroke-width="3"/>
+    <circle r="4" fill="#11120f"/>
+    <text y="3" text-anchor="middle" class="station-seq">3</text>
+    <text y="-16" text-anchor="middle" class="station-label">MESSAGE</text>
+
+  </g><g transform="translate(442.8 155.4)" class="station workline-station" data-step="4" style="--station:3">
+    <circle class="focus-ring" r="15" fill="none" stroke="#f1ecdf" stroke-width="2" opacity="0"/>
+    <circle r="10" fill="#2457ff" stroke="#11120f" stroke-width="3"/>
+    <circle r="4" fill="#11120f"/>
+    <text y="3" text-anchor="middle" class="station-seq">4</text>
+    <text y="-16" text-anchor="middle" class="station-label">COMMAND</text>
+    <g transform="translate(0 20)"><rect x="-26" y="0" width="52" height="15" rx="2" fill="#f1ecdf" opacity="0.24"/><text y="11" text-anchor="middle" class="phase-text">INSPECT</text></g>
+  </g><g transform="translate(576.4 198.52)" class="station workline-station" data-step="5" style="--station:4">
+    <circle class="focus-ring" r="15" fill="none" stroke="#f1ecdf" stroke-width="2" opacity="0"/>
+    <circle r="10" fill="#c7ff36" stroke="#11120f" stroke-width="3"/>
+    <circle r="4" fill="#11120f"/>
+    <text y="3" text-anchor="middle" class="station-seq">5</text>
+    <text y="-16" text-anchor="middle" class="station-label">COMMAND</text>
+
+  </g><g transform="translate(710 196.56)" class="station workline-station" data-step="6" style="--station:5">
+    <circle class="focus-ring" r="15" fill="none" stroke="#f1ecdf" stroke-width="2" opacity="0"/>
+    <circle r="10" fill="#2457ff" stroke="#11120f" stroke-width="3"/>
+    <circle r="4" fill="#11120f"/>
+    <text y="3" text-anchor="middle" class="station-seq">6</text>
+    <text y="-16" text-anchor="middle" class="station-label">FILE CHANGE</text>
+    <g transform="translate(0 20)"><rect x="-26" y="0" width="52" height="15" rx="2" fill="#2457ff" opacity="0.24"/><text y="11" text-anchor="middle" class="phase-text">EDIT</text></g>
+  </g><g transform="translate(843.6 253.4)" class="station workline-station" data-step="7" style="--station:6">
+    <circle class="focus-ring" r="15" fill="none" stroke="#f1ecdf" stroke-width="2" opacity="0"/>
+    <circle r="10" fill="#c7ff36" stroke="#11120f" stroke-width="3"/>
+    <circle r="4" fill="#11120f"/>
+    <text y="3" text-anchor="middle" class="station-seq">7</text>
+    <text y="-16" text-anchor="middle" class="station-label">FILE CHANGE</text>
+
+  </g><g transform="translate(977.2 147.56)" class="station workline-station" data-step="8" style="--station:7">
+    <circle class="focus-ring" r="15" fill="none" stroke="#f1ecdf" stroke-width="2" opacity="0"/>
+    <circle r="10" fill="#2457ff" stroke="#11120f" stroke-width="3"/>
+    <circle r="4" fill="#11120f"/>
+    <text y="3" text-anchor="middle" class="station-seq">8</text>
+    <text y="-16" text-anchor="middle" class="station-label">COMMAND</text>
+
+  </g><g transform="translate(1110.8 192.64)" class="station workline-station" data-step="9" style="--station:8">
+    <circle class="focus-ring" r="15" fill="none" stroke="#f1ecdf" stroke-width="2" opacity="0"/>
+    <circle r="10" fill="#c7ff36" stroke="#11120f" stroke-width="3"/>
+    <circle r="4" fill="#11120f"/>
+    <text y="3" text-anchor="middle" class="station-seq">9</text>
+    <text y="-16" text-anchor="middle" class="station-label">COMMAND</text>
+    <g transform="translate(0 20)"><rect x="-26" y="0" width="52" height="15" rx="2" fill="#c7ff36" opacity="0.24"/><text y="11" text-anchor="middle" class="phase-text">VERIFY</text></g>
+  </g><g transform="translate(1244.4 257.32)" class="station workline-station" data-step="10" style="--station:9">
+    <circle class="focus-ring" r="15" fill="none" stroke="#f1ecdf" stroke-width="2" opacity="0"/>
+    <circle r="10" fill="#aeb4ad" stroke="#11120f" stroke-width="3"/>
+    <circle r="4" fill="#11120f"/>
+    <text y="3" text-anchor="middle" class="station-seq">10</text>
+    <text y="-16" text-anchor="middle" class="station-label">MESSAGE</text>
+    <g transform="translate(0 20)"><rect x="-26" y="0" width="52" height="15" rx="2" fill="#f1ecdf" opacity="0.24"/><text y="11" text-anchor="middle" class="phase-text">DELIVER</text></g>
+  </g><g transform="translate(1378 89.74)" class="station workline-station" data-step="11" style="--station:10">
+    <circle class="focus-ring" r="15" fill="none" stroke="#f1ecdf" stroke-width="2" opacity="0"/>
+    <circle r="10" fill="#f1ecdf" stroke="#11120f" stroke-width="3"/>
+    <circle r="4" fill="#11120f"/>
+    <text y="3" text-anchor="middle" class="station-seq">11</text>
+    <text y="-16" text-anchor="middle" class="station-label">TURN</text>
+
+  </g>
+      </g>
+    </g>
+    <g transform="translate(60 616)">
+      <g>
+        <text class="panel-label">02 · TURNING POINTS</text>
+        <g transform="translate(0 36)"><rect width="38" height="30" rx="2" fill="#c7ff36"/><text x="19" y="22" text-anchor="middle" class="moment-seq">3</text><text x="53" y="11" class="moment-label">ITEM COMPLETION OBSERVED</text><text x="53" y="28" class="moment-detail">An item emitted a completed observation with no broader outcome i…</text></g><g transform="translate(0 84)"><rect width="38" height="30" rx="2" fill="#c7ff36"/><text x="19" y="22" text-anchor="middle" class="moment-seq">7</text><text x="53" y="11" class="moment-label">FILE CHANGE COMPLETION OBSERVED</text><text x="53" y="28" class="moment-detail">A file-change item emitted a completed observation; content stays…</text></g><g transform="translate(0 132)"><rect width="38" height="30" rx="2" fill="#c7ff36"/><text x="19" y="22" text-anchor="middle" class="moment-seq">11</text><text x="53" y="11" class="moment-label">TURN COMPLETION OBSERVED</text><text x="53" y="28" class="moment-detail">The event stream emitted turn.completed; task correctness is not …</text></g>
+      </g>
+      <path d="M545 -4V164M1085 -4V164" stroke="#34362f" stroke-width="1"/>
+      <g transform="translate(575 0)">
+        <text class="panel-label">03 · RUN RHYTHM / SEQUENCE, NOT TIME</text>
+        <g transform="translate(0 30)"><path d="M0 92H485" stroke="#45473f" stroke-width="1"/><rect x="15.55" y="70" width="13" height="22" fill="#f1ecdf" opacity="0.92"/><rect x="59.64" y="62" width="13" height="30" fill="#f1ecdf" opacity="0.92"/><rect x="103.73" y="50" width="13" height="42" fill="#aeb4ad" opacity="0.62"/><rect x="147.82" y="38" width="13" height="54" fill="#2457ff" opacity="0.92"/><rect x="191.91" y="38" width="13" height="54" fill="#c7ff36" opacity="0.92"/><rect x="236" y="24" width="13" height="68" fill="#2457ff" opacity="0.92"/><rect x="280.09" y="24" width="13" height="68" fill="#c7ff36" opacity="0.92"/><rect x="324.18" y="38" width="13" height="54" fill="#2457ff" opacity="0.92"/><rect x="368.27" y="38" width="13" height="54" fill="#c7ff36" opacity="0.92"/><rect x="412.36" y="50" width="13" height="42" fill="#aeb4ad" opacity="0.62"/><rect x="456.45" y="62" width="13" height="30" fill="#f1ecdf" opacity="0.92"/><text y="116" class="structure-label">1</text><text x="485" y="116" text-anchor="end" class="structure-label">11 · ORDERED</text></g>
+        <text x="0" y="148" class="structure-label">3 ITEM PAIRS · 0 OPEN · 1 WORKLINE FOLD</text>
+      </g>
+      <g transform="translate(1115 0)">
+        <text class="panel-label">04 · PUBLIC STRUCTURE</text>
+        <g transform="translate(0 28)"><text class="structure-number">1</text><text y="22" class="structure-label">TURN RANGES</text></g>
+        <g transform="translate(112 28)"><text class="structure-number">4</text><text y="22" class="structure-label">PUBLIC MARKERS</text></g>
+        <g transform="translate(236 28)"><text class="structure-number">3</text><text y="22" class="structure-label">ITEM PAIRS</text></g>
+        <text y="80" class="structure-label">#4 · INSPECT · Read status</text><text y="98" class="structure-label">#6 · EDIT · Update status</text><text y="116" class="structure-label">#9 · VERIFY · Diff check</text><text y="134" class="structure-label">#10 · DELIVER · Concise public report</text>
+      </g>
+    </g>
+  </g>
+  <g transform="translate(48 944)">
+    <text class="footer">npx codex-workprint build run.jsonl --title &quot;…&quot; --out ./workprint</text>
+    <text x="1504" text-anchor="end" class="footer">PUBLIC PROJECTION · NOT AN ATTESTATION · NO TRANSCRIPT</text>
+    <text y="23" class="public-label">Real Codex CLI 0.145.0 / Windows · Alternate public Workline</text>
+    <text x="1504" y="23" text-anchor="end" class="public-label">MADE WITH CODEX WORKPRINT · SHAPE 272932DB4351</text>
+  </g>
+</svg>

@@ -1,0 +1,112 @@
+{
+  "schemaVersion": "0.1",
+  "receiptType": "windows-release-candidate-validation",
+  "recordedAt": "2026-08-30T07:00:00+08:00",
+  "finalized": true,
+  "candidate": {
+    "packageVersion": "0.1.0-rc.3",
+    "gitState": "independent uncommitted child repository; no commit identity exists yet",
+    "publicHeroShapeSha256": "21fc1fde4c98b640a21ca5250733687aaa40f8a1cbabaa29e018cc4ddbc07872",
+    "publicHeroIrSha256": "614080189701cb097b3be313f1e996aaf7aa0fe6821b6f302802fa6ce6f7ed5a",
+    "publicAlternateShapeSha256": "272932db435165f5b8d64c42356067d6e8069a3ab093bd7450f54aa3866ff874",
+    "publicAlternateIrSha256": "0afa1b7883989858b7517425e8b7d418cde4c9ea2c634a5d20debbedf3074e93",
+    "rendererVersion": "workline-0.3.0",
+    "pngRenderer": "workprint-png-v3/stored-deflate/bitmap-5x7"
+  },
+  "environment": {
+    "operatingSystem": "Microsoft Windows 11 Home Chinese edition",
+    "osVersion": "10.0.26200",
+    "architecture": "AMD64 / 64-bit",
+    "node": "v24.19.0",
+    "codexCli": "codex-cli 0.145.0",
+    "timezone": "Singapore Standard Time"
+  },
+  "observations": [
+    {
+      "gate": "core unit and integration suite",
+      "command": "node --test",
+      "result": "observed pass",
+      "exitCode": 0,
+      "tests": { "total": 21, "pass": 21, "fail": 0 },
+      "log": {
+        "path": "docs/evidence/windows/node-test-2026-08-30-rc3.txt",
+        "bytes": 1889,
+        "sha256": "233516d9aef0961c15af068c975c4d9ce4f2a1fad2258b54cec2caa4408b26b4"
+      }
+    },
+    {
+      "gate": "release package and evidence contract",
+      "command": "node ./scripts/release-check.mjs",
+      "result": "observed pass",
+      "exitCode": 0,
+      "checks": { "total": 181, "pass": 181, "fail": 0 },
+      "log": {
+        "path": "docs/evidence/windows/release-check-2026-08-30-rc3.txt",
+        "bytes": 234,
+        "sha256": "78c10ff2a865a3e99b96ad567ca069860eb5425e29c017ea659d3f6ab1b3cf96"
+      }
+    },
+    {
+      "gate": "two strict real-input public bundles",
+      "command": "codex-workprint verify ./demo; codex-workprint verify ./examples/alternate-workprint",
+      "result": "observed pass",
+      "exitCodes": [0, 0],
+      "checkedFilesPerBundle": 7,
+      "log": {
+        "path": "docs/evidence/windows/demo-verify-2026-08-30-rc3.txt",
+        "bytes": 344,
+        "sha256": "d648484cefca6b644242960dab253237b17d3d046b4ab92270b8c7395e89f0db"
+      }
+    },
+    {
+      "gate": "real-run public projections",
+      "result": "observed pass",
+      "rawValuesPublished": false,
+      "rawInputDigestPublished": false,
+      "receipt": "docs/evidence/real-runs-2026-08-30-rc3.json",
+      "receiptSha256": "5d1a42239a984c88749d2fca254477cc537a4295690fecce4478ab814d0c3b19"
+    },
+    {
+      "gate": "browser desktop and narrow interactive QA",
+      "result": "observed pass on named Windows browser surface",
+      "consoleErrorsAndWarnings": 0,
+      "remoteRequestsObserved": 0,
+      "receipt": "docs/evidence/browser/qa-receipt-2026-08-30-rc3.json",
+      "receiptSha256": "e699bba6bc1d01df1edbb592c14465d4933da9dc99c266da8c4361920e3653dc"
+    },
+    {
+      "gate": "macOS gate rejects non-Darwin",
+      "command": "node ./scripts/macos-gate.mjs",
+      "result": "observed fail-closed refusal on Windows; not a macOS run",
+      "expectedExitCode": 2,
+      "observedExitCode": 2,
+      "log": {
+        "path": "docs/evidence/windows/macos-gate-refusal-2026-08-30-rc3.txt",
+        "bytes": 325,
+        "sha256": "5c837186a7666f390492480b6fe28668e17df457ac823bc37f6c4f6ae63d48ed"
+      }
+    },
+    {
+      "gate": "GitHub social preview",
+      "result": "observed local lossless recompression",
+      "path": "docs/assets/github-social-preview.png",
+      "dimensions": "1200x630",
+      "bytes": 14060,
+      "sha256": "5a465942027adade55bf3eaafd21ca68b0bfb78c5894dc8daa2d6916aa478e41",
+      "pixelEqualToHeroShareCard": true,
+      "method": "Pillow RGB pixel comparison; not a browser or GitHub upload result"
+    }
+  ],
+  "linkedReceipts": {
+    "realCodexRuns": "docs/evidence/real-runs-2026-08-30-rc3.json",
+    "browserQa": "docs/evidence/browser/qa-receipt-2026-08-30-rc3.json"
+  },
+  "notRun": {
+    "npmPackDryRun": "npm is not available in the local bundled PATH; the explicit static allowlist is checked, but npm pack --dry-run remains pending and pnpm was not substituted",
+    "externalGitHubActions": "configured / not observed",
+    "physicalMacos": "pending rc.3 exact Darwin handoff; rc.2 receipt is historical only",
+    "realUsersOrMarket": "pending",
+    "commitTagRemoteOrPublish": "pending user action"
+  },
+  "claimCeiling": "This receipt establishes automated Windows behavior for the named rc.3 candidate bytes and linked public artifacts. It does not establish external CI, npm tarball contents, physical-macOS behavior, source authenticity, task correctness, author identity, independent-user success, adoption, or market demand."
+}

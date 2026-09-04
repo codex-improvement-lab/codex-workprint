@@ -1,0 +1,75 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:codex-workprint:profile-input:0.1",
+  "title": "Codex Workprint public profile exchange input v0.1",
+  "type": "object",
+  "required": ["schemaVersion", "profile", "title", "sourceRevision", "sources", "findings", "summary"],
+  "properties": {
+    "schemaVersion": { "const": "workprint-profile/0.1" },
+    "profile": { "enum": ["continuity", "goal-delta", "context-receipt"] },
+    "title": { "type": "string", "minLength": 1, "maxLength": 240 },
+    "sourceRevision": { "type": "string", "minLength": 1, "maxLength": 640 },
+    "sources": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 64,
+      "items": {
+        "type": "object",
+        "required": ["id", "label", "revision"],
+        "properties": {
+          "id": { "$ref": "#/$defs/publicIdentifier" },
+          "label": { "$ref": "#/$defs/publicText" },
+          "revision": { "$ref": "#/$defs/publicText" }
+        }
+      }
+    },
+    "findings": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 128,
+      "items": {
+        "type": "object",
+        "required": ["id", "kind", "verdict", "subject", "sourceRefs"],
+        "properties": {
+          "id": { "$ref": "#/$defs/publicIdentifier" },
+          "kind": { "$ref": "#/$defs/publicIdentifier" },
+          "verdict": { "type": "string" },
+          "subject": { "$ref": "#/$defs/publicText" },
+          "sourceRefs": { "type": "array", "maxItems": 32, "uniqueItems": true, "items": { "$ref": "#/$defs/publicIdentifier" } },
+          "affectedEvidenceIds": { "type": "array", "maxItems": 128, "items": { "$ref": "#/$defs/publicText" } },
+          "reasonCode": { "$ref": "#/$defs/publicIdentifier" },
+          "currentRevision": { "$ref": "#/$defs/publicText" },
+          "expectedRevision": { "$ref": "#/$defs/publicText" },
+          "resolved": { "type": "boolean" }
+        }
+      }
+    },
+    "summary": {
+      "type": "object",
+      "required": ["headline", "counts"],
+      "properties": {
+        "headline": { "$ref": "#/$defs/publicText" },
+        "counts": { "type": "object", "additionalProperties": { "type": "integer", "minimum": 0 } }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "if": { "properties": { "profile": { "const": "continuity" } } },
+      "then": { "properties": { "findings": { "items": { "properties": { "verdict": { "enum": ["carried", "lost", "stale", "invented"] } } } } } }
+    },
+    {
+      "if": { "properties": { "profile": { "const": "goal-delta" } } },
+      "then": { "properties": { "findings": { "items": { "properties": { "verdict": { "enum": ["added", "removed", "changed", "unchanged"] } } } } } }
+    },
+    {
+      "if": { "properties": { "profile": { "const": "context-receipt" } } },
+      "then": { "properties": { "findings": { "items": { "properties": { "verdict": { "enum": ["prepared", "observed", "excluded", "not_observed", "stale", "conflict"] } } } } } }
+    }
+  ],
+  "$defs": {
+    "publicIdentifier": { "type": "string", "minLength": 1, "maxLength": 128, "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$" },
+    "publicText": { "type": "string", "minLength": 1, "maxLength": 640 }
+  }
+}
+

@@ -1,0 +1,11 @@
+CANDIDATE=0.1.0-rc.3
+NODE=v24.19.0
+PLATFORM=Windows 11 10.0.26200 x64
+
+COMMAND=node ./bin/codex-workprint.js verify ./demo
+VERIFIED 7 public bundle files; no drift observed.
+RECORDED_EXIT_CODE=0
+
+COMMAND=node ./bin/codex-workprint.js verify ./examples/alternate-workprint
+VERIFIED 7 public bundle files; no drift observed.
+RECORDED_EXIT_CODE=0

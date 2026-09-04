@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en" data-theme="carbon" data-profile="continuity">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; script-src 'unsafe-inline'; img-src data:; font-src 'none'; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <meta name="color-scheme" content="dark light">
+  <title>Handoff Receipt — Research archive migration — Codex Workprint</title>
+  <style>
+    :root{--carbon:#11120f;--paper:#f1ecdf;--acid:#c7ff36;--cobalt:#2457ff;--coral:#ff665c;--silver:#aeb4ad;--amber:#ffb340;--ink:#24251f;--muted:#858b83;--rule:#35372f;color-scheme:dark}
+    html[data-theme="carbon"]{--page:#090a08;--surface:#151612;--text:#f1ecdf;--surface-rule:#33352e;color-scheme:dark}html[data-theme="paper"]{--page:#e7e0d2;--surface:#f6f1e7;--text:#24251f;--surface-rule:#c9c3b7;color-scheme:light}
+    *{box-sizing:border-box}html,body{margin:0;min-height:100%;overflow-x:hidden}body{background:var(--page);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.45}button{font:inherit}.topline{position:fixed;z-index:5;inset:0 0 auto;height:8px;background:linear-gradient(90deg,var(--cobalt) 0 64%,var(--acid) 64% 84%,var(--coral) 84%)}.page{width:min(1440px,100%);margin:auto;padding:18px clamp(12px,2.5vw,38px) 48px}.masthead{display:flex;justify-content:space-between;align-items:center;gap:18px;padding:16px 0 13px}.brand{font:800 11px/1.2 "Arial Narrow",ui-sans-serif,sans-serif;letter-spacing:.16em;text-transform:uppercase}.actions{display:flex;gap:8px}.control{border:1px solid var(--surface-rule);background:var(--surface);color:var(--text);padding:8px 11px;border-radius:2px;cursor:pointer;font-size:11px;font-weight:800;letter-spacing:.04em}.control:hover,.control:focus-visible{border-color:var(--acid);outline:none}.artifact-shell{padding:7px;background:var(--paper);box-shadow:0 22px 75px #0007}.artifact-shell svg{display:block;width:100%;height:auto}.mobile-hero{display:none}.section-tag{margin:0 0 8px;color:var(--muted);font:800 10px/1.2 "Arial Narrow",ui-sans-serif,sans-serif;letter-spacing:.15em;text-transform:uppercase}
+    .trace-plane{display:grid;grid-template-columns:minmax(290px,.82fr) minmax(0,1.18fr);gap:0;margin-top:24px;border-top:1px solid var(--surface-rule);border-bottom:1px solid var(--surface-rule)}.trace-detail{padding:24px clamp(16px,2.2vw,30px);border-right:1px solid var(--surface-rule);min-height:286px}.trace-detail h2{font-family:Georgia,"Times New Roman",serif;font-size:clamp(25px,3vw,39px);line-height:1.02;margin:0 0 12px}.trace-verdict{font:850 11px/1.2 "Arial Narrow",ui-sans-serif,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--coral)}.trace-subject{font-size:14px;max-width:46rem}.trace-meta{display:flex;flex-wrap:wrap;gap:7px 14px;margin-top:20px;color:var(--muted);font-size:11px}.boundary{margin:22px 0 0;padding-top:14px;border-top:1px solid var(--surface-rule);color:var(--muted);font-size:11px}.ledger{min-width:0}.finding-row,.source-row{width:100%;display:grid;align-items:center;border:0;border-bottom:1px solid var(--surface-rule);background:transparent;color:var(--text);text-align:left;cursor:pointer}.finding-row{grid-template-columns:90px minmax(0,1fr) auto;gap:14px;padding:12px 16px}.finding-row:last-child{border-bottom:0}.finding-row:hover,.finding-row:focus-visible,.finding-row[aria-pressed="true"],.finding-row.is-traced{outline:none;background:color-mix(in srgb,var(--surface) 88%,var(--acid) 12%)}.finding-row[aria-pressed="true"]{box-shadow:inset 4px 0 var(--acid)}.verdict{font:850 9px/1.2 "Arial Narrow",ui-sans-serif,sans-serif;letter-spacing:.1em;text-transform:uppercase;color:var(--silver)}.finding-row[data-verdict="carried"] .verdict,.finding-row[data-verdict="unchanged"] .verdict,.finding-row[data-verdict="observed"] .verdict{color:var(--acid)}.finding-row[data-verdict="lost"] .verdict,.finding-row[data-verdict="changed"] .verdict,.finding-row[data-verdict="not_observed"] .verdict{color:var(--coral)}.finding-row[data-verdict="added"] .verdict,.finding-row[data-verdict="prepared"] .verdict{color:#6f8cff}.finding-row[data-verdict="stale"] .verdict,.finding-row[data-verdict="conflict"] .verdict{color:var(--amber)}.finding-copy{min-width:0;font-size:12px;overflow-wrap:anywhere}.finding-refs{font:9px/1.2 ui-monospace,SFMono-Regular,Consolas,monospace;color:var(--muted);white-space:nowrap}.sources{margin-top:24px;border-top:4px solid var(--cobalt);background:var(--surface)}.source-head{padding:16px 18px 12px;display:flex;justify-content:space-between;gap:16px;border-bottom:1px solid var(--surface-rule)}.source-head h2{margin:0;font-family:Georgia,"Times New Roman",serif;font-size:25px}.source-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr))}.source-row{grid-template-columns:20px minmax(0,1fr);gap:11px;padding:14px 16px;border-right:1px solid var(--surface-rule)}.source-row:hover,.source-row:focus-visible,.source-row[aria-pressed="true"],.source-row.is-traced{outline:none;background:color-mix(in srgb,var(--surface) 86%,var(--cobalt) 14%)}.source-dot{width:10px;height:10px;border-radius:50%;background:var(--silver)}.source-row.is-traced .source-dot,.source-row[aria-pressed="true"] .source-dot{background:var(--acid);box-shadow:0 0 0 4px color-mix(in srgb,var(--acid) 24%,transparent)}.source-copy strong,.source-copy small{display:block}.source-copy strong{font-size:12px}.source-copy small{font:10px/1.4 ui-monospace,SFMono-Regular,Consolas,monospace;color:var(--muted);overflow-wrap:anywhere}.generate{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:12px;align-items:center;margin-top:24px;padding:20px;border-top:4px solid var(--acid);background:var(--surface)}.generate h2{margin:0 0 4px;font-family:Georgia,"Times New Roman",serif;font-size:25px}.generate p{margin:0;color:var(--muted);font-size:12px}.command{grid-column:1/-1;background:var(--carbon);color:var(--paper);border:1px solid #3c3e36;padding:12px 14px;white-space:pre-wrap;overflow-wrap:anywhere;font:11px/1.5 ui-monospace,SFMono-Regular,Consolas,monospace}.foot{display:flex;justify-content:space-between;gap:18px;margin-top:23px;color:var(--muted);font-size:10px}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+    @media(max-width:760px){.page{padding-top:14px}.masthead{align-items:flex-start;flex-wrap:wrap}.brand{width:100%}.actions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));width:100%}.artifact-shell{display:none}.mobile-hero{display:block;position:relative;background:var(--carbon);color:var(--paper);padding:20px 17px 18px;border-top:6px solid var(--cobalt);box-shadow:0 18px 55px #0006}.mobile-hero h1{font-family:Georgia,"Times New Roman",serif;font-size:clamp(27px,8vw,36px);line-height:1.02;margin:0 0 12px}.mobile-question{margin:0;color:var(--acid);font:850 11px/1.35 "Arial Narrow",ui-sans-serif,sans-serif;letter-spacing:.1em;text-transform:uppercase}.mobile-headline{font-family:Georgia,"Times New Roman",serif;font-size:20px;line-height:1.12;margin:16px 0}.mobile-signature{position:relative;height:62px;margin:12px 0 8px;border-top:1px solid #393b33;border-bottom:1px solid #393b33;overflow:hidden}.mobile-signature::before,.mobile-signature::after{content:"";position:absolute}[data-profile="continuity"] .mobile-signature::before{left:4%;right:4%;top:29px;border-top:3px dashed var(--silver)}[data-profile="continuity"] .mobile-signature::after{width:16px;height:40px;left:62%;top:10px;border-top:4px solid var(--coral);border-bottom:4px solid var(--coral);background:var(--carbon)}[data-profile="goal-delta"] .mobile-signature::before{left:49%;top:4px;width:6px;height:54px;background:var(--coral);transform:skew(-17deg)}[data-profile="goal-delta"] .mobile-signature::after{width:90px;height:42px;left:calc(50% - 45px);top:9px;border:1px solid var(--coral);border-radius:50%}[data-profile="context-receipt"] .mobile-signature::before{width:170px;height:42px;left:calc(50% - 85px);top:8px;border:3px solid var(--cobalt);border-radius:50%}[data-profile="context-receipt"] .mobile-signature::after{width:96px;height:24px;left:calc(50% - 48px);top:17px;border:3px solid var(--acid);border-radius:50%}.mobile-source-count{color:var(--muted);font-size:10px;letter-spacing:.08em;text-transform:uppercase}.trace-plane{grid-template-columns:1fr}.trace-detail{border-right:0;border-bottom:1px solid var(--surface-rule);min-height:0}.finding-row{grid-template-columns:84px minmax(0,1fr);gap:10px}.finding-refs{grid-column:2;white-space:normal}.source-list{grid-template-columns:1fr}.source-row{border-right:0}.generate{grid-template-columns:1fr}.foot{flex-direction:column}.foot span:last-child{text-align:left}}
+    @media(max-width:420px){.finding-row{padding:11px 10px;grid-template-columns:76px minmax(0,1fr)}.trace-detail{padding:18px 14px}.source-head{padding-inline:14px}}
+  </style>
+</head>
+<body>
+  <div class="topline" aria-hidden="true"></div>
+  <main class="page">
+    <header class="masthead"><div class="brand">Codex Workprint / continuity profile / seam</div><div class="actions"><button id="theme" class="control" type="button">Paper mode</button><button id="copy" class="control" type="button" title="Shift+click selects the command as a clipboard fallback">Copy command</button></div></header>
+    <section class="mobile-hero" aria-label="Profile summary"><p class="section-tag">Three questions. One Workprint.</p><h1>Handoff Receipt — Research archive migration</h1><p class="mobile-question">What still holds after handoff?</p><p class="mobile-headline">7 loss points · 2 continuity faults</p><div class="mobile-signature" aria-hidden="true"></div><div class="mobile-source-count">8 findings · 4 sources · seam signature</div></section>
+    <section class="artifact-shell" aria-label="Profile Workprint visualization"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="profile-title profile-desc" class="profile-artifact profile-continuity">
+  <title id="profile-title">Handoff Receipt — Research archive migration — Codex Workprint continuity</title>
+  <desc id="profile-desc">What still holds after handoff? 7 loss points · 2 continuity faults Findings trace only to the source labels and revisions supplied in this public projection.</desc>
+  <style>
+    .profile-artifact{background:#f1ecdf;font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif}.eyebrow,.profile-tag,.question,.headline-label,.source-label,.verdict,.micro,.footer,.count-label{font-family:"Arial Narrow",Inter,ui-sans-serif,system-ui,sans-serif;font-weight:800;letter-spacing:1.45px}.eyebrow{font-size:11px;fill:#24251f}.profile-tag{font-size:10px;fill:#aeb4ad}.title{font-family:Georgia,"Times New Roman",serif;font-weight:700;fill:#f1ecdf}.question{font-size:14px;fill:#c7ff36}.headline-label{font-size:9px;fill:#aeb4ad}.headline{font-family:Georgia,"Times New Roman",serif;font-size:24px;font-weight:700;fill:#f1ecdf}.finding-label{font-size:10px;font-weight:700;fill:#f1ecdf}.verdict{font-size:8px}.micro{font-size:8px;fill:#aeb4ad}.source-label{font-size:8px;fill:#f1ecdf}.footer{font-size:9px;fill:#24251f}.count{font-size:19px;font-weight:850}.count-label{font-size:7px;fill:#aeb4ad}.profile-node:focus{outline:none}.profile-node:focus .focus-ring,.profile-node[aria-pressed="true"] .focus-ring{opacity:1}.profile-node,.profile-source{cursor:pointer}.profile-source.is-traced .source-hit,.profile-node.is-traced .trace-hit{opacity:1}
+  </style>
+  <rect width="1200" height="760" fill="#f1ecdf"/>
+  <path d="M0 0H1200V9H0Z" fill="#2457ff"/><path d="M770 0H1000V9H770Z" fill="#c7ff36"/><path d="M1000 0H1200V9H1000Z" fill="#ff665c"/>
+  <text x="34" y="28" class="eyebrow">CODEX WORKPRINT · THREE QUESTIONS. ONE WORKPRINT.</text>
+  <text x="1166" y="28" text-anchor="end" class="eyebrow">THE WORK HAS A STATE.</text>
+  <rect x="24" y="42" width="1152" height="660" rx="3" fill="#11120f"/>
+  <text x="58" y="76" class="profile-tag">CONTINUITY / SEAM PROFILE</text>
+  <text x="1142" y="76" text-anchor="end" class="profile-tag">PROFILE IR 5D892ECC7F19</text>
+  <text x="58" y="127" class="title" style="font-size:36px">Handoff Receipt — Research archive migration</text>
+  <text x="58" y="160" class="question">What still holds after handoff?</text>
+  <text x="58" y="198" class="headline-label">PUBLIC SUMMARY / SUPPLIED PROJECTION</text>
+  <text x="58" y="226" class="headline" style="font-size:24px">7 loss points · 2 continuity faults</text>
+  <g transform="translate(832 174)"><text class="count" fill="#c7ff36">6</text><text y="18" class="count-label">CARRIED</text></g><g transform="translate(906 174)"><text class="count" fill="#ff665c">1</text><text y="18" class="count-label">LOST</text></g><g transform="translate(980 174)"><text class="count" fill="#ffb340">0</text><text y="18" class="count-label">STALE</text></g><g transform="translate(1054 174)"><text class="count" fill="#aeb4ad">1</text><text y="18" class="count-label">INVENTED</text></g>
+  <path d="M58 250H1142" stroke="#383a32" stroke-width="1"/>
+  <g aria-label="Continuity seam visualization">
+    <rect x="64" y="278" width="1072" height="276" rx="2" fill="#1a1c17" stroke="#383a32"/>
+    <text x="84" y="301" class="micro">BLACK BOX / HANDOFF BOUNDARY</text><text x="1116" y="301" text-anchor="end" class="micro">8 PUBLIC FINDINGS</text>
+    <path d="M84 407H1116" stroke="#f1ecdf" stroke-width="18" opacity=".035"/><path d="M84 407H1116" stroke="#aeb4ad" stroke-width="1" stroke-dasharray="2 7"/>
+    <g class="profile-node" data-finding-id="archive-migration:goal" data-source-refs="migration-brief data-policy" tabindex="0" role="button" aria-pressed="false" aria-label="carried: Current goal: Migrate searchable metadata without exposing restricted audio or identities." transform="translate(0 0)">
+      <rect class="trace-hit" x="124.7" y="277" width="101.85" height="62" rx="2" fill="#c7ff36" opacity="0"/>
+      <circle class="focus-ring" cx="175.63" cy="407" r="20" fill="none" stroke="#f1ecdf" stroke-width="2" opacity="0"/>
+      <path d="M175.63 332V390" stroke="#383a32" stroke-width="1"/>
+      <path d="M175.63 373V441" stroke="#c7ff36" stroke-width="5"/><circle cx="175.63" cy="407" r="8" fill="#c7ff36" stroke="#11120f" stroke-width="4"/>
+      <text x="175.63" y="313" text-anchor="middle" class="verdict" fill="#c7ff36">CARRIED</text>
+      <text x="175.63" y="329" text-anchor="middle" class="finding-label">Current goal: Migrat…</text>
+      <text x="175.63" y="342" text-anchor="middle" class="micro">2 SOURCES</text>
+    </g><g class="profile-node" data-finding-id="archive-migration:schema-decision" data-source-refs="migration-brief" tabindex="0" role="button" aria-pressed="false" aria-label="carried: Settled decision: Use the version-three archive schema and preserve original record keys." transform="translate(0 0)">
+      <rect class="trace-hit" x="245.95" y="482" width="101.85" height="62" rx="2" fill="#c7ff36" opacity="0"/>
+      <circle class="focus-ring" cx="296.88" cy="407" r="20" fill="none" stroke="#f1ecdf" stroke-width="2" opacity="0"/>
+      <path d="M296.88 424V498" stroke="#383a32" stroke-width="1"/>
+      <path d="M296.88 373V441" stroke="#c7ff36" stroke-width="5"/><circle cx="296.88" cy="407" r="8" fill="#c7ff36" stroke="#11120f" stroke-width="4"/>
+      <text x="296.88" y="522" text-anchor="middle" class="verdict" fill="#c7ff36">CARRIED</text>
+      <text x="296.88" y="538" text-anchor="middle" class="finding-label">Settled decision: Us…</text>
+      <text x="296.88" y="551" text-anchor="middle" class="micro">1 SOURCE</text>
+    </g><g class="profile-node" data-finding-id="archive-migration:access-boundary" data-source-refs="data-policy" tabindex="0" role="button" aria-pressed="false" aria-label="carried: Settled decision: Keep audio objects and participant identity fields outside the public index." transform="translate(0 0)">
+      <rect class="trace-hit" x="367.2" y="277" width="101.85" height="62" rx="2" fill="#c7ff36" opacity="0"/>
+      <circle class="focus-ring" cx="418.13" cy="407" r="20" fill="none" stroke="#f1ecdf" stroke-width="2" opacity="0"/>
+      <path d="M418.13 332V390" stroke="#383a32" stroke-width="1"/>
+      <path d="M418.13 373V441" stroke="#c7ff36" stroke-width="5"/><circle cx="418.13" cy="407" r="8" fill="#c7ff36" stroke="#11120f" stroke-width="4"/>
+      <text x="418.13" y="313" text-anchor="middle" class="verdict" fill="#c7ff36">CARRIED</text>
+      <text x="418.13" y="329" text-anchor="middle" class="finding-label">Settled decision: Ke…</text>
+      <text x="418.13" y="342" text-anchor="middle" class="micro">1 SOURCE</text>
+    </g><g class="profile-node" data-finding-id="archive-migration:schema-evidence" data-source-refs="migration-evidence" tabindex="0" role="button" aria-pressed="false" aria-label="carried: Valid evidence: Schema validator passed all 2,400 synthetic archive records." transform="translate(0 0)">
+      <rect class="trace-hit" x="488.45" y="482" width="101.85" height="62" rx="2" fill="#c7ff36" opacity="0"/>
+      <circle class="focus-ring" cx="539.38" cy="407" r="20" fill="none" stroke="#f1ecdf" stroke-width="2" opacity="0"/>
+      <path d="M539.38 424V498" stroke="#383a32" stroke-width="1"/>
+      <path d="M539.38 373V441" stroke="#c7ff36" stroke-width="5"/><circle cx="539.38" cy="407" r="8" fill="#c7ff36" stroke="#11120f" stroke-width="4"/>
+      <text x="539.38" y="522" text-anchor="middle" class="verdict" fill="#c7ff36">CARRIED</text>
+      <text x="539.38" y="538" text-anchor="middle" class="finding-label">Valid evidence: Sche…</text>
+      <text x="539.38" y="551" text-anchor="middle" class="micro">1 SOURCE</text>
+    </g><g class="profile-node" data-finding-id="archive-migration:redaction-evidence" data-source-refs="migration-evidence" tabindex="0" role="button" aria-pressed="false" aria-label="carried: Valid evidence: Redaction probe found zero identity fields in the public projection." transform="translate(0 0)">
+      <rect class="trace-hit" x="609.7" y="277" width="101.85" height="62" rx="2" fill="#c7ff36" opacity="0"/>
+      <circle class="focus-ring" cx="660.63" cy="407" r="20" fill="none" stroke="#f1ecdf" stroke-width="2" opacity="0"/>
+      <path d="M660.63 332V390" stroke="#383a32" stroke-width="1"/>
+      <path d="M660.63 373V441" stroke="#c7ff36" stroke-width="5"/><circle cx="660.63" cy="407" r="8" fill="#c7ff36" stroke="#11120f" stroke-width="4"/>
+      <text x="660.63" y="313" text-anchor="middle" class="verdict" fill="#c7ff36">CARRIED</text>
+      <text x="660.63" y="329" text-anchor="middle" class="finding-label">Valid evidence: Reda…</text>
+      <text x="660.63" y="342" text-anchor="middle" class="micro">1 SOURCE</text>
+    </g><g class="profile-node" data-finding-id="archive-migration:retention-question" data-source-refs="migration-issues" tabindex="0" role="button" aria-pressed="false" aria-label="lost: Open question: Resolve retention codes for twelve legacy records before cutover." transform="translate(0 0)">
+      <rect class="trace-hit" x="730.95" y="482" width="101.85" height="62" rx="2" fill="#ff665c" opacity="0"/>
+      <circle class="focus-ring" cx="781.88" cy="407" r="20" fill="none" stroke="#f1ecdf" stroke-width="2" opacity="0"/>
+      <path d="M781.88 424V498" stroke="#383a32" stroke-width="1"/>
+      <path d="M781.88 373V397M781.88 417V441" stroke="#ff665c" stroke-width="5"/><path d="M769.88 399L793.88 415M793.88 399L769.88 415" stroke="#ff665c" stroke-width="2"/>
+      <text x="781.88" y="522" text-anchor="middle" class="verdict" fill="#ff665c">LOST</text>
+      <text x="781.88" y="538" text-anchor="middle" class="finding-label">Open question: Resol…</text>
+      <text x="781.88" y="551" text-anchor="middle" class="micro">1 SOURCE</text>
+    </g><g class="profile-node" data-finding-id="archive-migration:next-action" data-source-refs="migration-brief data-policy" tabindex="0" role="button" aria-pressed="false" aria-label="carried: Next safe action: Run the restricted-field diff, then stage metadata-only cutover." transform="translate(0 0)">
+      <rect class="trace-hit" x="852.2" y="277" width="101.85" height="62" rx="2" fill="#c7ff36" opacity="0"/>
+      <circle class="focus-ring" cx="903.13" cy="407" r="20" fill="none" stroke="#f1ecdf" stroke-width="2" opacity="0"/>
+      <path d="M903.13 332V390" stroke="#383a32" stroke-width="1"/>
+      <path d="M903.13 373V441" stroke="#c7ff36" stroke-width="5"/><circle cx="903.13" cy="407" r="8" fill="#c7ff36" stroke="#11120f" stroke-width="4"/>
+      <text x="903.13" y="313" text-anchor="middle" class="verdict" fill="#c7ff36">CARRIED</text>
+      <text x="903.13" y="329" text-anchor="middle" class="finding-label">Next safe action: Ru…</text>
+      <text x="903.13" y="342" text-anchor="middle" class="micro">2 SOURCES</text>
+    </g><g class="profile-node" data-finding-id="archive-migration:rebuild-invented" data-source-refs="" tabindex="0" role="button" aria-pressed="false" aria-label="invented: Unsupported reconstruction: Legal approved unrestricted publication of the interview audio." transform="translate(0 0)">
+      <rect class="trace-hit" x="973.45" y="482" width="101.85" height="62" rx="2" fill="#aeb4ad" opacity="0"/>
+      <circle class="focus-ring" cx="1024.38" cy="407" r="20" fill="none" stroke="#f1ecdf" stroke-width="2" opacity="0"/>
+      <path d="M1024.38 424V498" stroke="#383a32" stroke-width="1"/>
+      <circle cx="1024.38" cy="407" r="13" fill="none" stroke="#aeb4ad" stroke-width="2" stroke-dasharray="3 4"/><path d="M1024.38 373V392M1024.38 422V441" stroke="#aeb4ad" stroke-width="2" stroke-dasharray="3 4"/>
+      <text x="1024.38" y="522" text-anchor="middle" class="verdict" fill="#aeb4ad">INVENTED</text>
+      <text x="1024.38" y="538" text-anchor="middle" class="finding-label">Unsupported reconstr…</text>
+      <text x="1024.38" y="551" text-anchor="middle" class="micro">NO SOURCE REF</text>
+    </g>
+  </g>
+  <g transform="translate(80 578)" aria-label="Source evidence rail">
+    <text y="0" class="micro">SOURCE EVIDENCE RAIL / CLICK A FINDING OR SOURCE IN HTML TO TRACE</text>
+    <path d="M0 25H1040" stroke="#aeb4ad" stroke-width="2"/>
+    <g class="profile-source" data-source-id="migration-brief" tabindex="0" role="button" aria-pressed="false" aria-label="Source Migration brief, revision brief-r14" transform="translate(130 25)"><circle class="source-hit" r="15" fill="#c7ff36" opacity="0"/><circle r="6" fill="#f1ecdf" stroke="#11120f" stroke-width="3"/><text y="23" text-anchor="middle" class="source-label">Migration brief</text><text y="36" text-anchor="middle" class="micro">brief-r14</text></g><g class="profile-source" data-source-id="data-policy" tabindex="0" role="button" aria-pressed="false" aria-label="Source Data-use policy, revision policy-r09" transform="translate(390 25)"><circle class="source-hit" r="15" fill="#c7ff36" opacity="0"/><circle r="6" fill="#f1ecdf" stroke="#11120f" stroke-width="3"/><text y="23" text-anchor="middle" class="source-label">Data-use policy</text><text y="36" text-anchor="middle" class="micro">policy-r09</text></g><g class="profile-source" data-source-id="migration-evidence" tabindex="0" role="button" aria-pressed="false" aria-label="Source Migration evidence, revision evidence-r31" transform="translate(650 25)"><circle class="source-hit" r="15" fill="#c7ff36" opacity="0"/><circle r="6" fill="#f1ecdf" stroke="#11120f" stroke-width="3"/><text y="23" text-anchor="middle" class="source-label">Migration evidence</text><text y="36" text-anchor="middle" class="micro">evidence-r31</text></g><g class="profile-source" data-source-id="migration-issues" tabindex="0" role="button" aria-pressed="false" aria-label="Source Open issue log, revision issues-r08" transform="translate(910 25)"><circle class="source-hit" r="15" fill="#c7ff36" opacity="0"/><circle r="6" fill="#f1ecdf" stroke="#11120f" stroke-width="3"/><text y="23" text-anchor="middle" class="source-label">Open issue log</text><text y="36" text-anchor="middle" class="micro">issues-r08</text></g>
+  </g>
+  <text x="34" y="730" class="footer">WORKPRINT IS A DETERMINISTIC DISPLAY · NOT A NEW FACT SOURCE · NOT AN ATTESTATION</text>
+  <text x="1166" y="730" text-anchor="end" class="footer">SOURCE REVISION archive-migration/migration-brief@brief-r14+data-policy@policy-r09+migration-…</text>
+</svg>
+</section>
+    <section class="trace-plane" aria-label="Interactive finding trace">
+      <div class="trace-detail" aria-live="polite"><p class="section-tag">Selected finding / source trace</p><div id="detailVerdict" class="trace-verdict">lost</div><h2 id="detailTitle">archive-migration:retention-question</h2><p id="detailSubject" class="trace-subject">Open question: Resolve retention codes for twelve legacy records before cutover.</p><div class="trace-meta"><span id="detailKind">Kind handoff</span><span id="detailSources">Sources migration-issues</span><span id="detailExtra">No profile-specific extension</span></div><p class="boundary">This view traces the supplied public finding to supplied source labels and revisions. It does not establish source authenticity, correctness, model influence, or causality.</p></div>
+      <div class="ledger" id="findingLedger"><button class="finding-row" type="button" data-finding-id="archive-migration:goal" data-verdict="carried" aria-pressed="false"><span class="verdict">carried</span><span class="finding-copy">Current goal: Migrate searchable metadata without exposing restricted audio or identities.</span><span class="finding-refs">2 sources</span></button><button class="finding-row" type="button" data-finding-id="archive-migration:schema-decision" data-verdict="carried" aria-pressed="false"><span class="verdict">carried</span><span class="finding-copy">Settled decision: Use the version-three archive schema and preserve original record keys.</span><span class="finding-refs">1 source</span></button><button class="finding-row" type="button" data-finding-id="archive-migration:access-boundary" data-verdict="carried" aria-pressed="false"><span class="verdict">carried</span><span class="finding-copy">Settled decision: Keep audio objects and participant identity fields outside the public index.</span><span class="finding-refs">1 source</span></button><button class="finding-row" type="button" data-finding-id="archive-migration:schema-evidence" data-verdict="carried" aria-pressed="false"><span class="verdict">carried</span><span class="finding-copy">Valid evidence: Schema validator passed all 2,400 synthetic archive records.</span><span class="finding-refs">1 source</span></button><button class="finding-row" type="button" data-finding-id="archive-migration:redaction-evidence" data-verdict="carried" aria-pressed="false"><span class="verdict">carried</span><span class="finding-copy">Valid evidence: Redaction probe found zero identity fields in the public projection.</span><span class="finding-refs">1 source</span></button><button class="finding-row" type="button" data-finding-id="archive-migration:retention-question" data-verdict="lost" aria-pressed="false"><span class="verdict">lost</span><span class="finding-copy">Open question: Resolve retention codes for twelve legacy records before cutover.</span><span class="finding-refs">1 source</span></button><button class="finding-row" type="button" data-finding-id="archive-migration:next-action" data-verdict="carried" aria-pressed="false"><span class="verdict">carried</span><span class="finding-copy">Next safe action: Run the restricted-field diff, then stage metadata-only cutover.</span><span class="finding-refs">2 sources</span></button><button class="finding-row" type="button" data-finding-id="archive-migration:rebuild-invented" data-verdict="invented" aria-pressed="false"><span class="verdict">invented</span><span class="finding-copy">Unsupported reconstruction: Legal approved unrestricted publication of the interview audio.</span><span class="finding-refs">no source ref</span></button></div>
+    </section>
+    <section class="sources" aria-label="Source evidence rail"><div class="source-head"><div><p class="section-tag">Evidence rail</p><h2>Sources stay attached.</h2></div><span class="section-tag">revision-bound public labels</span></div><div class="source-list"><button class="source-row" type="button" data-source-id="migration-brief" aria-pressed="false"><span class="source-dot" aria-hidden="true"></span><span class="source-copy"><strong>Migration brief</strong><small>migration-brief · brief-r14</small></span></button><button class="source-row" type="button" data-source-id="data-policy" aria-pressed="false"><span class="source-dot" aria-hidden="true"></span><span class="source-copy"><strong>Data-use policy</strong><small>data-policy · policy-r09</small></span></button><button class="source-row" type="button" data-source-id="migration-evidence" aria-pressed="false"><span class="source-dot" aria-hidden="true"></span><span class="source-copy"><strong>Migration evidence</strong><small>migration-evidence · evidence-r31</small></span></button><button class="source-row" type="button" data-source-id="migration-issues" aria-pressed="false"><span class="source-dot" aria-hidden="true"></span><span class="source-copy"><strong>Open issue log</strong><small>migration-issues · issues-r08</small></span></button></div></section>
+    <section class="generate"><div><p class="section-tag">Compile a public profile</p><h2>The work has a state.</h2><p>Inspect the public projection, then build a deterministic seven-file profile bundle locally.</p></div><button id="copyBottom" class="control" type="button">Copy</button><code id="command" class="command">codex-workprint profile build profile.json --out ./workprint</code></section>
+    <footer class="foot"><span>Made with Codex Workprint · supplied public projection, not attestation</span><span>Profile IR 5D892ECC7F19 · source revision archive-migration/migration-brief@brief-r14+data-policy@policy-r09+migration-evidence@evidence-r31+migration-issues@issues-r08</span></footer>
+  </main>
+  <script id="profile-data" type="application/json">{
+  "artifact": "codex-workprint-profile",
+  "findings": [
+    {
+      "id": "archive-migration:goal",
+      "kind": "handoff",
+      "sourceRefs": [
+        "migration-brief",
+        "data-policy"
+      ],
+      "subject": "Current goal: Migrate searchable metadata without exposing restricted audio or identities.",
+      "verdict": "carried"
+    },
+    {
+      "id": "archive-migration:schema-decision",
+      "kind": "handoff",
+      "sourceRefs": [
+        "migration-brief"
+      ],
+      "subject": "Settled decision: Use the version-three archive schema and preserve original record keys.",
+      "verdict": "carried"
+    },
+    {
+      "id": "archive-migration:access-boundary",
+      "kind": "handoff",
+      "sourceRefs": [
+        "data-policy"
+      ],
+      "subject": "Settled decision: Keep audio objects and participant identity fields outside the public index.",
+      "verdict": "carried"
+    },
+    {
+      "id": "archive-migration:schema-evidence",
+      "kind": "handoff",
+      "sourceRefs": [
+        "migration-evidence"
+      ],
+      "subject": "Valid evidence: Schema validator passed all 2,400 synthetic archive records.",
+      "verdict": "carried"
+    },
+    {
+      "id": "archive-migration:redaction-evidence",
+      "kind": "handoff",
+      "sourceRefs": [
+        "migration-evidence"
+      ],
+      "subject": "Valid evidence: Redaction probe found zero identity fields in the public projection.",
+      "verdict": "carried"
+    },
+    {
+      "id": "archive-migration:retention-question",
+      "kind": "handoff",
+      "sourceRefs": [
+        "migration-issues"
+      ],
+      "subject": "Open question: Resolve retention codes for twelve legacy records before cutover.",
+      "verdict": "lost"
+    },
+    {
+      "id": "archive-migration:next-action",
+      "kind": "handoff",
+      "sourceRefs": [
+        "migration-brief",
+        "data-policy"
+      ],
+      "subject": "Next safe action: Run the restricted-field diff, then stage metadata-only cutover.",
+      "verdict": "carried"
+    },
+    {
+      "id": "archive-migration:rebuild-invented",
+      "kind": "handoff",
+      "sourceRefs": [],
+      "subject": "Unsupported reconstruction: Legal approved unrestricted publication of the interview audio.",
+      "verdict": "invented"
+    }
+  ],
+  "profile": "continuity",
+  "question": "What still holds after handoff?",
+  "render": {
+    "palette": "workprint-profile-family-v1",
+    "pngRenderer": "workprint-profile-png-v1/stored-deflate/bitmap-5x7",
+    "rendererVersion": "profile-print-0.1.0"
+  },
+  "schemaVersion": "workprint-profile-ir/0.1",
+  "source": {
+    "kind": "workprint-profile-public-projection",
+    "profileIrSha256": "5d892ecc7f19ddf1075f0be33088d6510ca9f71c77560ac43855ebb626342b22",
+    "schemaVersion": "workprint-profile/0.1"
+  },
+  "sourceRevision": "archive-migration/migration-brief@brief-r14+data-policy@policy-r09+migration-evidence@evidence-r31+migration-issues@issues-r08",
+  "sources": [
+    {
+      "id": "migration-brief",
+      "label": "Migration brief",
+      "revision": "brief-r14"
+    },
+    {
+      "id": "data-policy",
+      "label": "Data-use policy",
+      "revision": "policy-r09"
+    },
+    {
+      "id": "migration-evidence",
+      "label": "Migration evidence",
+      "revision": "evidence-r31"
+    },
+    {
+      "id": "migration-issues",
+      "label": "Open issue log",
+      "revision": "issues-r08"
+    }
+  ],
+  "summary": {
+    "counts": {
+      "carried": 6,
+      "invented": 1,
+      "lost": 1,
+      "stale": 0
+    },
+    "headline": "7 loss points · 2 continuity faults"
+  },
+  "title": "Handoff Receipt — Research archive migration",
+  "visualForm": "seam"
+}
+</script>
+  <script>
+    (() => {
+      const data = JSON.parse(document.getElementById('profile-data').textContent);
+      const findings = new Map(data.findings.map((finding) => [finding.id, finding]));
+      const sources = new Map(data.sources.map((source) => [source.id, source]));
+      const detail = { verdict: document.getElementById('detailVerdict'), title: document.getElementById('detailTitle'), subject: document.getElementById('detailSubject'), kind: document.getElementById('detailKind'), sources: document.getElementById('detailSources'), extra: document.getElementById('detailExtra') };
+      const extra = (finding) => finding.affectedEvidenceIds ? 'Affected evidence ' + (finding.affectedEvidenceIds.join(', ') || 'none supplied') : finding.reasonCode ? 'Reason ' + finding.reasonCode : 'No profile-specific extension';
+      const clearTrace = () => document.querySelectorAll('.is-traced,[aria-pressed="true"]').forEach((element) => { element.classList.remove('is-traced'); element.setAttribute('aria-pressed', 'false'); });
+      const selectFinding = (id) => {
+        const finding = findings.get(id); if (!finding) return; clearTrace();
+        document.querySelectorAll('[data-finding-id="' + CSS.escape(id) + '"]').forEach((element) => { element.classList.add('is-traced'); element.setAttribute('aria-pressed', 'true'); });
+        finding.sourceRefs.forEach((sourceId) => document.querySelectorAll('[data-source-id="' + CSS.escape(sourceId) + '"]').forEach((element) => element.classList.add('is-traced')));
+        detail.verdict.textContent = finding.verdict.replaceAll('_', ' '); detail.title.textContent = finding.id; detail.subject.textContent = finding.subject; detail.kind.textContent = 'Kind ' + finding.kind; detail.sources.textContent = 'Sources ' + (finding.sourceRefs.join(', ') || 'none supplied'); detail.extra.textContent = extra(finding);
+        document.body.dataset.traceType = 'finding'; document.body.dataset.traceId = finding.id; document.body.dataset.traceSourceCount = String(finding.sourceRefs.length);
+      };
+      const selectSource = (id) => {
+        const source = sources.get(id); if (!source) return; clearTrace();
+        document.querySelectorAll('[data-source-id="' + CSS.escape(id) + '"]').forEach((element) => { element.classList.add('is-traced'); element.setAttribute('aria-pressed', 'true'); });
+        const linked = data.findings.filter((finding) => finding.sourceRefs.includes(id)); linked.forEach((finding) => document.querySelectorAll('[data-finding-id="' + CSS.escape(finding.id) + '"]').forEach((element) => element.classList.add('is-traced')));
+        detail.verdict.textContent = 'source revision'; detail.title.textContent = source.label; detail.subject.textContent = 'Revision ' + source.revision; detail.kind.textContent = 'Source ' + source.id; detail.sources.textContent = linked.length + ' linked finding' + (linked.length === 1 ? '' : 's'); detail.extra.textContent = 'No source content is embedded';
+        document.body.dataset.traceType = 'source'; document.body.dataset.traceId = source.id; document.body.dataset.traceFindingCount = String(linked.length);
+      };
+      const bind = (selector, callback, key) => document.querySelectorAll(selector).forEach((element) => { element.addEventListener('click', () => callback(element.dataset[key])); element.addEventListener('keydown', (event) => { if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); callback(element.dataset[key]); } }); });
+      bind('[data-finding-id]', selectFinding, 'findingId'); bind('[data-source-id]', selectSource, 'sourceId'); selectFinding("archive-migration:retention-question");
+      const theme = document.getElementById('theme'); theme.addEventListener('click', () => { const paper = document.documentElement.dataset.theme === 'paper'; document.documentElement.dataset.theme = paper ? 'carbon' : 'paper'; theme.textContent = paper ? 'Paper mode' : 'Carbon mode'; });
+      const command = document.getElementById('command').textContent; const copy = async (button, fallback = false) => { const original = button.textContent; try { if (fallback) throw new Error('fallback'); await navigator.clipboard.writeText(command); button.dataset.copyResult = 'clipboard'; button.textContent = 'Copied'; } catch { const range = document.createRange(); range.selectNodeContents(document.getElementById('command')); const selection = window.getSelection(); selection.removeAllRanges(); selection.addRange(range); button.dataset.copyResult = 'fallback-selection'; button.textContent = 'Selected'; } window.setTimeout(() => { button.textContent = original; }, 1200); };
+      document.getElementById('copy').addEventListener('click', (event) => copy(event.currentTarget, event.shiftKey)); document.getElementById('copyBottom').addEventListener('click', (event) => copy(event.currentTarget, event.shiftKey));
+    })();
+  </script>
+</body>
+</html>

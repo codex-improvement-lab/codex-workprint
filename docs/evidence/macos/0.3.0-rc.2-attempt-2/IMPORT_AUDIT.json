@@ -1,0 +1,100 @@
+{
+  "schemaVersion": "codex-workprint-macos-evidence-import-audit/0.1",
+  "importDate": "2026-09-05",
+  "evidenceClass": "user-supplied external physical-Mac receipt, report, and messaging-service-transcoded screenshots",
+  "candidate": {
+    "package": "0.3.0-rc.2",
+    "archiveBytes": 1250055,
+    "archiveSha256": "98a50a8aca3b3ace7b7eb1c4687bbd5ffa3b0dbf073327e2ef1a5c84044d1091",
+    "internalManifestSha256": "d5c01affa5d723770202cacf9b2d8aa9c162c477edebd0296afebb85fc283339"
+  },
+  "importedFiles": {
+    "AUTOMATED_RECEIPT.json": {
+      "bytes": 2740,
+      "sha256": "04f6ad6765dac33737050bb5fc65e70d5ec93cf606317e0f65f76c3de42dc232",
+      "copiedByteForByte": true
+    },
+    "MACOS_VALIDATION_REPORT.md": {
+      "bytes": 1615,
+      "sha256": "58cecb3e5f6b604d8b43964c3de1778a068c82f53f7428220fb2c59798604fff",
+      "copiedByteForByte": true
+    },
+    "workprint-desktop-wechat-transcoded.jpg": {
+      "bytes": 226882,
+      "sha256": "3f6332b051535d9a8baf09edf79b6d895903377c7d8af0d24aadff45ba2e6a6b",
+      "magic": "ffd8ff",
+      "width": 1280,
+      "height": 2403,
+      "copiedByteForByte": true
+    },
+    "workprint-narrow-wechat-transcoded.jpg": {
+      "bytes": 170808,
+      "sha256": "f3e0bc1e7ff2dcba4eb180c98614ffb0ba2c63bf97cba330e73b6a540540265a",
+      "magic": "ffd8ff",
+      "width": 390,
+      "height": 3096,
+      "copiedByteForByte": true
+    }
+  },
+  "receiptBindings": {
+    "schemaVersion": "codex-workprint-macos-minimal-validation/0.1",
+    "result": "AUTOMATED_IMPLEMENTATION_PASS",
+    "host": {
+      "platform": "darwin",
+      "macOSVersion": "15.5",
+      "darwinRelease": "24.5.0",
+      "architecture": "arm64",
+      "node": "24.19.0"
+    },
+    "candidateVersionsMatch": true,
+    "localArchiveIdentityMatch": true,
+    "internalManifestIdentityMatch": true,
+    "shapeSha256Match": true,
+    "publicIrSha256Match": true,
+    "artifactSha256Matches": 7,
+    "artifactSha256Mismatches": 0
+  },
+  "reportedBrowserResult": {
+    "verdict": "PASS",
+    "browser": "Google Chrome 152.0.7977.82 (headless automated)",
+    "desktopViewport": "1440x1000",
+    "narrowViewport": "390x844",
+    "consoleErrorsOrWarnings": 0,
+    "remoteNetworkRequests": 0,
+    "methodNote": "fresh Chrome profile, loopback-only server, explicit non-loopback request block, screenshots reportedly visually inspected"
+  },
+  "reportedOriginalScreenshots": {
+    "workprint-desktop-chrome-1440x1000.png": {
+      "sha256": "8611fc4140796c09e0193cc3718cc12fa7f664fe258a08e3a63f9cd195bb8c70",
+      "receivedExactBytes": false
+    },
+    "workprint-narrow-chrome-390x844.png": {
+      "sha256": "569ce46cf9d1e80e1e717c5f1d5f56c40113d45ac311f53ca6aae45bddb8139c",
+      "receivedExactBytes": false
+    }
+  },
+  "visualInspectionOfDeliveredJpegs": {
+    "chineseTitleReadable": true,
+    "headlineArrowReadable": true,
+    "visibleReplacementQuestionMark": false,
+    "visibleUnicodeReplacementCharacter": false,
+    "desktopFullPageLayoutPresent": true,
+    "narrowFullPageLayoutPresent": true,
+    "limits": "Static transformed screenshots cannot independently prove interaction, reduced-motion, clipboard, console, network, viewport measurement, or origin host."
+  },
+  "identityGap": {
+    "kind": "SCREENSHOT_BYTES_MISMATCH",
+    "detail": "The report names PNG files and SHA-256 values, but the delivered image attachments are JPEG files with different names, dimensions, byte counts, and SHA-256 values. Messaging-service transcoding is plausible but cannot be treated as byte identity.",
+    "requiredClosure": "Provide the two exact reported PNG files in a ZIP or as unmodified file attachments, or provide a new report bound to newly captured unmodified screenshot files."
+  },
+  "verdict": "PENDING_SCREENSHOT_IDENTITY",
+  "acceptedNow": [
+    "Externally supplied automated Darwin receipt is exactly bound to the current minimal validation package manifest and all seven pinned public artifacts.",
+    "The external report records a browser PASS and the delivered transformed images visibly support the title, headline glyph, and broad responsive layout claims."
+  ],
+  "notAcceptedNow": [
+    "A fully closed current physical-Mac browser PASS, because the exact screenshot bytes named by the report were not received.",
+    "Any human-comprehension, source-authenticity, task-correctness, production, real-user, adoption, or market claim."
+  ],
+  "claimCeiling": "Package-bound external automated Darwin evidence plus an external browser PASS report with visually consistent but byte-unbound transformed screenshots. Codex did not witness the Mac execution; complete physical-Mac acceptance remains pending exact screenshot identity."
+}

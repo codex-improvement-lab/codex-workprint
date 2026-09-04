@@ -1,0 +1,7 @@
+{"type":"thread.started","thread_id":"01999999-1111-7222-8333-aaaaaaaaaaaa"}
+{"type":"turn.started"}
+{"type":"item.started","item":{"id":"item_0","type":"command_execution","command":"Get-Content C:\\Users\\private\\secret.txt","aggregated_output":"","exit_code":null,"status":"in_progress"}}
+{"type":"item.completed","item":{"id":"item_0","type":"command_execution","command":"Get-Content C:\\Users\\private\\secret.txt","aggregated_output":"PRIVATE OUTPUT MUST NOT LEAK","exit_code":0,"status":"completed"}}
+{"type":"item.completed","item":{"id":"item_1","type":"agent_message","text":"The private work is complete."}}
+{"type":"turn.completed","usage":{"input_tokens":123,"cached_input_tokens":45,"cache_write_input_tokens":0,"output_tokens":67,"reasoning_output_tokens":8}}
+

@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 1,
+  "evidenceClass": "user-supplied external targeted physical-Mac retest report plus local successor-package audit",
+  "importedOn": "2026-08-30",
+  "recordStatus": "historical pre-final-return",
+  "supersededBy": "INTAKE_FINAL_RETEST_V2_AUDIT_2026-08-30.json",
+  "sourceAttachment": {
+    "originalFile": "Codex-Improvement-Lab-macOS-targeted-retest-report-2026-08-30.md",
+    "bytes": 3292,
+    "lines": 46,
+    "sha256": "a3354a21d8df44255966bce9bd68980528337fbbff635fe2c00efccf84f60770",
+    "attachmentInstructionsTreatedAsAuthorization": false
+  },
+  "repositoryCopy": {
+    "file": "TARGETED_RETEST_REPORT_2026-08-30.md",
+    "bytes": 3288,
+    "lines": 46,
+    "sha256": "acda2fcfbdfc3f6e534dbf63f98c3f984770471ae3018b3155a7bdd6b3cb13b4",
+    "byteForByte": false,
+    "normalization": "Removed four trailing Markdown spaces from the two blockquote metadata lines to satisfy the repository no-trailing-whitespace contract; all text, line order, and verdicts are unchanged."
+  },
+  "reviewedInputArchive": {
+    "archive": "Codex-Improvement-Lab-macOS-targeted-retest-Intake-Proofline-2026-08-30.zip",
+    "sha256": "ccfebc7feccc878aa0fe13622957017a6b025536a88843be5b1e2e1f073599d2",
+    "localArchiveSha256Matched": true,
+    "sourceSnapshotFilesReportedAndMatched": 123,
+    "manifest": "PASS",
+    "zipCrcAndPathSafety": "PASS"
+  },
+  "targetedVerdict": {
+    "wholeTwoProjectRetest": "FAIL",
+    "portfolioAfterComposingUnchangedPriorPasses": "4_PASS_1_FAIL",
+    "perProject": {
+      "codex-proofline": {
+        "result": "PASS",
+        "candidateId": "codex-proofline-macos-rc-9bdf7995a611f15e",
+        "contentSha256": "9bdf7995a611f15e6d012ce10da39075aea98ce7fc00516439056a1a6a99d746",
+        "sourceSnapshotSha256": "7a460bc356cbc2b77bc6e157bc36a5fb284ff166c6e2ec8e4b7906cc104556c5",
+        "tests": "34 pass / 0 fail / 1 Windows-only skip",
+        "releaseFileGate": "28/28 pass"
+      },
+      "codex-intake": {
+        "result": "FAIL",
+        "candidateId": "codex-intake@0.1.0+codex.20260826170524",
+        "contentSha256": "32a15ab142dd6588a3e1e8f48c9e2dd5ce105002bb64710ee07c4f443589cd76",
+        "sourceSnapshotSha256": "321bb0b96288b59d7826f9b14756bb19745b00686ebe3caad2e1fce39e822743",
+        "platformTests": "15/15 pass, including 5/5 platform tests",
+        "releaseCheck": "exit 1 at check:project because .agents/plugins/marketplace.json was absent"
+      }
+    }
+  },
+  "successorIntakePackage": {
+    "evidenceClass": "current Windows-built source package; physical-Mac result pending",
+    "archive": "Codex-Improvement-Lab-macOS-Intake-final-retest-v2-2026-08-30.zip",
+    "bytes": 552070,
+    "sha256": "198a45ee111bee7804f191653c6ec3dd0f3b31f11877d61d9115f147a0a139bb",
+    "zipFiles": 66,
+    "manifestEntries": 65,
+    "manifestEntriesVerifiedBeforeAndAfterCleanCopyGate": 65,
+    "jsonDocumentsParsed": 6,
+    "marketplaceSourceIncluded": true,
+    "candidateId": "codex-intake@0.1.0+codex.20260826170524",
+    "contentSha256": "74883da55dae3e581fdb22e4cb1db7a58894c38a0041fe4aed69b99e2974454e",
+    "sourceSnapshotSha256": "d95026b00a87d795aeb298673203b3b687518bb9e88af5f5223487896308dc49",
+    "windowsCleanCopy": {
+      "frozenInstall": "PASS",
+      "releaseCheckExitCode": 0,
+      "vitest": "15/15 pass",
+      "playwright": "5/5 pass",
+      "build": "PASS",
+      "candidateSha256StableOnSecondPrepare": true,
+      "checkedInPublicScreenshotsUnchanged": true
+    },
+    "physicalMacRetest": "PENDING"
+  },
+  "auditDecision": {
+    "mayRecordProoflineScopedLabPhysicalMacPass": true,
+    "mayRecordProoflineStandaloneFullGateV2Pass": false,
+    "mayRecordIntakePhysicalMacPass": false,
+    "mayRecordWholeFiveProjectPhysicalMacPass": false,
+    "importerDirectlyWitnessedDarwinRun": false
+  },
+  "claimCeiling": [
+    "The external report supports the named targeted archive and exact candidate identities within its stated lab acceptance scope.",
+    "Proofline passes that targeted lab scope; the report does not show Proofline's separate full plugin lifecycle gate-v2 sequence.",
+    "Intake's platform repairs passed on the reported Mac, but the delivered candidate failed its release gate and is not a Mac PASS.",
+    "The successor Intake archive has only local Windows packaging and clean-copy evidence until its own exact physical-Mac result returns.",
+    "No result establishes cryptographic hardware attestation, real-user evidence, source authenticity, task correctness, adoption, or market demand."
+  ],
+  "externalActions": {
+    "commit": false,
+    "push": false,
+    "publish": false,
+    "upload": false
+  }
+}

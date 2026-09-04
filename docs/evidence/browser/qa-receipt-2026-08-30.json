@@ -1,0 +1,136 @@
+{
+  "schemaVersion": "0.1",
+  "receiptType": "browser-visual-qa",
+  "recordedAt": "2026-08-30T00:39:58+08:00",
+  "candidate": "0.1.0-rc.2",
+  "artifact": {
+    "shapeSha256": "21fc1fde4c98b640a21ca5250733687aaa40f8a1cbabaa29e018cc4ddbc07872",
+    "publicIrSha256": "20611506ef395410cbada5942297d0fa907d79ba6332678c3bd22dacc95706a3",
+    "htmlPath": "demo/workprint.html",
+    "htmlSha256": "9e430788fe989dc5f39016d5c75fe512ec88d353c701046b495d6ddf20fe7eee",
+    "svgPath": "demo/workprint.svg",
+    "svgSha256": "1c0af7d88ec8bd3cb08599ae7ad96b8415e87324dd551d0b3fb10262abc3662e"
+  },
+  "browser": {
+    "surface": "Codex In-app Browser",
+    "version": "not exposed by the browser runtime"
+  },
+  "loopbackServer": {
+    "urlDuringQa": "http://127.0.0.1:59808/",
+    "status": 200,
+    "identityHeader": "X-Codex-Workprint-QA: 0.1.0-rc.2",
+    "expectedPublicTitleObserved": true,
+    "stoppedAfterQa": true
+  },
+  "desktop": {
+    "requestedPageViewport": { "width": 1440, "height": 900 },
+    "observedPageViewport": { "width": 1440, "height": 900 },
+    "documentScrollWidth": 1425,
+    "horizontalOverflow": false,
+    "heroBounds": { "top": 87.33333587646484, "bottom": 759.3333358764648, "width": 1340.666748046875 },
+    "heroWithinFirstScreen": true,
+    "titleMetricOverlap": false,
+    "shapeIdObserved": "21FC1FDE4C98",
+    "initialSelection": {
+      "sequence": 5,
+      "eventType": "item.completed",
+      "itemType": "command_execution",
+      "status": "failed",
+      "exitCode": 1,
+      "publicPhase": "verify · Expected marker check",
+      "boundaryTextObserved": "A completion event is not proof of correctness; a post-failure completion is not a recovery claim."
+    },
+    "replayInteraction": {
+      "clickObserved": true,
+      "keyboardEnterObserved": true,
+      "result": "animated",
+      "animationRestartObserved": true,
+      "evidenceSignal": "browser animationstart event for reveal after replayPending was set",
+      "reducedMotionGuard": "CSS media query and runtime reduced-motion branch are covered by source/tests; this browser run used no-preference and did not emulate reduce"
+    },
+    "themeToggle": { "paperModeObserved": true, "carbonModeRestored": true },
+    "copyInteraction": {
+      "clipboardPath": "observed",
+      "fallbackSelectionPath": "observed",
+      "fallbackGesture": "Shift+click",
+      "selectedText": "codex-workprint build run.jsonl --title \"Create a marker after an expected failed check\" --out ./workprint"
+    },
+    "stationSelection": {
+      "sequence": 8,
+      "itemType": "file_change",
+      "status": "completed",
+      "relation": "completion observed after a failed item"
+    },
+    "consoleErrorsAndWarnings": 0,
+    "screenshot": {
+      "path": "docs/evidence/browser/workprint-desktop-viewport-1440x900-2026-08-30.jpg",
+      "actualFormat": "JPEG/JFIF",
+      "magicHex": "ffd8ffe000104a46",
+      "capturedPixelWidth": 1425,
+      "capturedPixelHeight": 891,
+      "bytes": 97140,
+      "sha256": "fb6c30b8e3262e4f5f80e69ebd23e9bae5179575200c581926c40e4a132151bb"
+    }
+  },
+  "narrow": {
+    "requestedPageViewport": { "width": 390, "height": 844 },
+    "observedPageViewport": { "width": 390, "height": 844 },
+    "documentScrollWidth": 375,
+    "horizontalOverflow": false,
+    "outOfViewportElements": 0,
+    "mastheadBounds": { "left": 12, "right": 362.6666870117187, "width": 350.66668701171875, "height": 113.83333587646484 },
+    "actionBounds": { "left": 12, "right": 362.6666870117187, "width": 350.66668701171875, "height": 33.833335876464844 },
+    "mobileLeadVisible": true,
+    "mobileLeadStates": { "started": 3, "completed": 2, "failed": 1, "noStatusOrUnknown": 3 },
+    "mobileLeadClaimBoundaryVisible": true,
+    "mobileLeadGenerationCommandVisible": true,
+    "mobileLeadShapeIdObserved": "21FC1FDE4C98",
+    "worklineBounds": { "top": 419.7708435058594, "bottom": 636.9895935058594, "width": 366.6666870117187 },
+    "initialSelectionSequence": 5,
+    "replayInteraction": { "result": "animated", "animationRestartObserved": true },
+    "postFailureCompletionInteraction": {
+      "sequence": 8,
+      "itemType": "file_change",
+      "status": "completed",
+      "relation": "completion observed after a failed item"
+    },
+    "consoleErrorsAndWarnings": 0,
+    "screenshot": {
+      "path": "docs/evidence/browser/workprint-narrow-viewport-390x844-2026-08-30.jpg",
+      "actualFormat": "JPEG/JFIF",
+      "magicHex": "ffd8ffe000104a46",
+      "capturedPixelWidth": 375,
+      "capturedPixelHeight": 812,
+      "bytes": 48406,
+      "sha256": "2f44519f46a4623b1b952b3e336ce13597c99ed802ceec0625e853f3e86cba15"
+    }
+  },
+  "assetInventory": {
+    "method": "in-app Browser pageAssets inventory after load",
+    "inlineSvgCount": 1,
+    "externalScript": 0,
+    "externalFont": 0,
+    "externalImage": 0,
+    "externalStylesheet": 0,
+    "externalVideo": 0,
+    "otherAssets": 0,
+    "remoteUrls": []
+  },
+  "network": {
+    "method": "observed browser page-resource inventory plus self-contained CSP/source checks; the browser runtime did not expose a raw network-event log",
+    "navigationUrl": "http://127.0.0.1:59808/",
+    "remoteRequestCount": 0,
+    "claimBoundary": "Zero remote resource URLs/requests were observed on the available browser surface; this is not a packet capture."
+  },
+  "productPngIndependentCheck": {
+    "path": "demo/share-card.png",
+    "renderer": "workprint-png-v2/stored-deflate/bitmap-5x7",
+    "actualFormat": "PNG",
+    "magicHex": "89504e470d0a1a0a",
+    "pixelWidth": 1200,
+    "pixelHeight": 630,
+    "bytes": 2268868,
+    "sha256": "a1852e6dc2f53024bf1d793db6069f927be99ee596ae0801b1abd0c409cf73d6"
+  },
+  "claimCeiling": "Automated real-browser observation on this Windows host. It does not establish human comprehension, source authenticity, task correctness, physical-macOS behavior, real-user success, or market evidence."
+}
