@@ -18,6 +18,15 @@ def digest(path: Path) -> str:
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
+def read_installed_utf8(path: Path) -> str:
+    # pnpm's installed layout can exceed MAX_PATH in a nested Windows checkout.
+    # The caller has already checked that the resolved package stays in smoke.
+    native = str(path)
+    if os.name == "nt" and not native.startswith("\\\\?\\"):
+        native = "\\\\?\\" + native
+    return Path(native).read_text(encoding="utf-8")
+
+
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--pnpm-js", required=True, help="Path to an installed pnpm CLI module")
@@ -81,7 +90,7 @@ def main() -> None:
     installed = (install / "node_modules/codex-workprint").resolve()
     if not installed.is_relative_to(smoke):
         raise RuntimeError("Installed package escaped isolated smoke root")
-    if json.loads((installed / "package.json").read_text(encoding="utf-8"))["version"] != version:
+    if json.loads(read_installed_utf8(installed / "package.json"))["version"] != version:
         raise RuntimeError("Installed version differs")
     cli = [args.node, str(installed / "bin/codex-workprint.js")]
     shim = run([args.node, str(Path(args.pnpm_js).resolve()), "--dir", str(install), "exec", "codex-workprint", "--help"], root)
@@ -91,7 +100,7 @@ def main() -> None:
     for name, source in [("file", str(sample)), ("stdin", "-")]:
         out = smoke / f"Run {name}"
         run([*cli, "build", source, "--title", "Synthetic first run", "--out", str(out)], install,
-            input_text=sample.read_text(encoding="utf-8") if source == "-" else None)
+            input_text=read_installed_utf8(sample) if source == "-" else None)
         result = json.loads(run([*cli, "verify", str(out), "--json"], install))
         if not result.get("ok"):
             raise RuntimeError("Installed Run verification failed")
