@@ -16,6 +16,8 @@ The terminal returns `WORKPRINT READY`, the public observation count, the number
 
 > A Workprint is a **receipt of observed public metadata**, not proof that the source was authentic, the task was correct, or a failure was recovered.
 
+For reviewed Intake requirements and Proofline evidence, use the existing Profile build/verify loop described in [Proofline mainline compatibility](docs/PROOFLINE_MAINLINE.md). The consumer preserves the producer's public findings without reading its private requirements or ledger.
+
 ## Try the packaged example offline
 
 Download the **[portable ZIP from the GitHub prerelease](https://github.com/codex-improvement-lab/codex-workprint/releases/tag/v0.3.0-rc.3)**, extract it, and open a terminal in its `codex-workprint-0.3.0-rc.3` folder. Node.js 22.18.0 or newer is enough; no Codex account or model call is needed for this explicitly synthetic example:
