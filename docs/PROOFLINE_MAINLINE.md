@@ -1,5 +1,7 @@
 # Proofline mainline compatibility candidate
 
+The 2026-09-09 simplification adds an upstream atomic review/direct-input path and a second conformance fixture, `tests/fixtures/proofline-intake-simplified.json`. The complete synthetic loop uses 14 CLI calls; the separate maintenance comparison remains negative against its strong baseline (14/22 operations, original 14/29 retained). Private recheck executable/argv/cwd details stay upstream. This verification requires no Workprint runtime/schema change, version bump or republishing of the existing 0.3.0-rc.3 package.
+
 The next Lab mainline uses Intake for explicitly reviewed requirements and Proofline for evidence. Workprint continues to accept the existing `workprint-profile/0.1` public Goal Delta projection. It does not import Intake source snapshots, requirements, commands, input fingerprints or ledger bindings, and does not recalculate Proofline's five evidence states.
 
 ```text
