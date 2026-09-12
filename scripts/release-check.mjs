@@ -47,6 +47,7 @@ const expectedPackageFiles = [
   "docs/assets/workprint-profile-triptych.png",
   "docs/WORKPRINT_IR.md",
   "docs/PROFILE_IR.md",
+  "docs/PROOFLINE_MAINLINE.md",
   "docs/PLATFORM_SUPPORT.md",
   "README.md",
   "CHANGELOG.md",

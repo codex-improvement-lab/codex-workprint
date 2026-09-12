@@ -1,5 +1,7 @@
 # Codex Workprint 0.3.0-rc.3 release candidate
 
+The notes below describe the published rc.3 baseline. The current development candidate adds [mainline Profile compatibility verification](docs/PROOFLINE_MAINLINE.md) and its packaged guide, with no renderer/runtime or schema change. Its local validation and candidate identity are separate from historical CI and physical-Mac evidence.
+
 Turn a Codex JSONL run into a local visual receipt: one readable observation story, a distinctive Workprint, and seven deterministic files that can be verified.
 
 This prerelease fixes primary-action text overflowing at intermediate desktop widths, ships JavaScript that runs below node_modules, and adds a packaged synthetic first run. It retains Run IR 0.2, the immutable historical 0.1 schema, all three Unified Profiles, the local fixed font, and the privacy projection.
