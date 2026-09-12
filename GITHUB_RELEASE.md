@@ -2,6 +2,8 @@
 
 The user authorized completing and publishing `0.3.0-rc.3` on 2026-09-05. The publication target is the public GitHub repository `codex-improvement-lab/codex-workprint` and its prerelease assets, using the established `eliasruntime` maintainer account. npm and plugin-directory publication remain separate.
 
+Completed: [GitHub prerelease](https://github.com/codex-improvement-lab/codex-workprint/releases/tag/v0.3.0-rc.3), tagged commit `b5ea146`, four successful hosted jobs, verified public downloads, social preview and private vulnerability reporting. The [publication record](docs/evidence/github/release-0.3.0-rc.3.json) binds the exact commit, hosted run and asset hashes.
+
 ## Local release assets
 
 - Repository description: `Turn Codex runs into privacy-safe, verifiable visual receipts.`

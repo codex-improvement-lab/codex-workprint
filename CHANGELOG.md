@@ -13,7 +13,10 @@ All notable changes to Codex Workprint are recorded here. This project follows t
 
 ## Unreleased
 
-No changes recorded after 0.3.0-rc.3.
+- Verify the simplified atomic-review/direct-Intake-input producer projection with a second fixture. Workprint runtime/schema/version remain 0.3.0-rc.3; no new Workprint package or tag is prepared for this verification-only step.
+
+- Add an Intake-to-Proofline public Profile compatibility fixture and regression. Preserve supplied counts and findings, and verify that private requirement/binding extensions do not change any artifact. Runtime and Profile schema remain unchanged.
+- Document the mainline import boundary and local interoperability evidence in `docs/PROOFLINE_MAINLINE.md`.
 
 ## [0.3.0-rc.2] — release candidate — 2026-08-30
 

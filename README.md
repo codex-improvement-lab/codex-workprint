@@ -16,6 +16,8 @@ The terminal returns `WORKPRINT READY`, the public observation count, the number
 
 > A Workprint is a **receipt of observed public metadata**, not proof that the source was authentic, the task was correct, or a failure was recovered.
 
+For reviewed Intake requirements and Proofline evidence, use the existing Profile build/verify loop described in [Proofline mainline compatibility](docs/PROOFLINE_MAINLINE.md). The consumer preserves the producer's public findings without reading its private requirements or ledger.
+
 ## Try the packaged example offline
 
 Download the **[portable ZIP from the GitHub prerelease](https://github.com/codex-improvement-lab/codex-workprint/releases/tag/v0.3.0-rc.3)**, extract it, and open a terminal in its `codex-workprint-0.3.0-rc.3` folder. Node.js 22.18.0 or newer is enough; no Codex account or model call is needed for this explicitly synthetic example:
@@ -66,7 +68,7 @@ These layers are deterministic render-time views of the public IR. They add stru
   <a href="examples/alternate-workprint/workprint.html"><img src="examples/alternate-workprint/workprint.svg" alt="Real Codex run A alternate Workprint without a failed item" width="100%"></a>
 </div>
 
-These are two fresh, small, no-secret Codex CLI 0.145.0 inputs captured on Windows. Their JSONL event records were not hand-edited before compilation; only the public titles, labels, and annotations were explicitly reviewed. The comparison demonstrates different public observation structures and different Shape IDs. It does not prove the sources authentic, the tasks correct, or either run attributable to an identity.
+These are two retained, small, no-secret Codex CLI 0.145.0 inputs captured on Windows and rebuilt for this version. Their JSONL event records were not hand-edited before compilation; only the public titles, labels, and annotations were explicitly reviewed. The comparison demonstrates different public observation structures and different Shape IDs. It does not prove the sources authentic, the tasks correct, or either run attributable to an identity.
 
 ## The 90-second first Workprint
 
@@ -85,7 +87,7 @@ codex exec --json "<your small task>" | node ./bin/codex-workprint.js build - `
 
 For the auditable path, save the JSONL and run `inspect`, `build`, then `verify`. UTF-8 BOM/no-BOM and LF/CRLF remain covered by adapter tests.
 
-After publication, the same three actions are available through the `codex-workprint` package command. This release candidate has not reserved or published the npm name.
+Installing the release tarball exposes the same three actions through the `codex-workprint` package command. The npm name has not been reserved or published.
 
 `inspect` is the privacy preview. It lists the fixed whitelist, excluded field categories and counts, ordered public observations, visible unknowns, explicit public fields, and the claim ceiling before any bundle is written.
 
@@ -196,9 +198,9 @@ The privacy receipt is an auditable record of the projection, not a no-leak guar
 ```text
 user-supplied Codex JSONL (upstream fields may evolve)
                        │
-              adapter 0.1 whitelist
+             adapter 0.2.0 whitelist
                        │
-          Workprint IR v0.1 public projection
+          Workprint IR v0.2 public projection
                        │
        deterministic HTML · SVG · PNG · receipts
 
@@ -211,7 +213,7 @@ supplied workprint-profile/0.1 public projection
       seam · fault · slice HTML/SVG/PNG · receipts
 ```
 
-The fixed [IR schema](schema/workprint-ir-v0.1.schema.json) and [adapter notes](docs/WORKPRINT_IR.md) keep upstream JSONL evolution separate from the public contract. Unknown envelopes, unknown item types, malformed lines, missing `type`, and missing item `id/type` become visible `unknown` observations with no raw payload.
+The current [IR schema](schema/workprint-ir-v0.2.schema.json) and [adapter notes](docs/WORKPRINT_IR.md) keep upstream JSONL evolution separate from the public contract; the historical 0.1 schema remains byte-frozen. Unknown envelopes, unknown item types, malformed lines, missing `type`, and missing item `id/type` become visible `unknown` observations with no raw payload.
 
 Workprint is deliberately not a transcript viewer, generic architecture diagram, live dashboard, agent scorer, hosted gallery, multi-agent platform, or authenticity service. It does not read Codex Desktop internal rollout files.
 
@@ -234,7 +236,7 @@ node ./scripts/build-profile-examples.mjs
 
 The suite covers the Node preflight, bounded stdin and `--open`, strict opt-in public identity, query-free public URLs, immutable IR 0.1 plus current IR 0.2, shell-injection payloads against Build yours, fixed-template story branches, separate open/status-absent semantics, observed CLI 0.145.0 shapes, copy-independent Shape IDs/geometry, preserved started/completed history, long-run folding, Run Sheet associations/turn ranges/turning points, file-change content exclusion, explicit-only phases, UTF-8 BOM plus LF/CRLF equivalence, malformed and unknown records, privacy attacks, HTML/SVG escaping, local share/copy/download hooks, visible clipboard fallback, station-by-station Replay/reduced-motion hooks, fail-closed public-text glyph coverage, indexed PNG identity/byte ceiling, double-build determinism, exact bundle verification, and tamper/unexpected-file rejection.
 
-GitHub Actions is configured for `windows-latest` and `macos-latest` on Node 22.x and 24.x. Configuration is not a recorded CI result. A hosted macOS job is also not physical-Mac evidence; use the fail-closed [real-Mac handoff](docs/MACOS_HANDOFF.md).
+The release gate runs `windows-latest` and `macos-latest` on Node 22.x and 24.x; see each commit's [GitHub Actions result](https://github.com/codex-improvement-lab/codex-workprint/actions). A hosted macOS job is distinct from physical-Mac evidence; the [real-Mac handoff](docs/MACOS_HANDOFF.md) records that separate process.
 
 ## Contributing and support
 
@@ -245,12 +247,12 @@ Read [CONTRIBUTING.md](CONTRIBUTING.md) before proposing a change. Use [SUPPORT.
 - **Run Receipts observed locally on Windows:** two retained no-secret real-input public projections plus one Chinese synthetic example; all three deterministic 7-file Run IR 0.2 bundles verify; the primary social preview/share card is an indexed 756798-byte 1200×630 PNG.
 - **Current Run Receipt browser evidence:** primary and Chinese HTML at requested 1440×900 and 390×844, plus a 1280×720 button-layout regression; 7 current screenshots including desktop/narrow copy fallback; Share/Copy verify/Download/Replay/trace paths; 0 overflow/outliers, console warnings/errors, remote assets, missing share-card public glyph fields, and Unicode replacement characters. See the [Run Receipt browser receipt](docs/evidence/browser/run-receipt-qa-receipt-2026-09-05-0.3.0-rc.3.json).
 - **Unified Profiles observed locally on Windows:** three self-contained synthetic-scenario public inputs; three deterministic 7-file bundles; strict Profile/Run isolation; deterministic 756798-byte triptych. Their six-view 0.2 browser receipt remains artifact-bound historical evidence.
-- **Physical-Mac evidence:** the exact 0.3.0-rc.2 baseline has a scoped externally supplied PASS, including your accepted screenshot correspondence. That acceptance remains intact. The current rc.3 changes action-label wrapping, ships compiled JavaScript for installed packages, and adds a synthetic offline input; this presentation delta has current Windows browser evidence, not a new physical-Mac run. See [platform scope](docs/PLATFORM_SUPPORT.md).
-- **Configured, not observed externally:** GitHub Actions Node 22/24 Windows/macOS matrix.
+- **Physical-Mac evidence:** the exact 0.3.0-rc.2 baseline has a scoped externally supplied PASS with maintainer-accepted screenshot correspondence. That acceptance remains intact. The current rc.3 changes action-label wrapping, ships compiled JavaScript for installed packages, and adds a synthetic offline input; this presentation delta has current Windows browser evidence, not a new physical-Mac run. See [platform scope](docs/PLATFORM_SUPPORT.md).
+- **Hosted automation:** the four Windows/macOS × Node 22/24 jobs must pass on the source commit before tagging. The [Actions page](https://github.com/codex-improvement-lab/codex-workprint/actions) carries the observed results.
 - **Local distribution:** a pnpm tarball and portable ZIP were built and exercised offline, including the package bin shim, stdin/file inputs and all three Profiles. Public registry publication is separate.
-- **Pending:** fresh real Codex input on the reviewed Mac, public repository/package, independent users, reuse, sharing, adoption, and market evidence.
+- **Not established by this release:** new rc.3 physical-Mac acceptance, independent-user comprehension, reuse, sharing, adoption, or market demand.
 
-The project is at `0.3.0-rc.3`. The 0.1 Run evidence, rc.1–rc.3 history, 0.2 Unified Profile evidence, and 0.3.0-rc.1 evidence remain intact. The remaining public actions stay user-controlled: confirm the public identity/security contact, review the artifacts, commit, tag, create a remote if desired, and publish. No commit, push, remote, package reservation, or publication has been performed here.
+The project is at `0.3.0-rc.3`. Source and prerelease archives are distributed through [codex-improvement-lab/codex-workprint](https://github.com/codex-improvement-lab/codex-workprint). The historical Run/Profile evidence and rc.2 Mac acceptance remain intact. npm and plugin-directory publication are separate from this GitHub release.
 
 Read the [release checklist](RELEASE_CHECKLIST.md), [GitHub publication runbook](GITHUB_RELEASE.md), [release notes](RELEASE_NOTES.md), [platform boundary](docs/PLATFORM_SUPPORT.md), and [changelog](CHANGELOG.md).
 

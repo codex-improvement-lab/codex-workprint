@@ -1,0 +1,43 @@
+{
+  "schemaVersion": "lab-mainline-candidate/1",
+  "product": "codex-workprint",
+  "status": "development-candidate-awaiting-product-review",
+  "date": "2026-09-08",
+  "branch": "dev/proofline-mainline-2026-09-08",
+  "sourceCommit": "43a0eebda1f5f7bcab256957ad5f12c03c6765eb",
+  "basePackageVersion": "0.3.0-rc.3",
+  "host": "Windows / Node v24.19.0",
+  "checks": {
+    "nodeTests": 47,
+    "releaseChecks": 439,
+    "distributionBuildAndInstalledLayout": "passed",
+    "installedTarball": "Run plus all three Profiles plus mainline Profile build/verify passed",
+    "extractedSource": "same Run/Profile smoke passed",
+    "windowsBinShim": "passed",
+    "browser": "1280 and 390 mainline Profile; no overflow/errors/external requests"
+  },
+  "notes": [
+    "Runtime, renderer and public Profile schema are unchanged; conformance/privacy regressions and the packaged mainline guide were added.",
+    "An initial manual package smoke omitted the required public title and was correctly rejected; the reproducible smoke supplies an explicit synthetic public title.",
+    "Compact diagram labels remain shortened; full IDs and findings remain in the public Profile data and HTML details."
+  ],
+  "evidenceLimits": {
+    "hostedCI": "not-run for this candidate",
+    "physicalMac": "not-run for this candidate; historical evidence not transferred",
+    "freshTaskPluginActivation": "not-run",
+    "externalUserValidation": "not-run",
+    "release": "not published; next release version and publication require product review"
+  },
+  "artifacts": [
+    {
+      "file": "codex-workprint-mainline-20260908-43a0eeb.tgz",
+      "sha256": "a3bec73ba38beb3cf544917209d0e3096b774107fce330ab8d91b3e69bf74f5c",
+      "bytes": 1039780
+    },
+    {
+      "file": "codex-workprint-mainline-20260908-43a0eeb-source.zip",
+      "sha256": "188ff7d76d7e2ad9e7ffdaf77a88898f3e6ed914d4364ed6c7743a03f230fe5d",
+      "bytes": 3624274
+    }
+  ]
+}

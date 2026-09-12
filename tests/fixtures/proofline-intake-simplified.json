@@ -1,0 +1,59 @@
+{
+  "schemaVersion": "workprint-profile/0.1",
+  "profile": "goal-delta",
+  "title": "Goal Delta · Intake lab-mainline",
+  "sourceRevision": "lab-mainline.r2-7d7b6b8c75a0..lab-mainline.r4-5d67c7ceb9bc",
+  "sources": [
+    {
+      "id": "contract-before",
+      "label": "Intake lab-mainline",
+      "revision": "lab-mainline.r2-7d7b6b8c75a0"
+    },
+    {
+      "id": "contract-after",
+      "label": "Intake lab-mainline",
+      "revision": "lab-mainline.r4-5d67c7ceb9bc"
+    }
+  ],
+  "findings": [
+    {
+      "id": "goal-delta-lab-mainline-R001",
+      "kind": "contract-change",
+      "verdict": "changed",
+      "subject": "lab-mainline-R001 · Reviewed requirement lab-mainline-R001",
+      "sourceRefs": [
+        "contract-before",
+        "contract-after"
+      ],
+      "affectedEvidenceIds": [
+        "AC-COVERAGE/tests"
+      ]
+    },
+    {
+      "id": "goal-delta-lab-mainline-R002",
+      "kind": "contract-change",
+      "verdict": "unchanged",
+      "subject": "lab-mainline-R002 · Reviewed requirement lab-mainline-R002",
+      "sourceRefs": [
+        "contract-before",
+        "contract-after"
+      ],
+      "affectedEvidenceIds": []
+    }
+  ],
+  "summary": {
+    "headline": "1 contract change; 2 proof lines are currently usable under the target comparison.",
+    "counts": {
+      "added": 0,
+      "removed": 0,
+      "changed": 1,
+      "unchanged": 1,
+      "affectedEvidence": 1,
+      "newlyStaleEvidence": 0,
+      "usableEvidence": 2,
+      "rerunEvidence": 0,
+      "retireEvidence": 0,
+      "uncoveredAddedItems": 0
+    }
+  }
+}

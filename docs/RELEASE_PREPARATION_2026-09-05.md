@@ -2,6 +2,8 @@
 
 Candidate: **0.3.0-rc.3**. The changes fix wrapping primary-action text and the installed-package TypeScript loader; the Run renderer identity is `workline-0.4.2`. A synthetic offline input is now packaged for a first result without a model call. Earlier review ZIPs, machine receipts and the accepted rc.2 Mac result remain intact.
 
+Publication follow-through completed: [0.3.0-rc.3](https://github.com/codex-improvement-lab/codex-workprint/releases/tag/v0.3.0-rc.3), commit `b5ea146`, with four passing hosted jobs and verified unauthenticated downloads. See the [publication record](evidence/github/release-0.3.0-rc.3.json). The observations below describe preparation; publication is separately recorded.
+
 ## Current checks
 
 - 46/46 core tests passed.
@@ -16,11 +18,11 @@ Candidate: **0.3.0-rc.3**. The changes fix wrapping primary-action text and the 
 
 ## Distribution
 
-The prepared tarball and portable ZIP are identified in [release/README.md](../release/README.md), with adjacent SHA-256 files. These are local release assets. No remote, public package, tag, or announcement is created by preparation.
+The tarball and portable ZIP are identified in [release/README.md](../release/README.md), with adjacent SHA-256 files. The preparation helper itself performs no remote, public package, tag, or announcement action. The user subsequently authorized GitHub publication; the final assets are rebuilt from a clean source clone with the public repository metadata.
 
 ## Evidence scope
 
-The rc.2 Mac baseline stays accepted. rc.3 has a new, separately recorded presentation delta; no new physical-Mac or hosted CI result is claimed. The packaged first run is synthetic; retained real demos were rebuilt from their original private input files, not recaptured or replaced by fixtures.
+The rc.2 Mac baseline stays accepted. rc.3 has a new, separately recorded presentation delta and no new physical-Mac acceptance. Initial preparation was local; the later [source baseline CI](https://github.com/codex-improvement-lab/codex-workprint/actions/runs/33917492625) passed all four Windows/macOS × Node 22/24 jobs. The final tag must independently pass the same matrix. The packaged first run is synthetic; retained real demos were rebuilt from their original private input files, not recaptured or replaced by fixtures.
 
 ## Reproduce the local distribution
 
